@@ -1,8 +1,11 @@
 import argparse
 import time
+from collections import Counter
 from dataclasses import dataclass
+from typing import Any, cast
 
 import cv2
+import numpy as np
 from ultralytics import YOLO
 
 
@@ -24,6 +27,104 @@ class ROI:
     @property
     def y2(self) -> int:
         return self.y + self.h
+
+
+@dataclass
+class DetectionStats:
+    label: str
+    confidence: float
+    local_box: tuple[int, int, int, int]
+    global_box: tuple[int, int, int, int]
+    center_global: tuple[float, float]
+    center_normalized: tuple[float, float]
+    area: int
+    roi_coverage: float
+
+
+class TerminalStatsReporter:
+    def __init__(self, interval_s: float) -> None:
+        self.interval_s = interval_s
+        self.last_print_t = 0.0
+        self.frame_count = 0
+        self.total_detections = 0
+        self.class_counts: Counter[str] = Counter()
+        self.best_confidence = 0.0
+        self.started_t = time.time()
+
+    def maybe_print(
+        self,
+        fps: float,
+        roi: ROI,
+        frame_size: tuple[int, int],
+        detection_stats: list[DetectionStats],
+        speed_ms: dict | None,
+    ) -> None:
+        self.frame_count += 1
+        self.total_detections += len(detection_stats)
+        for stat in detection_stats:
+            self.class_counts[stat.label] += 1
+            self.best_confidence = max(self.best_confidence, stat.confidence)
+
+        now_t = time.time()
+        if now_t - self.last_print_t < self.interval_s:
+            return
+        self.last_print_t = now_t
+
+        frame_w, frame_h = frame_size
+        roi_area = roi.w * roi.h
+        roi_fraction = roi_area / max(1, frame_w * frame_h)
+
+        print(
+            "[STATS] "
+            f"fps={fps:.1f} frame={frame_w}x{frame_h} "
+            f"roi=(x={roi.x}, y={roi.y}, w={roi.w}, h={roi.h}, area={roi_area}, frame_pct={roi_fraction * 100:.1f}%) "
+            f"detections={len(detection_stats)}"
+        )
+
+        if speed_ms:
+            preprocess = speed_ms.get("preprocess", 0.0)
+            inference = speed_ms.get("inference", 0.0)
+            postprocess = speed_ms.get("postprocess", 0.0)
+            total = preprocess + inference + postprocess
+            print(
+                "[TIMING] "
+                f"preprocess={preprocess:.1f}ms inference={inference:.1f}ms "
+                f"postprocess={postprocess:.1f}ms total={total:.1f}ms"
+            )
+
+        if not detection_stats:
+            print("[DETECTIONS] none")
+            return
+
+        for idx, stat in enumerate(
+            sorted(detection_stats, key=lambda item: item.confidence, reverse=True),
+            start=1,
+        ):
+            gx1, gy1, gx2, gy2 = stat.global_box
+            cx, cy = stat.center_global
+            nx, ny = stat.center_normalized
+            print(
+                f"[DETECTION {idx}] "
+                f"label={stat.label} conf={stat.confidence:.3f} "
+                f"box_global=({gx1},{gy1})-({gx2},{gy2}) "
+                f"center=({cx:.1f},{cy:.1f}) normalized=({nx:.3f},{ny:.3f}) "
+                f"area={stat.area} roi_pct={stat.roi_coverage * 100:.1f}%"
+            )
+
+    def print_summary(self) -> None:
+        elapsed = max(1e-6, time.time() - self.started_t)
+        avg_det_per_frame = self.total_detections / max(1, self.frame_count)
+        class_summary = ", ".join(
+            f"{label}={count}" for label, count in self.class_counts.most_common()
+        ) or "none"
+        print(
+            "[SUMMARY] "
+            f"elapsed={elapsed:.1f}s frames={self.frame_count} "
+            f"avg_fps={self.frame_count / elapsed:.1f} total_detections={self.total_detections} "
+            f"avg_detections_per_frame={avg_det_per_frame:.2f} "
+            f"best_confidence={self.best_confidence:.3f} "
+            f"class_counts={class_summary}"
+        )
 
 
 class ROIController:
@@ -159,20 +260,79 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--iou", type=float, default=0.45, help="NMS IoU threshold")
     parser.add_argument("--imgsz", type=int, default=640, help="Inference image size")
     parser.add_argument("--device", type=str, default="", help="Inference device: '', 'cpu', or '0'")
+    parser.add_argument(
+        "--stats-interval",
+        type=float,
+        default=1.0,
+        help="Seconds between terminal stats updates",
+    )
     return parser.parse_args()
+
+
+def to_numpy_array(value: Any) -> np.ndarray:
+    if isinstance(value, np.ndarray):
+        return value
+    if hasattr(value, "cpu") and hasattr(value, "numpy"):
+        return cast(np.ndarray, value.cpu().numpy())
+    if hasattr(value, "numpy"):
+        return cast(np.ndarray, value.numpy())
+    return np.asarray(value)
+
+
+def _open_camera_once(index: int):
+    cap = cv2.VideoCapture(index)
+    if not cap.isOpened():
+        cap.release()
+        return None, None
+
+    ok, frame = cap.read()
+    if not ok:
+        cap.release()
+        return None, None
+
+    return cap, frame
+
+
+def open_camera_with_fallback(requested_index: int, max_index_to_scan: int = 5):
+    cap, frame = _open_camera_once(requested_index)
+    if cap is not None:
+        return cap, frame, requested_index
+
+    available_indices = []
+    for idx in range(max_index_to_scan + 1):
+        probe, _ = _open_camera_once(idx)
+        if probe is not None:
+            available_indices.append(idx)
+            probe.release()
+
+    if available_indices:
+        fallback_index = available_indices[0]
+        cap, frame = _open_camera_once(fallback_index)
+        if cap is not None:
+            print(
+                f"[WARN] Camera index {requested_index} could not be opened. "
+                f"Falling back to camera index {fallback_index}."
+            )
+            return cap, frame, fallback_index
+
+    scanned = ", ".join(str(i) for i in range(max_index_to_scan + 1))
+    raise RuntimeError(
+        f"Could not open camera index {requested_index}. "
+        f"No working cameras found in scanned indices [{scanned}]. "
+        "Try --camera 0 and ensure camera permissions are enabled for Terminal/Python on macOS."
+    )
 
 
 def main() -> None:
     args = parse_args()
 
     model = YOLO(args.weights)
+    reporter = TerminalStatsReporter(interval_s=max(0.1, args.stats_interval))
 
-    cap = cv2.VideoCapture(args.camera)
-    if not cap.isOpened():
-        raise RuntimeError(f"Could not open camera index {args.camera}")
-
-    ok, frame = cap.read()
-    if not ok:
+    cap, frame, active_camera = open_camera_with_fallback(args.camera)
+    print(f"[INFO] Using camera index {active_camera}")
+    print(f"[INFO] Terminal stats enabled every {reporter.interval_s:.1f}s")
+    if frame is None:
         raise RuntimeError("Could not read initial frame from camera")
 
     h, w = frame.shape[:2]
@@ -185,7 +345,7 @@ def main() -> None:
 
     while True:
         ok, frame = cap.read()
-        if not ok:
+        if not ok or frame is None:
             break
 
         h, w = frame.shape[:2]
@@ -203,20 +363,38 @@ def main() -> None:
         )[0]
 
         det_count = 0
+        detection_stats: list[DetectionStats] = []
         if result.boxes is not None and len(result.boxes) > 0:
             names = result.names
-            xyxy = result.boxes.xyxy.cpu().numpy()
-            confs = result.boxes.conf.cpu().numpy()
-            classes = result.boxes.cls.cpu().numpy().astype(int)
+            xyxy = to_numpy_array(result.boxes.xyxy)
+            confs = to_numpy_array(result.boxes.conf)
+            classes = to_numpy_array(result.boxes.cls).astype(int)
 
             for box, conf, cls_id in zip(xyxy, confs, classes):
                 det_count += 1
                 x1, y1, x2, y2 = [int(v) for v in box]
                 gx1, gy1 = x1 + roi.x, y1 + roi.y
                 gx2, gy2 = x2 + roi.x, y2 + roi.y
+                area = max(0, x2 - x1) * max(0, y2 - y1)
+                center_x = gx1 + (gx2 - gx1) / 2.0
+                center_y = gy1 + (gy2 - gy1) / 2.0
+                label = names.get(cls_id, str(cls_id))
+
+                detection_stats.append(
+                    DetectionStats(
+                        label=label,
+                        confidence=float(conf),
+                        local_box=(x1, y1, x2, y2),
+                        global_box=(gx1, gy1, gx2, gy2),
+                        center_global=(center_x, center_y),
+                        center_normalized=(center_x / max(1, w), center_y / max(1, h)),
+                        area=area,
+                        roi_coverage=area / max(1, roi.w * roi.h),
+                    )
+                )
 
                 cv2.rectangle(frame, (gx1, gy1), (gx2, gy2), (0, 255, 0), 2)
-                label = f"{names.get(cls_id, str(cls_id))} {conf:.2f}"
+                label = f"{label} {conf:.2f}"
                 cv2.putText(
                     frame,
                     label,
@@ -247,6 +425,13 @@ def main() -> None:
         fps = 1.0 / max(1e-6, now_t - prev_t)
         prev_t = now_t
         draw_help(frame, fps=fps, count=det_count, roi=roi)
+        reporter.maybe_print(
+            fps=fps,
+            roi=roi,
+            frame_size=(w, h),
+            detection_stats=detection_stats,
+            speed_ms=result.speed,
+        )
 
         cv2.imshow(WINDOW_NAME, frame)
         key = cv2.waitKey(1) & 0xFF
@@ -270,6 +455,7 @@ def main() -> None:
 
     cap.release()
     cv2.destroyAllWindows()
+    reporter.print_summary()
 
 
 if __name__ == "__main__":
