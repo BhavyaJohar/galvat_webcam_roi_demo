@@ -59,7 +59,7 @@ python app.py --weights weights/best.pt --camera 1
 Example:
 
 ```bash
-python app.py --weights weights/best.pt --conf 0.30 --iou 0.50 --imgsz 640
+python app.py --weights weights/trial4.pt --conf 0.30 --iou 0.50 --imgsz 640
 ```
 
 ## Notes

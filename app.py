@@ -254,7 +254,7 @@ def mouse_callback(event, x, y, _flags, param) -> None:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="GALVAT webcam ROI detector demo")
-    parser.add_argument("--weights", type=str, default="weights/best.pt", help="Path to YOLO .pt weights")
+    parser.add_argument("--weights", type=str, default="weights/trial4.pt", help="Path to YOLO .pt weights")
     parser.add_argument("--camera", type=int, default=0, help="Camera index")
     parser.add_argument("--conf", type=float, default=0.25, help="Confidence threshold")
     parser.add_argument("--iou", type=float, default=0.45, help="NMS IoU threshold")
