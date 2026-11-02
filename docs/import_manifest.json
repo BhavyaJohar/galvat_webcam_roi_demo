@@ -1,0 +1,195 @@
+{
+  "schema": "galvat.research_import.v1",
+  "imported_at": "2026-11-02",
+  "source_repository": "https://github.com/BhavyaJohar/ml-workflow.git",
+  "source_workspace_head": "654b9637808739c56343c3b3cb28b80d3233159a",
+  "source_workspace_has_uncommitted_artifacts": true,
+  "source_hashes_authoritative_for_import": true,
+  "destination_repository": "https://github.com/BhavyaJohar/galvat_webcam_roi_demo.git",
+  "destination_base": "f2335867d1eea569591ea63c09c2031c816d9d89",
+  "branch": "research-notebooks-and-runtime-status",
+  "notebook_transform": "Code outputs/execution counts cleared; transient metadata removed. Source preserved except one Trial5 API-key literal replaced with interactive getpass prompt.",
+  "missing": [
+    "Current45-class small-model Colab notebook export",
+    "Current nano-model Colab notebook export and split-specific recognition metrics",
+    "Full standalone migration of supporting scripts and raw benchmark inputs"
+  ],
+  "unity": {
+    "branch": "bhavya",
+    "head": "dd792ba28b1b0ee589986c33b0216625f616ee48",
+    "main": "3da9995eef27c6d9a12d78da8fbdab32296ab749",
+    "ahead_of_main": 17,
+    "merged_into_main": false
+  },
+  "files": [
+    {
+      "source": "domains/galvat/notebooks/galvat_trial4_thin_colab_workflow.ipynb",
+      "source_sha256": "919136c586baa976e5a448969572814887d09846851a75e57b46c8230061423b",
+      "destination_sha256": "77fe9e8e91277e4290d351dd750cc88266c3df3350745399a765da5a62ad027a",
+      "notebook": true,
+      "destination": "notebooks/archive/notebooks/galvat_trial4_thin_colab_workflow.ipynb"
+    },
+    {
+      "source": "domains/galvat/notebooks/galvat_v7_assistive29_colab_train.ipynb",
+      "source_sha256": "0d68231face5f6cf414f2000013e867792fc194974fbe71bcd8e1bfe2bef2960",
+      "destination_sha256": "0d68231face5f6cf414f2000013e867792fc194974fbe71bcd8e1bfe2bef2960",
+      "notebook": true,
+      "destination": "notebooks/archive/notebooks/galvat_v7_assistive29_colab_train.ipynb"
+    },
+    {
+      "source": "domains/galvat/trial 5/Trial_5_Training.ipynb",
+      "source_sha256": "0e0d5c57f5db6b43e39eeb61bb61c8d306b6c82bd18e8fcffaba4d7572fae5db",
+      "destination_sha256": "257f42d2dc2feac78bccbca98c4ecf197fd88eaf4d4ad62dceab7571f05cd70e",
+      "notebook": true,
+      "destination": "notebooks/archive/trial 5/Trial_5_Training.ipynb",
+      "security_redaction": "One embedded API-key literal replaced by interactive getpass prompt; original source not modified."
+    },
+    {
+      "source": "domains/galvat/trial_7/Trial_7_Roboflow_Source_Checkpoint_Builder.ipynb",
+      "source_sha256": "5d6df253d614d3ad15b47cf3c12da4f6ebe3420c2eeb6ec042252b53632e78c9",
+      "destination_sha256": "9f4956407b61c49d2dbcc6c9609465e14612ed3cfaf22aaaeea2509d099405ad",
+      "notebook": true,
+      "destination": "notebooks/archive/trial_7/Trial_7_Roboflow_Source_Checkpoint_Builder.ipynb"
+    },
+    {
+      "source": "domains/galvat/trial_7/Trial_7_Train_Evaluate_Export.ipynb",
+      "source_sha256": "e066f8b04194968d033463a2ce7b68c8ede202a034b52a583e6a074b0bf1f6fa",
+      "destination_sha256": "fc23dbd9f70cb497d3cfcca9c6fc0cb9b7653292f4da7fe5777008617470b5f0",
+      "notebook": true,
+      "destination": "notebooks/archive/trial_7/Trial_7_Train_Evaluate_Export.ipynb"
+    },
+    {
+      "source": "domains/galvat/trial_8/Trial_8_Append_Roboflow_Sources_To_Checkpoint.ipynb",
+      "source_sha256": "b463cade12854abd12354ed786a8e92d91d8c510dbc34af1abfa3043aec6faff",
+      "destination_sha256": "324bb9c081ebc367b6ae1db8e0b840d878adafef42563bb49574df65af200d06",
+      "notebook": true,
+      "destination": "notebooks/archive/trial_8/Trial_8_Append_Roboflow_Sources_To_Checkpoint.ipynb"
+    },
+    {
+      "source": "domains/galvat/trial_8/Trial_8_Filter_Trial7_To_Roboflow_Only_Checkpoint.ipynb",
+      "source_sha256": "e5083b7856178e63a800e81d837e55179a88c04e83ecc51e68e37712fc5802d7",
+      "destination_sha256": "469f6d6fa0ef340cebe748cf3270276954f5d6ce978d8242d70bfdac7d7069e5",
+      "notebook": true,
+      "destination": "notebooks/archive/trial_8/Trial_8_Filter_Trial7_To_Roboflow_Only_Checkpoint.ipynb"
+    },
+    {
+      "source": "domains/galvat/trial_8/Trial_8_Merge_Outsourced_Worker_Dataset.ipynb",
+      "source_sha256": "19e5782f85ce40615348d3bfb2cea27c1b496e9567f8a43512bca1101b80bd1b",
+      "destination_sha256": "a7a0f84aeb647662714ba42bc243a18cf3279794a6654b7c40ab2d598c48d398",
+      "notebook": true,
+      "destination": "notebooks/archive/trial_8/Trial_8_Merge_Outsourced_Worker_Dataset.ipynb"
+    },
+    {
+      "source": "domains/galvat/trial_8/Trial_8_Roboflow_Only_Dataset_Builder.ipynb",
+      "source_sha256": "f65c2482392fcdae614a30bade1c025a476f0c521d068f139af9f5616ea16170",
+      "destination_sha256": "8e53ea443532f8a6ec9175f1914e2c45d9583c1ec786056fb6c309770f0140bb",
+      "notebook": true,
+      "destination": "notebooks/archive/trial_8/Trial_8_Roboflow_Only_Dataset_Builder.ipynb"
+    },
+    {
+      "source": "domains/galvat/trial_8/Trial_8_Train_Evaluate_Export.ipynb",
+      "source_sha256": "c907240a787af2a0331066e5a79208532a99cd366281effd0976d42f2d2c5f20",
+      "destination_sha256": "e31a86a3306d1d024e0c9847fdc6085b7ed27284552c62cbd6afe870ffd9c6d8",
+      "notebook": true,
+      "destination": "notebooks/archive/trial_8/Trial_8_Train_Evaluate_Export.ipynb"
+    },
+    {
+      "source": "domains/galvat/trial_9/Trial_9_Train_Evaluate_Export.ipynb",
+      "source_sha256": "cae2c7e61d4b9f2b5c7d33a77bf6bd197e5d3f560c81b02c13006968d2ff77b0",
+      "destination_sha256": "9ee4f8dfea0bd78d0b6786edc4c25fcb9e846c089a11c6e59ea615d096d9925e",
+      "notebook": true,
+      "destination": "notebooks/archive/trial_9/Trial_9_Train_Evaluate_Export.ipynb"
+    },
+    {
+      "source": "domains/galvat/experiments/reports/galvat_trial9_coworker_gpu_profile_20261013.json",
+      "source_sha256": "c5388dc72eb5cd31cd3fb1755a76879c6f681178886dd2fe3959044f28114712",
+      "destination_sha256": "c5388dc72eb5cd31cd3fb1755a76879c6f681178886dd2fe3959044f28114712",
+      "notebook": false,
+      "destination": "docs/experiments/trial9/galvat_trial9_coworker_gpu_profile_20261013.json"
+    },
+    {
+      "source": "domains/galvat/experiments/reports/galvat_trial9_coworker_gpu_profile_20261013.md",
+      "source_sha256": "42ca96356e1d98efc61f6c3f2eb758685a447482be7396b767dfa168dbe113da",
+      "destination_sha256": "42ca96356e1d98efc61f6c3f2eb758685a447482be7396b767dfa168dbe113da",
+      "notebook": false,
+      "destination": "docs/experiments/trial9/galvat_trial9_coworker_gpu_profile_20261013.md"
+    },
+    {
+      "source": "domains/galvat/experiments/reports/galvat_trial9_coworker_gpu_profile_evidence_20261013.json",
+      "source_sha256": "d7a86b5d4f7061647d029045a015b78b27abc869aad752d72192bbc43b7d5bad",
+      "destination_sha256": "d7a86b5d4f7061647d029045a015b78b27abc869aad752d72192bbc43b7d5bad",
+      "notebook": false,
+      "destination": "docs/experiments/trial9/galvat_trial9_coworker_gpu_profile_evidence_20261013.json"
+    },
+    {
+      "source": "domains/galvat/experiments/reports/galvat_trial9_headset_tracking_acceptance_20261013.json",
+      "source_sha256": "7d77a2d85fdd7fe07a464564230b3ab5f9a4db73faa50a34c31c6736d0d314e6",
+      "destination_sha256": "7d77a2d85fdd7fe07a464564230b3ab5f9a4db73faa50a34c31c6736d0d314e6",
+      "notebook": false,
+      "destination": "docs/experiments/trial9/galvat_trial9_headset_tracking_acceptance_20261013.json"
+    },
+    {
+      "source": "domains/galvat/experiments/reports/galvat_trial9_headset_tracking_acceptance_20261013.md",
+      "source_sha256": "50e049eee395e91b9bfeef9e652d88f1cc744d67363305cdbf66cc06abccbf67",
+      "destination_sha256": "50e049eee395e91b9bfeef9e652d88f1cc744d67363305cdbf66cc06abccbf67",
+      "notebook": false,
+      "destination": "docs/experiments/trial9/galvat_trial9_headset_tracking_acceptance_20261013.md"
+    },
+    {
+      "source": "domains/galvat/experiments/reports/galvat_trial9_latency_audit_20261012.json",
+      "source_sha256": "ec8def7c7f194d51edc7685fce94ba18450c3d45510a19313f2cb02d3c90be5a",
+      "destination_sha256": "ec8def7c7f194d51edc7685fce94ba18450c3d45510a19313f2cb02d3c90be5a",
+      "notebook": false,
+      "destination": "docs/experiments/trial9/galvat_trial9_latency_audit_20261012.json"
+    },
+    {
+      "source": "domains/galvat/experiments/reports/galvat_trial9_latency_audit_20261012.md",
+      "source_sha256": "bf9e5ef14b33f29dbfb896851f168301089edb413d649e6e7cc96ece785a1c73",
+      "destination_sha256": "bf9e5ef14b33f29dbfb896851f168301089edb413d649e6e7cc96ece785a1c73",
+      "notebook": false,
+      "destination": "docs/experiments/trial9/galvat_trial9_latency_audit_20261012.md"
+    },
+    {
+      "source": "domains/galvat/experiments/reports/galvat_trial9_mac_camera_runtime_20261007.md",
+      "source_sha256": "75b8b8261e94fdc6aa3c2a790a466406c88213b8b41f8f803ad5b5b5fdd67e57",
+      "destination_sha256": "75b8b8261e94fdc6aa3c2a790a466406c88213b8b41f8f803ad5b5b5fdd67e57",
+      "notebook": false,
+      "destination": "docs/experiments/trial9/galvat_trial9_mac_camera_runtime_20261007.md"
+    },
+    {
+      "source": "domains/galvat/experiments/reports/galvat_trial9_mac_nano_comparison_20261008.md",
+      "source_sha256": "4ef52cdd23dbac62fe15e8094413a41fafa996575d8d153c951930d49153e272",
+      "destination_sha256": "4ef52cdd23dbac62fe15e8094413a41fafa996575d8d153c951930d49153e272",
+      "notebook": false,
+      "destination": "docs/experiments/trial9/galvat_trial9_mac_nano_comparison_20261008.md"
+    },
+    {
+      "source": "domains/galvat/experiments/reports/galvat_trial9_sentis_mac_20261013.json",
+      "source_sha256": "17a7aeb89ce00f6f028f22315ae195e41510dc000529699a23aa8fed5437bc13",
+      "destination_sha256": "17a7aeb89ce00f6f028f22315ae195e41510dc000529699a23aa8fed5437bc13",
+      "notebook": false,
+      "destination": "docs/experiments/trial9/galvat_trial9_sentis_mac_20261013.json"
+    },
+    {
+      "source": "domains/galvat/experiments/reports/galvat_trial9_sentis_mac_20261013.md",
+      "source_sha256": "1641250f8372f88627295fb598224443912070ea856395944ff83768cbb95d2a",
+      "destination_sha256": "1641250f8372f88627295fb598224443912070ea856395944ff83768cbb95d2a",
+      "notebook": false,
+      "destination": "docs/experiments/trial9/galvat_trial9_sentis_mac_20261013.md"
+    },
+    {
+      "source": "domains/galvat/experiments/reports/galvat_trial9_tracking_pipeline_fixes_20261013.md",
+      "source_sha256": "3e6d6900df9a32198871acfc577b5975f789b5aa546e656b67c5cdf414b05191",
+      "destination_sha256": "3e6d6900df9a32198871acfc577b5975f789b5aa546e656b67c5cdf414b05191",
+      "notebook": false,
+      "destination": "docs/experiments/trial9/galvat_trial9_tracking_pipeline_fixes_20261013.md"
+    },
+    {
+      "source": "domains/galvat/experiments/reports/galvat_trial9_tracking_value_diagnostics_20261013.md",
+      "source_sha256": "a67f0927877a8d23128ffcbf85640459c31829207952b43399b3369839cf4af5",
+      "destination_sha256": "a67f0927877a8d23128ffcbf85640459c31829207952b43399b3369839cf4af5",
+      "notebook": false,
+      "destination": "docs/experiments/trial9/galvat_trial9_tracking_value_diagnostics_20261013.md"
+    }
+  ]
+}

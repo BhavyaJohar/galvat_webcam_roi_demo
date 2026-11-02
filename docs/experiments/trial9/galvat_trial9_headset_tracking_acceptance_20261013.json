@@ -1,0 +1,999 @@
+{
+  "schema": "galvat.headset_tracking_acceptance.v1",
+  "warmup_seconds": 15,
+  "method": "Within-session final-minus-first counter delta / elapsed delta after warmup; all short sessions retained but excluded. Source percentages count track observations, not ground-truth accuracy. Nearest-rank p95; repeated window fields are not independent windows. FrameWork excludes some asynchronous completion, native callback and CSV work. No commit/model identity is supplied by CSV.",
+  "files": [
+    {
+      "path": "domains/galvat/trial_9/timing_results_2026-10-13_11-43-15_OT3.csv",
+      "sha256": "19eebbfb73ba78b0b1295def339cbe91d7d26a59587f9f0ed05f3d1aa3696298",
+      "columns": 27,
+      "valid_rows": 840,
+      "excluded_rows": 0,
+      "sessions": [
+        {
+          "run_id": "d85be6bdcb1b4b67a3be841dafca6884",
+          "session_id": "1",
+          "rows": 809,
+          "last_elapsed_ms": 123916.93890000042,
+          "postwarm_rows": 711,
+          "settings": {
+            "WorkerBackend": {
+              "GPUCompute": 809
+            },
+            "K_Layers": {
+              "298": 809
+            },
+            "TimestampSource": {
+              "NativeCameraCallbackArrival": 809
+            }
+          },
+          "postwarm_span_seconds": 108.8399617000008,
+          "detector_completions_per_second": 6.523339303968119,
+          "metrics": {
+            "Inference_ms": {
+              "mean": 126.72573839662448,
+              "median": 127.0,
+              "p95": 136.0,
+              "min": 100.0,
+              "max": 279.0
+            },
+            "Scheduling_ms": {
+              "mean": 11.351617440225036,
+              "median": 11.0,
+              "p95": 13.0,
+              "min": 10.0,
+              "max": 18.0
+            },
+            "GPUReadback_ms": {
+              "mean": 114.8902953586498,
+              "median": 115.0,
+              "p95": 124.0,
+              "min": 89.0,
+              "max": 268.0
+            },
+            "Preprocess_ms": {
+              "mean": 18.119549929676513,
+              "median": 18.0,
+              "p95": 22.0,
+              "min": 16.0,
+              "max": 47.0
+            },
+            "Postprocess_ms": {
+              "mean": 3.6272855133614628,
+              "median": 1.0,
+              "p95": 17.0,
+              "min": 0.0,
+              "max": 85.0
+            },
+            "CaptureToResult_ms": {
+              "mean": 166.45185358648786,
+              "median": 165.6722999997437,
+              "p95": 190.7147000003606,
+              "min": 127.16029999963939,
+              "max": 329.68209999985993
+            },
+            "Output_ms": {
+              "mean": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "min": 0.0,
+              "max": 0.0
+            },
+            "Detections": {
+              "mean": 0.8537271448663853,
+              "median": 1.0,
+              "p95": 2.0,
+              "min": 0.0,
+              "max": 3.0
+            }
+          },
+          "nonzero_detection_row_percent": 71.16736990154712
+        },
+        {
+          "run_id": "d85be6bdcb1b4b67a3be841dafca6884",
+          "session_id": "2",
+          "rows": 15,
+          "last_elapsed_ms": 2232.5626999996603,
+          "postwarm_rows": 0,
+          "settings": {
+            "WorkerBackend": {
+              "GPUCompute": 15
+            },
+            "K_Layers": {
+              "298": 15
+            },
+            "TimestampSource": {
+              "NativeCameraCallbackArrival": 15
+            }
+          },
+          "excluded_from_postwarm_comparison": true
+        },
+        {
+          "run_id": "d85be6bdcb1b4b67a3be841dafca6884",
+          "session_id": "3",
+          "rows": 9,
+          "last_elapsed_ms": 1440.5691999997944,
+          "postwarm_rows": 0,
+          "settings": {
+            "WorkerBackend": {
+              "GPUCompute": 9
+            },
+            "K_Layers": {
+              "298": 9
+            },
+            "TimestampSource": {
+              "NativeCameraCallbackArrival": 9
+            }
+          },
+          "excluded_from_postwarm_comparison": true
+        },
+        {
+          "run_id": "d85be6bdcb1b4b67a3be841dafca6884",
+          "session_id": "4",
+          "rows": 7,
+          "last_elapsed_ms": 1051.5369999995455,
+          "postwarm_rows": 0,
+          "settings": {
+            "WorkerBackend": {
+              "GPUCompute": 7
+            },
+            "K_Layers": {
+              "298": 7
+            },
+            "TimestampSource": {
+              "NativeCameraCallbackArrival": 7
+            }
+          },
+          "excluded_from_postwarm_comparison": true
+        }
+      ]
+    },
+    {
+      "path": "domains/galvat/trial_9/timing_results_2026-10-13_11-57-22_OT5.csv",
+      "sha256": "118270bd9d1447861316d5c4958a156340b1bf76d018e5292d9932c26a3acab2",
+      "columns": 27,
+      "valid_rows": 820,
+      "excluded_rows": 0,
+      "sessions": [
+        {
+          "run_id": "3e9868d394274976a389100283401da4",
+          "session_id": "1",
+          "rows": 793,
+          "last_elapsed_ms": 124452.31789999997,
+          "postwarm_rows": 701,
+          "settings": {
+            "WorkerBackend": {
+              "GPUCompute": 793
+            },
+            "K_Layers": {
+              "298": 793
+            },
+            "TimestampSource": {
+              "NativeCameraCallbackArrival": 793
+            }
+          },
+          "postwarm_span_seconds": 109.42121959999999,
+          "detector_completions_per_second": 6.397296635505606,
+          "metrics": {
+            "Inference_ms": {
+              "mean": 125.80313837375178,
+              "median": 127.0,
+              "p95": 136.0,
+              "min": 102.0,
+              "max": 271.0
+            },
+            "Scheduling_ms": {
+              "mean": 11.7018544935806,
+              "median": 11.0,
+              "p95": 14.0,
+              "min": 10.0,
+              "max": 17.0
+            },
+            "GPUReadback_ms": {
+              "mean": 113.60057061340942,
+              "median": 115.0,
+              "p95": 124.0,
+              "min": 89.0,
+              "max": 256.0
+            },
+            "Preprocess_ms": {
+              "mean": 17.96861626248217,
+              "median": 18.0,
+              "p95": 20.0,
+              "min": 16.0,
+              "max": 30.0
+            },
+            "Postprocess_ms": {
+              "mean": 1.2111269614835949,
+              "median": 1.0,
+              "p95": 5.0,
+              "min": 0.0,
+              "max": 13.0
+            },
+            "CaptureToResult_ms": {
+              "mean": 162.50513737517795,
+              "median": 162.33770000000368,
+              "p95": 178.62179999996442,
+              "min": 122.48800000001211,
+              "max": 322.541899999982
+            },
+            "Output_ms": {
+              "mean": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "min": 0.0,
+              "max": 0.0
+            },
+            "Detections": {
+              "mean": 0.9643366619115549,
+              "median": 1.0,
+              "p95": 2.0,
+              "min": 0.0,
+              "max": 2.0
+            }
+          },
+          "nonzero_detection_row_percent": 91.01283880171184
+        },
+        {
+          "run_id": "3e9868d394274976a389100283401da4",
+          "session_id": "2",
+          "rows": 27,
+          "last_elapsed_ms": 4074.801700000011,
+          "postwarm_rows": 0,
+          "settings": {
+            "WorkerBackend": {
+              "GPUCompute": 27
+            },
+            "K_Layers": {
+              "298": 27
+            },
+            "TimestampSource": {
+              "NativeCameraCallbackArrival": 27
+            }
+          },
+          "excluded_from_postwarm_comparison": true
+        }
+      ]
+    },
+    {
+      "path": "domains/galvat/trial_9/timing_results_2026-10-13_12-16-24_OT10.csv",
+      "sha256": "eec9ee164aa95f34fe73c9055d69c17ba1d0715757d9b74c05a511f48fdb1e78",
+      "columns": 27,
+      "valid_rows": 800,
+      "excluded_rows": 0,
+      "sessions": [
+        {
+          "run_id": "d9dfb1c7c6ff4af8a4063a3f2ad11ef0",
+          "session_id": "1",
+          "rows": 800,
+          "last_elapsed_ms": 149631.2407000002,
+          "postwarm_rows": 710,
+          "settings": {
+            "WorkerBackend": {
+              "GPUCompute": 800
+            },
+            "K_Layers": {
+              "298": 800
+            },
+            "TimestampSource": {
+              "NativeCameraCallbackArrival": 800
+            }
+          },
+          "postwarm_span_seconds": 134.6196174000001,
+          "detector_completions_per_second": 5.266691539416004,
+          "metrics": {
+            "Inference_ms": {
+              "mean": 126.38169014084507,
+              "median": 127.0,
+              "p95": 136.0,
+              "min": 100.0,
+              "max": 164.0
+            },
+            "Scheduling_ms": {
+              "mean": 11.452112676056338,
+              "median": 11.0,
+              "p95": 13.0,
+              "min": 9.0,
+              "max": 19.0
+            },
+            "GPUReadback_ms": {
+              "mean": 114.40563380281691,
+              "median": 115.0,
+              "p95": 124.0,
+              "min": 86.0,
+              "max": 153.0
+            },
+            "Preprocess_ms": {
+              "mean": 18.03098591549296,
+              "median": 18.0,
+              "p95": 22.0,
+              "min": 16.0,
+              "max": 29.0
+            },
+            "Postprocess_ms": {
+              "mean": 2.415492957746479,
+              "median": 1.0,
+              "p95": 11.0,
+              "min": 0.0,
+              "max": 21.0
+            },
+            "CaptureToResult_ms": {
+              "mean": 163.48341070423166,
+              "median": 163.6193000000203,
+              "p95": 181.83310000016354,
+              "min": 126.89039999991655,
+              "max": 200.9731000000611
+            },
+            "Output_ms": {
+              "mean": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "min": 0.0,
+              "max": 0.0
+            },
+            "Detections": {
+              "mean": 0.9690140845070423,
+              "median": 1.0,
+              "p95": 2.0,
+              "min": 0.0,
+              "max": 3.0
+            }
+          },
+          "nonzero_detection_row_percent": 89.01408450704226
+        }
+      ]
+    },
+    {
+      "path": "domains/galvat/trial_9/timing_results_2026-10-13_12-24-02_Control.csv",
+      "sha256": "89fc13dd622a16b4eae1cd8abf0829a09e97d4f456e2aef8ee2baed89e94bb4d",
+      "columns": 27,
+      "valid_rows": 800,
+      "excluded_rows": 0,
+      "sessions": [
+        {
+          "run_id": "619690ffdf0349609171a5f41d947de2",
+          "session_id": "1",
+          "rows": 800,
+          "last_elapsed_ms": 96832.33530000015,
+          "postwarm_rows": 671,
+          "settings": {
+            "WorkerBackend": {
+              "GPUCompute": 800
+            },
+            "K_Layers": {
+              "298": 800
+            },
+            "TimestampSource": {
+              "NativeCameraCallbackArrival": 800
+            }
+          },
+          "postwarm_span_seconds": 81.71612280000001,
+          "detector_completions_per_second": 8.199116368257256,
+          "metrics": {
+            "Inference_ms": {
+              "mean": 108.15350223546945,
+              "median": 116.0,
+              "p95": 119.0,
+              "min": 90.0,
+              "max": 136.0
+            },
+            "Scheduling_ms": {
+              "mean": 11.704918032786885,
+              "median": 11.0,
+              "p95": 14.0,
+              "min": 9.0,
+              "max": 17.0
+            },
+            "GPUReadback_ms": {
+              "mean": 95.98211624441133,
+              "median": 103.0,
+              "p95": 108.0,
+              "min": 77.0,
+              "max": 125.0
+            },
+            "Preprocess_ms": {
+              "mean": 1.1922503725782414,
+              "median": 1.0,
+              "p95": 2.0,
+              "min": 1.0,
+              "max": 3.0
+            },
+            "Postprocess_ms": {
+              "mean": 5.180327868852459,
+              "median": 8.0,
+              "p95": 10.0,
+              "min": 0.0,
+              "max": 13.0
+            },
+            "CaptureToResult_ms": {
+              "mean": 129.53356989567902,
+              "median": 133.48580000014044,
+              "p95": 154.67969999997877,
+              "min": 96.1730000001844,
+              "max": 174.16009999997914
+            },
+            "Output_ms": {
+              "mean": 0.044709388971684055,
+              "median": 0.0,
+              "p95": 0.0,
+              "min": 0.0,
+              "max": 3.0
+            },
+            "Detections": {
+              "mean": 0.6199701937406855,
+              "median": 1.0,
+              "p95": 1.0,
+              "min": 0.0,
+              "max": 2.0
+            }
+          },
+          "nonzero_detection_row_percent": 61.847988077496275
+        }
+      ]
+    },
+    {
+      "path": "domains/galvat/trial_9/tracking_experiment_2026-10-13_11-44-27_f2b50c0d_OT3.csv",
+      "sha256": "03badff97d8521c028683aadff4df340558ab6824dc56a7b88225db4f69388ea",
+      "columns": 35,
+      "valid_rows": 2536,
+      "excluded_rows": 0,
+      "sessions": [
+        {
+          "run_id": "f2b50c0d89184a8b8a83011985ddfab5",
+          "session_id": "1",
+          "rows": 2440,
+          "last_elapsed_ms": 123898.38650000002,
+          "postwarm_rows": 2142,
+          "settings": {
+            "Mode": {
+              "YOLO_FLOW": 2440
+            },
+            "WorkerBackend": {
+              "GPUCompute": 2440
+            },
+            "TrackerBackend": {
+              "CPU_SparseOpticalFlow": 2440
+            },
+            "RefreshFrames": {
+              "3": 2440
+            }
+          },
+          "postwarm_span_seconds": 108.83757490000036,
+          "counter_deltas": {
+            "CameraFrames": 2141.0,
+            "OverlayFrames": 1473.0,
+            "YOLOSubmissions": 710.0,
+            "YOLOCompletions": 710.0,
+            "LostTracks": 100.0,
+            "ForcedRefreshes": 508.0,
+            "AcceptedRefreshes": 703.0,
+            "RejectedRefreshes": 7.0,
+            "CameraCallbacks": 3265.0,
+            "OverwrittenCallbacks": 1124.0,
+            "CropPreparations": 710.0
+          },
+          "processed_camera_fps": 19.671515117523928,
+          "detector_completions_per_second": 6.523482360318538,
+          "detector_submission_frame_percent": 33.16207379729099,
+          "forced_refresh_submission_percent": 71.54929577464789,
+          "nonzero_track_row_percent": 68.76750700280112,
+          "callback_fps": 29.99883085414088,
+          "overwritten_callback_percent": 34.42572741194487,
+          "track_observation_sources": {
+            "YOLO_UNPROPAGATED": 1708,
+            "YOLO+TRACK": 14,
+            "TRACK": 10
+          },
+          "track_observation_source_percent": {
+            "YOLO_UNPROPAGATED": 98.61431870669746,
+            "YOLO+TRACK": 0.8083140877598153,
+            "TRACK": 0.5773672055427251
+          },
+          "metrics": {
+            "Tracker_ms": {
+              "mean": 15.530691363214386,
+              "median": 15.087150000035763,
+              "p95": 18.55960000026971,
+              "min": 14.092199999839067,
+              "max": 41.38690000027418
+            },
+            "Overlay_ms": {
+              "mean": 0.4892570028041536,
+              "median": 0.5827499995939434,
+              "p95": 1.1663999995216727,
+              "min": 0.020599999465048313,
+              "max": 4.573900000192225
+            },
+            "FrameWork_ms": {
+              "mean": 22.35718613445592,
+              "median": 18.349099999759346,
+              "p95": 32.459400000050664,
+              "min": 16.18420000001788,
+              "max": 60.101000000722706
+            },
+            "RefreshReplay_ms": {
+              "mean": 1.2383329131619625,
+              "median": 0.0,
+              "p95": 7.510700000450015,
+              "min": 0.0,
+              "max": 84.76439999975264
+            },
+            "ActiveTracks": {
+              "mean": 0.8085901027077498,
+              "median": 1.0,
+              "p95": 2.0,
+              "min": 0.0,
+              "max": 3.0
+            },
+            "CallbackQueue_ms": {
+              "mean": 15.043576657322925,
+              "median": 14.741049999836832,
+              "p95": 31.312599999830127,
+              "min": 0.7466000001877546,
+              "max": 46.21939999982715
+            },
+            "CameraProcessingWindowFPS": {
+              "mean": 19.6996721684525,
+              "median": 19.935348714799403,
+              "p95": 20.714737351913374,
+              "min": 15.574516664332466,
+              "max": 21.09910412244279
+            }
+          },
+          "processed_frame_completion_gap_ms": {
+            "mean": 50.83492522185911,
+            "median": 49.254099999554455,
+            "p95": 66.5734999999404,
+            "min": 26.591900000348687,
+            "max": 166.93250000011176
+          },
+          "processed_frame_gaps_over100ms": 4,
+          "logged_window_fps_rows_below10": 0
+        },
+        {
+          "run_id": "f2b50c0d89184a8b8a83011985ddfab5",
+          "session_id": "2",
+          "rows": 45,
+          "last_elapsed_ms": 2224.7874999996275,
+          "postwarm_rows": 0,
+          "settings": {
+            "Mode": {
+              "YOLO_FLOW": 45
+            },
+            "WorkerBackend": {
+              "GPUCompute": 45
+            },
+            "TrackerBackend": {
+              "CPU_SparseOpticalFlow": 45
+            },
+            "RefreshFrames": {
+              "3": 45
+            }
+          },
+          "excluded_from_postwarm_comparison": true
+        },
+        {
+          "run_id": "f2b50c0d89184a8b8a83011985ddfab5",
+          "session_id": "3",
+          "rows": 29,
+          "last_elapsed_ms": 1474.4124999996275,
+          "postwarm_rows": 0,
+          "settings": {
+            "Mode": {
+              "YOLO_FLOW": 29
+            },
+            "WorkerBackend": {
+              "GPUCompute": 29
+            },
+            "TrackerBackend": {
+              "CPU_SparseOpticalFlow": 29
+            },
+            "RefreshFrames": {
+              "3": 29
+            }
+          },
+          "excluded_from_postwarm_comparison": true
+        },
+        {
+          "run_id": "f2b50c0d89184a8b8a83011985ddfab5",
+          "session_id": "4",
+          "rows": 22,
+          "last_elapsed_ms": 1087.8354000002146,
+          "postwarm_rows": 0,
+          "settings": {
+            "Mode": {
+              "YOLO_FLOW": 22
+            },
+            "WorkerBackend": {
+              "GPUCompute": 22
+            },
+            "TrackerBackend": {
+              "CPU_SparseOpticalFlow": 22
+            },
+            "RefreshFrames": {
+              "3": 22
+            }
+          },
+          "excluded_from_postwarm_comparison": true
+        }
+      ]
+    },
+    {
+      "path": "domains/galvat/trial_9/tracking_experiment_2026-10-13_11-58-05_dc4b29e1_OT5.csv",
+      "sha256": "3c42dede840de6a43ab76173d638337083ed55d1dcb5296d918b88c732562a5e",
+      "columns": 35,
+      "valid_rows": 2646,
+      "excluded_rows": 0,
+      "sessions": [
+        {
+          "run_id": "dc4b29e1d8614b5fb2eb3b84428332fa",
+          "session_id": "1",
+          "rows": 2543,
+          "last_elapsed_ms": 124435.2347,
+          "postwarm_rows": 2236,
+          "settings": {
+            "Mode": {
+              "YOLO_FLOW": 2543
+            },
+            "WorkerBackend": {
+              "GPUCompute": 2543
+            },
+            "TrackerBackend": {
+              "CPU_SparseOpticalFlow": 2543
+            },
+            "RefreshFrames": {
+              "5": 2543
+            }
+          },
+          "postwarm_span_seconds": 109.4240533,
+          "counter_deltas": {
+            "CameraFrames": 2235.0,
+            "OverlayFrames": 1925.0,
+            "YOLOSubmissions": 700.0,
+            "YOLOCompletions": 700.0,
+            "LostTracks": 66.0,
+            "ForcedRefreshes": 640.0,
+            "AcceptedRefreshes": 696.0,
+            "RejectedRefreshes": 4.0,
+            "CameraCallbacks": 3282.0,
+            "OverwrittenCallbacks": 1048.0,
+            "CropPreparations": 700.0
+          },
+          "processed_camera_fps": 20.425125304693864,
+          "detector_completions_per_second": 6.397130967913067,
+          "detector_submission_frame_percent": 31.319910514541387,
+          "forced_refresh_submission_percent": 91.42857142857143,
+          "nonzero_track_row_percent": 86.13595706618962,
+          "callback_fps": 29.993405480986695,
+          "overwritten_callback_percent": 31.931748933577087,
+          "track_observation_sources": {
+            "YOLO_UNPROPAGATED": 2034,
+            "YOLO+TRACK": 2,
+            "TRACK": 3
+          },
+          "track_observation_source_percent": {
+            "YOLO_UNPROPAGATED": 99.75478175576262,
+            "YOLO+TRACK": 0.0980872976949485,
+            "TRACK": 0.14713094654242276
+          },
+          "metrics": {
+            "Tracker_ms": {
+              "mean": 15.333109615385,
+              "median": 15.136500000022352,
+              "p95": 17.09659999998985,
+              "min": 14.090400000015507,
+              "max": 21.644700000004377
+            },
+            "Overlay_ms": {
+              "mean": 0.5738776833631731,
+              "median": 0.6502499999915017,
+              "p95": 0.9005999999935739,
+              "min": 0.020299999974668026,
+              "max": 3.459900000016205
+            },
+            "FrameWork_ms": {
+              "mean": 22.176188282647622,
+              "median": 18.406399999992573,
+              "p95": 32.718499999988126,
+              "min": 16.21040000001085,
+              "max": 44.52859999999055
+            },
+            "RefreshReplay_ms": {
+              "mean": 0.422835375670822,
+              "median": 0.0,
+              "p95": 2.4786000000021886,
+              "min": 0.0,
+              "max": 12.766800000012154
+            },
+            "ActiveTracks": {
+              "mean": 0.9118962432915921,
+              "median": 1.0,
+              "p95": 2.0,
+              "min": 0.0,
+              "max": 2.0
+            },
+            "CallbackQueue_ms": {
+              "mean": 14.751154472271809,
+              "median": 13.84800000001269,
+              "p95": 32.09979999999632,
+              "min": 0.784399999974994,
+              "max": 53.71799999999348
+            },
+            "CameraProcessingWindowFPS": {
+              "mean": 20.42623803342073,
+              "median": 20.348580880279485,
+              "p95": 21.685065623444345,
+              "min": 17.547204905730677,
+              "max": 22.943870116148172
+            }
+          },
+          "processed_frame_completion_gap_ms": {
+            "mean": 48.95930796420581,
+            "median": 48.75190000003204,
+            "p95": 65.67679999998654,
+            "min": 24.106200000009267,
+            "max": 179.66790000000037
+          },
+          "processed_frame_gaps_over100ms": 3,
+          "logged_window_fps_rows_below10": 0
+        },
+        {
+          "run_id": "dc4b29e1d8614b5fb2eb3b84428332fa",
+          "session_id": "2",
+          "rows": 103,
+          "last_elapsed_ms": 4924.831600000034,
+          "postwarm_rows": 0,
+          "settings": {
+            "Mode": {
+              "YOLO_FLOW": 103
+            },
+            "WorkerBackend": {
+              "GPUCompute": 103
+            },
+            "TrackerBackend": {
+              "CPU_SparseOpticalFlow": 103
+            },
+            "RefreshFrames": {
+              "5": 103
+            }
+          },
+          "excluded_from_postwarm_comparison": true
+        }
+      ]
+    },
+    {
+      "path": "domains/galvat/trial_9/tracking_experiment_2026-10-13_12-17-09_35845f2e_OT10.csv",
+      "sha256": "8d2bebd1de6b777dfdd098337a165b07b05728290ac922b9e42b4e36b8c6b5c0",
+      "columns": 35,
+      "valid_rows": 3207,
+      "excluded_rows": 0,
+      "sessions": [
+        {
+          "run_id": "35845f2edcd44b2983d621a7aa5f012c",
+          "session_id": "1",
+          "rows": 3207,
+          "last_elapsed_ms": 150331.60990000004,
+          "postwarm_rows": 2896,
+          "settings": {
+            "Mode": {
+              "YOLO_FLOW": 3207
+            },
+            "WorkerBackend": {
+              "GPUCompute": 3207
+            },
+            "TrackerBackend": {
+              "CPU_SparseOpticalFlow": 3207
+            },
+            "RefreshFrames": {
+              "10": 3207
+            }
+          },
+          "postwarm_span_seconds": 135.2886375000002,
+          "counter_deltas": {
+            "CameraFrames": 2895.0,
+            "OverlayFrames": 2015.0,
+            "YOLOSubmissions": 713.0,
+            "YOLOCompletions": 713.0,
+            "LostTracks": 111.0,
+            "ForcedRefreshes": 617.0,
+            "AcceptedRefreshes": 713.0,
+            "RejectedRefreshes": 0.0,
+            "CameraCallbacks": 4058.0,
+            "OverwrittenCallbacks": 1164.0,
+            "CropPreparations": 713.0
+          },
+          "processed_camera_fps": 21.398692850314173,
+          "detector_completions_per_second": 5.270213472288085,
+          "detector_submission_frame_percent": 24.6286701208981,
+          "forced_refresh_submission_percent": 86.53576437587658,
+          "nonzero_track_row_percent": 69.61325966850829,
+          "callback_fps": 29.99512800917959,
+          "overwritten_callback_percent": 28.684080827994087,
+          "track_observation_sources": {
+            "YOLO_UNPROPAGATED": 1890,
+            "YOLO+TRACK": 47,
+            "TRACK": 232
+          },
+          "track_observation_source_percent": {
+            "YOLO_UNPROPAGATED": 87.13692946058092,
+            "YOLO+TRACK": 2.1668971876440755,
+            "TRACK": 10.69617335177501
+          },
+          "metrics": {
+            "Tracker_ms": {
+              "mean": 15.688604972375433,
+              "median": 15.071499999961816,
+              "p95": 20.215400000102818,
+              "min": 13.893699999898672,
+              "max": 29.04229999985546
+            },
+            "Overlay_ms": {
+              "mean": 0.4067338743102859,
+              "median": 0.31109999993350357,
+              "p95": 0.8787000000011176,
+              "min": 0.01860000006854534,
+              "max": 8.859300000127405
+            },
+            "FrameWork_ms": {
+              "mean": 21.362997790055672,
+              "median": 18.106999999959953,
+              "p95": 32.08749999990687,
+              "min": 15.792500000214204,
+              "max": 44.724500000011176
+            },
+            "RefreshReplay_ms": {
+              "mean": 0.6212914364644132,
+              "median": 0.0,
+              "p95": 3.444399999920279,
+              "min": 0.0,
+              "max": 20.938700000056997
+            },
+            "ActiveTracks": {
+              "mean": 0.74896408839779,
+              "median": 1.0,
+              "p95": 2.0,
+              "min": 0.0,
+              "max": 3.0
+            },
+            "CallbackQueue_ms": {
+              "mean": 14.701894233424863,
+              "median": 14.105950000113808,
+              "p95": 31.256400000071153,
+              "min": 0.7494999999180436,
+              "max": 49.75290000019595
+            },
+            "CameraProcessingWindowFPS": {
+              "mean": 21.478610682664613,
+              "median": 20.68190496889931,
+              "p95": 25.53305406064737,
+              "min": 18.811415559018215,
+              "max": 26.658157119624054
+            }
+          },
+          "processed_frame_completion_gap_ms": {
+            "mean": 46.73182642487053,
+            "median": 45.96160000003874,
+            "p95": 65.64520000014454,
+            "min": 23.61409999988973,
+            "max": 80.96160000003874
+          },
+          "processed_frame_gaps_over100ms": 0,
+          "logged_window_fps_rows_below10": 0
+        }
+      ]
+    },
+    {
+      "path": "domains/galvat/trial_9/tracking_experiment_2026-10-13_12-24-33_234381cb_Control.csv",
+      "sha256": "1832709e77c3619c4fab631ca4de11619ea0a84283bebc7e53b1ad158eee3b44",
+      "columns": 35,
+      "valid_rows": 2176,
+      "excluded_rows": 0,
+      "sessions": [
+        {
+          "run_id": "234381cb39224976880021e537502f2a",
+          "session_id": "1",
+          "rows": 2176,
+          "last_elapsed_ms": 97181.83349999995,
+          "postwarm_rows": 1839,
+          "settings": {
+            "Mode": {
+              "YOLO_ONLY": 2176
+            },
+            "WorkerBackend": {
+              "GPUCompute": 2176
+            },
+            "TrackerBackend": {
+              "None": 2176
+            },
+            "RefreshFrames": {
+              "10": 2176
+            }
+          },
+          "postwarm_span_seconds": 82.16665859999996,
+          "counter_deltas": {
+            "CameraFrames": 1838.0,
+            "OverlayFrames": 0.0,
+            "YOLOSubmissions": 674.0,
+            "YOLOCompletions": 674.0,
+            "LostTracks": 0.0,
+            "ForcedRefreshes": 0.0,
+            "AcceptedRefreshes": 0.0,
+            "RejectedRefreshes": 0.0,
+            "CameraCallbacks": 2465.0,
+            "OverwrittenCallbacks": 627.0,
+            "CropPreparations": 674.0
+          },
+          "processed_camera_fps": 22.369170553078824,
+          "detector_completions_per_second": 8.202840561901592,
+          "detector_submission_frame_percent": 36.67029379760609,
+          "forced_refresh_submission_percent": 0.0,
+          "nonzero_track_row_percent": 0.0,
+          "callback_fps": 30.000002945233568,
+          "overwritten_callback_percent": 25.43610547667343,
+          "track_observation_sources": {},
+          "track_observation_source_percent": {},
+          "metrics": {
+            "Tracker_ms": {
+              "mean": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "min": 0.0,
+              "max": 0.0
+            },
+            "Overlay_ms": {
+              "mean": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "min": 0.0,
+              "max": 0.0
+            },
+            "FrameWork_ms": {
+              "mean": 6.616178140296034,
+              "median": 1.7135000000707805,
+              "p95": 17.004399999976158,
+              "min": 1.292600000044331,
+              "max": 28.023700000019744
+            },
+            "RefreshReplay_ms": {
+              "mean": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "min": 0.0,
+              "max": 0.0
+            },
+            "ActiveTracks": {
+              "mean": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "min": 0.0,
+              "max": 0.0
+            },
+            "CallbackQueue_ms": {
+              "mean": 13.453554703643603,
+              "median": 11.960100000025705,
+              "p95": 30.42119999998249,
+              "min": 0.7709999999497086,
+              "max": 56.16699999989942
+            },
+            "CameraProcessingWindowFPS": {
+              "mean": 22.436664298479215,
+              "median": 22.249295422857692,
+              "p95": 25.760667938446378,
+              "min": 18.896408001691295,
+              "max": 26.95292402289655
+            }
+          },
+          "processed_frame_completion_gap_ms": {
+            "mean": 44.704384439608255,
+            "median": 41.619199999957345,
+            "p95": 68.85190000012517,
+            "min": 10.286199999973178,
+            "max": 145.90009999996983
+          },
+          "processed_frame_gaps_over100ms": 1,
+          "logged_window_fps_rows_below10": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": "galvat.coworker_gpu_profile_evidence.v1",
+  "source_category": "internal_evidence",
+  "csv_analysis": "domains/galvat/experiments/reports/galvat_trial9_coworker_gpu_profile_20261013.json",
+  "baseline_run_id": "galvat_trial9_headset_tracking_acceptance_20261013_v1",
+  "existing_followup_plan_id": "galvat_trial9_tracking_value_diagnostics_v1",
+  "rgp": {
+    "path": "domains/galvat/trial_9/com.AUD.GALVAT_R61-20261013-153848.rgp",
+    "sha256": "32a5861a77f2ff68963f1e28a38f839a01e3329ce936c85cc49ff02738746e45",
+    "size_bytes": 16627040,
+    "container_version": "1.5",
+    "header_local_datetime_timezone_unknown": "2026-10-13T19:38:46",
+    "cpu_brand": "100-000000003",
+    "cpu_timestamp_frequency_hz": 1000000000,
+    "gpu_timestamp_frequency_hz": 100000000,
+    "gpu_name": "Unknown AMD GPU",
+    "api": "Vulkan",
+    "api_version": "1.1",
+    "queue_chunk_offset": 16622328,
+    "queue_chunk_version": "1.1",
+    "queue_record_count": 5,
+    "queue_event_count": 75,
+    "cpu_timestamp_span_ms": 669.77954,
+    "first_submit_frame_ids": [1343,1344,1345,1346,1347,1348],
+    "first_submit_gaps_ms": [168.327652,133.064858,134.494517,116.848573,116.813117],
+    "container_chunk_walk_exact_eof": true,
+    "full_shader_trace_decoded": false,
+    "native_viewer_used": false,
+    "method": "Little-endian <14I file header; 16-byte <IHHii chunk headers and bounded size walk. CPU chunk0.0 timestamp frequency at offset88. Queue chunk1.1 counts <4I at16; 24-byte queue records followed by 56-byte <IIQIIQQQQ events. Event type0 CPU submit timestamp divided by recorded CPU frequency. Layout checked against AMD-authored Mesa ac_rgp.c; no SQTT token decoding or GPU-utilization recomputation."
+  },
+  "screenshot_observations": {
+    "rgp_version": "1.13.2.11",
+    "gpu_idle_percent": 87.49,
+    "profiled_frame_duration_ms": 787.309632,
+    "profiled_frame_rate_hz_rounded": 1.3,
+    "profiling_trace_memory_mb": 15.84,
+    "scope": "User screenshot frame summary; not whole-run camera throughput or independently recomputed occupancy."
+  },
+  "extra_csv_checks": {
+    "largest_complete_record_gap_ms": 265.8624,
+    "largest_postwarm_record_gap_ms": 209.0781,
+    "whole_session_processed_camera_fps": 7.5524162950648135,
+    "postwarm_zero_active_track_rows": 244,
+    "postwarm_zero_active_mean_tracker_ms": 93.0692430328135,
+    "tracker_share_of_logged_framework_percent": 89.90746725310377,
+    "callback_increments_across_top10_gaps_range": [5,8],
+    "reported_1237ms_pause_observed_between_complete_csv_rows": false
+  },
+  "provenance": {
+    "inspected_source_commit": "dd792ba28b1b0ee589986c33b0216625f616ee48",
+    "coworker_commit_verified": false,
+    "coworker_model_verified": false,
+    "coworker_build_type_known": false,
+    "coworker_profiling_settings_known": false,
+    "unity_cpu_profiler_capture_received": false,
+    "received_csv_columns": 35,
+    "current_diagnostic_csv_columns": 69,
+    "rgp_csv_numeric_clock_overlap": true,
+    "rgp_csv_same_run_formally_verified": false
+  },
+  "open_questions": [
+    "Which common tracker-observation stage explains approximately93ms cost even without active tracks?",
+    "Was Deep Profiling or concurrent RGP capture enabled during the CSV?",
+    "Why does SQTT screenshot frame duration differ markedly from raw CPU queue submission cadence?",
+    "Does reported Camera.Pause correspond to SDK application pause/native disconnect, another engine marker, or capture-induced behavior?"
+  ],
+  "runtime_code_changed": false
+}

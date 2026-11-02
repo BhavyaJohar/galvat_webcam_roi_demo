@@ -1,0 +1,1101 @@
+{
+  "schema_version": 1,
+  "artifact_id": "galvat_trial9_sentis_mac_findings_20261013_v1",
+  "run_id": "galvat_trial9_sentis_mac_20261013_v1",
+  "plan_id": "galvat_trial9_latency_audit_v1",
+  "source_commit": "d6069b84cacc4c64fbe9bb5c44bb47551fc97b17",
+  "metrics": {
+    "measured_samples": 7680,
+    "warmups": 1920,
+    "completed_suites": 8,
+    "case_runs": 192,
+    "actual_unity_build": true,
+    "actual_native_arm64_execution": true,
+    "magic_leap_execution": false,
+    "unity_version": "6000.3.11f1",
+    "sentis_version": "2.6.1",
+    "planned_gpu_cpu_fallback_layers_nano": 0,
+    "planned_gpu_cpu_fallback_layers_small": 0,
+    "runtime_layers_nano": 297,
+    "runtime_layers_small": 297,
+    "scheduling_frame_gaps_all_zero": true,
+    "trial9-nano-maxdet40_CPU_ReadbackAndCloneAsync_60_mean_ms": 33.5617825,
+    "trial9-nano-maxdet40_CPU_ReadbackAndCloneAsync_60_median_ms": 33.39660000000001,
+    "trial9-nano-maxdet40_CPU_ReadbackAndCloneAsync_60_p95_ms": 34.837915,
+    "trial9-nano-maxdet40_CPU_ReadbackAndCloneAsync_60_full_case_results_per_second": 19.89101131431223,
+    "trial9-small-maxdet40_CPU_ReadbackAndCloneAsync_60_mean_ms": 66.964035,
+    "trial9-small-maxdet40_CPU_ReadbackAndCloneAsync_60_median_ms": 66.71969999999999,
+    "trial9-small-maxdet40_CPU_ReadbackAndCloneAsync_60_p95_ms": 67.36005,
+    "trial9-small-maxdet40_CPU_ReadbackAndCloneAsync_60_full_case_results_per_second": 11.965350355549191,
+    "trial9-nano-maxdet40_CPU_request_poll_clone_after_done_60_mean_ms": 54.2887875,
+    "trial9-nano-maxdet40_CPU_request_poll_clone_after_done_60_median_ms": 33.4701,
+    "trial9-nano-maxdet40_CPU_request_poll_clone_after_done_60_p95_ms": 124.27094499999998,
+    "trial9-nano-maxdet40_CPU_request_poll_clone_after_done_60_full_case_results_per_second": 11.388403812482279,
+    "trial9-small-maxdet40_CPU_request_poll_clone_after_done_60_mean_ms": 67.85664416666667,
+    "trial9-small-maxdet40_CPU_request_poll_clone_after_done_60_median_ms": 66.7385,
+    "trial9-small-maxdet40_CPU_request_poll_clone_after_done_60_p95_ms": 72.89737,
+    "trial9-small-maxdet40_CPU_request_poll_clone_after_done_60_full_case_results_per_second": 11.847497870056833,
+    "trial9-nano-maxdet40_CPU_ReadbackAndCloneAsync_-1_mean_ms": 28.616576666666667,
+    "trial9-nano-maxdet40_CPU_ReadbackAndCloneAsync_-1_median_ms": 27.85065,
+    "trial9-nano-maxdet40_CPU_ReadbackAndCloneAsync_-1_p95_ms": 33.922255,
+    "trial9-nano-maxdet40_CPU_ReadbackAndCloneAsync_-1_full_case_results_per_second": 33.692804106532876,
+    "trial9-small-maxdet40_CPU_ReadbackAndCloneAsync_-1_mean_ms": 68.8820175,
+    "trial9-small-maxdet40_CPU_ReadbackAndCloneAsync_-1_median_ms": 68.2697,
+    "trial9-small-maxdet40_CPU_ReadbackAndCloneAsync_-1_p95_ms": 75.283695,
+    "trial9-small-maxdet40_CPU_ReadbackAndCloneAsync_-1_full_case_results_per_second": 14.282111657053822,
+    "trial9-nano-maxdet40_GPUCompute_ReadbackAndCloneAsync_60_mean_ms": 57.74418166666667,
+    "trial9-nano-maxdet40_GPUCompute_ReadbackAndCloneAsync_60_median_ms": 66.6037,
+    "trial9-nano-maxdet40_GPUCompute_ReadbackAndCloneAsync_60_p95_ms": 67.485635,
+    "trial9-nano-maxdet40_GPUCompute_ReadbackAndCloneAsync_60_full_case_results_per_second": 13.314123715636413,
+    "trial9-small-maxdet40_GPUCompute_ReadbackAndCloneAsync_60_mean_ms": 62.3103825,
+    "trial9-small-maxdet40_GPUCompute_ReadbackAndCloneAsync_60_median_ms": 66.5727,
+    "trial9-small-maxdet40_GPUCompute_ReadbackAndCloneAsync_60_p95_ms": 82.88186,
+    "trial9-small-maxdet40_GPUCompute_ReadbackAndCloneAsync_60_full_case_results_per_second": 12.698584377898426,
+    "trial9-nano-maxdet40_GPUCompute_request_poll_clone_after_done_60_mean_ms": 58.857906666666665,
+    "trial9-nano-maxdet40_GPUCompute_request_poll_clone_after_done_60_median_ms": 66.69800000000001,
+    "trial9-nano-maxdet40_GPUCompute_request_poll_clone_after_done_60_p95_ms": 69.281125,
+    "trial9-nano-maxdet40_GPUCompute_request_poll_clone_after_done_60_full_case_results_per_second": 13.204203383851766,
+    "trial9-small-maxdet40_GPUCompute_request_poll_clone_after_done_60_mean_ms": 61.96827583333333,
+    "trial9-small-maxdet40_GPUCompute_request_poll_clone_after_done_60_median_ms": 66.64735,
+    "trial9-small-maxdet40_GPUCompute_request_poll_clone_after_done_60_p95_ms": 67.200085,
+    "trial9-small-maxdet40_GPUCompute_request_poll_clone_after_done_60_full_case_results_per_second": 12.531562724886726,
+    "trial9-nano-maxdet40_GPUCompute_ReadbackAndCloneAsync_-1_mean_ms": 14.178835833333332,
+    "trial9-nano-maxdet40_GPUCompute_ReadbackAndCloneAsync_-1_median_ms": 14.120999999999999,
+    "trial9-nano-maxdet40_GPUCompute_ReadbackAndCloneAsync_-1_p95_ms": 15.852744999999999,
+    "trial9-nano-maxdet40_GPUCompute_ReadbackAndCloneAsync_-1_full_case_results_per_second": 67.66932455232117,
+    "trial9-small-maxdet40_GPUCompute_ReadbackAndCloneAsync_-1_mean_ms": 27.2664975,
+    "trial9-small-maxdet40_GPUCompute_ReadbackAndCloneAsync_-1_median_ms": 27.113750000000003,
+    "trial9-small-maxdet40_GPUCompute_ReadbackAndCloneAsync_-1_p95_ms": 29.72862,
+    "trial9-small-maxdet40_GPUCompute_ReadbackAndCloneAsync_-1_full_case_results_per_second": 36.37310836193998,
+    "trial9-nano-maxdet40_GPUCompute_ReadbackAndCloneAsync_20_mean_ms": 131.92929833333332,
+    "trial9-nano-maxdet40_GPUCompute_ReadbackAndCloneAsync_20_median_ms": 149.88979999999998,
+    "trial9-nano-maxdet40_GPUCompute_ReadbackAndCloneAsync_20_p95_ms": 152.628205,
+    "trial9-nano-maxdet40_GPUCompute_ReadbackAndCloneAsync_20_full_case_results_per_second": 5.504820439142867,
+    "trial9-small-maxdet40_GPUCompute_ReadbackAndCloneAsync_20_mean_ms": 186.42544,
+    "trial9-small-maxdet40_GPUCompute_ReadbackAndCloneAsync_20_median_ms": 199.93755,
+    "trial9-small-maxdet40_GPUCompute_ReadbackAndCloneAsync_20_p95_ms": 203.28017499999999,
+    "trial9-small-maxdet40_GPUCompute_ReadbackAndCloneAsync_20_full_case_results_per_second": 4.2116478495341525,
+    "trial9-nano-maxdet40_GPUCompute_request_poll_clone_after_done_20_mean_ms": 131.02767583333332,
+    "trial9-nano-maxdet40_GPUCompute_request_poll_clone_after_done_20_median_ms": 149.9694,
+    "trial9-nano-maxdet40_GPUCompute_request_poll_clone_after_done_20_p95_ms": 152.80919500000002,
+    "trial9-nano-maxdet40_GPUCompute_request_poll_clone_after_done_20_full_case_results_per_second": 5.511033163711203,
+    "trial9-small-maxdet40_GPUCompute_request_poll_clone_after_done_20_mean_ms": 194.67743333333334,
+    "trial9-small-maxdet40_GPUCompute_request_poll_clone_after_done_20_median_ms": 200.24329999999998,
+    "trial9-small-maxdet40_GPUCompute_request_poll_clone_after_done_20_p95_ms": 203.67153000000002,
+    "trial9-small-maxdet40_GPUCompute_request_poll_clone_after_done_20_full_case_results_per_second": 4.111873102113571
+  },
+  "selected": [
+    {
+      "model": "trial9-nano-maxdet40",
+      "backend": "CPU",
+      "readback": "ReadbackAndCloneAsync",
+      "desktop_target": 60,
+      "total_ms": {
+        "count": 120,
+        "mean": 33.5617825,
+        "median": 33.39660000000001,
+        "p95": 34.837915,
+        "min": 33.3279,
+        "max": 35.2684
+      },
+      "case_mean_ranges": {
+        "input_cpu_ms": {
+          "min_case_mean": 0.13709,
+          "max_case_mean": 0.164425
+        },
+        "enqueue_cpu_ms": {
+          "min_case_mean": 1.758192500000001,
+          "max_case_mean": 2.158885
+        },
+        "scheduling_wall_ms": {
+          "min_case_mean": 1.7646575,
+          "max_case_mean": 2.165345
+        },
+        "readback_wait_wall_ms": {
+          "min_case_mean": 31.31674,
+          "max_case_mean": 31.5368175
+        },
+        "poll_clone_cpu_ms": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "postprocess_cpu_ms": {
+          "min_case_mean": 0.008635,
+          "max_case_mean": 0.009197499999999999
+        },
+        "total_wall_ms": {
+          "min_case_mean": 33.38753,
+          "max_case_mean": 33.655835
+        },
+        "total_frame_gap": {
+          "min_case_mean": 2,
+          "max_case_mean": 2
+        },
+        "scheduling_frame_gap": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "readback_frame_gap": {
+          "min_case_mean": 2,
+          "max_case_mean": 2
+        },
+        "previous_completion_frame_gap": {
+          "min_case_mean": 3,
+          "max_case_mean": 3
+        }
+      },
+      "full_case_results_per_second": 19.89101131431223
+    },
+    {
+      "model": "trial9-small-maxdet40",
+      "backend": "CPU",
+      "readback": "ReadbackAndCloneAsync",
+      "desktop_target": 60,
+      "total_ms": {
+        "count": 120,
+        "mean": 66.964035,
+        "median": 66.71969999999999,
+        "p95": 67.36005,
+        "min": 66.6536,
+        "max": 83.3794
+      },
+      "case_mean_ranges": {
+        "input_cpu_ms": {
+          "min_case_mean": 0.1376575,
+          "max_case_mean": 0.155395
+        },
+        "enqueue_cpu_ms": {
+          "min_case_mean": 1.7807850000000018,
+          "max_case_mean": 2.3193125
+        },
+        "scheduling_wall_ms": {
+          "min_case_mean": 1.7870425,
+          "max_case_mean": 2.3257575
+        },
+        "readback_wait_wall_ms": {
+          "min_case_mean": 64.4283425,
+          "max_case_mean": 64.98454
+        },
+        "poll_clone_cpu_ms": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "postprocess_cpu_ms": {
+          "min_case_mean": 0.008365000000000001,
+          "max_case_mean": 0.008605
+        },
+        "total_wall_ms": {
+          "min_case_mean": 66.7175175,
+          "max_case_mean": 67.4569
+        },
+        "total_frame_gap": {
+          "min_case_mean": 4,
+          "max_case_mean": 4.025
+        },
+        "scheduling_frame_gap": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "readback_frame_gap": {
+          "min_case_mean": 4,
+          "max_case_mean": 4.025
+        },
+        "previous_completion_frame_gap": {
+          "min_case_mean": 5,
+          "max_case_mean": 5.025
+        }
+      },
+      "full_case_results_per_second": 11.965350355549191
+    },
+    {
+      "model": "trial9-nano-maxdet40",
+      "backend": "CPU",
+      "readback": "request_poll_clone_after_done",
+      "desktop_target": 60,
+      "total_ms": {
+        "count": 120,
+        "mean": 54.2887875,
+        "median": 33.4701,
+        "p95": 124.27094499999998,
+        "min": 33.2917,
+        "max": 160.283
+      },
+      "case_mean_ranges": {
+        "input_cpu_ms": {
+          "min_case_mean": 0.1475225,
+          "max_case_mean": 0.44183
+        },
+        "enqueue_cpu_ms": {
+          "min_case_mean": 1.9372399999999999,
+          "max_case_mean": 4.843187499999999
+        },
+        "scheduling_wall_ms": {
+          "min_case_mean": 1.9438325,
+          "max_case_mean": 4.8586775
+        },
+        "readback_wait_wall_ms": {
+          "min_case_mean": 31.25173,
+          "max_case_mean": 90.474515
+        },
+        "poll_clone_cpu_ms": {
+          "min_case_mean": 0.005625,
+          "max_case_mean": 0.010995
+        },
+        "postprocess_cpu_ms": {
+          "min_case_mean": 0.00955,
+          "max_case_mean": 0.02002
+        },
+        "total_wall_ms": {
+          "min_case_mean": 33.416,
+          "max_case_mean": 95.7962975
+        },
+        "total_frame_gap": {
+          "min_case_mean": 1.275,
+          "max_case_mean": 2
+        },
+        "scheduling_frame_gap": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "readback_frame_gap": {
+          "min_case_mean": 1.275,
+          "max_case_mean": 2
+        },
+        "previous_completion_frame_gap": {
+          "min_case_mean": 2.275,
+          "max_case_mean": 3
+        }
+      },
+      "full_case_results_per_second": 11.388403812482279
+    },
+    {
+      "model": "trial9-small-maxdet40",
+      "backend": "CPU",
+      "readback": "request_poll_clone_after_done",
+      "desktop_target": 60,
+      "total_ms": {
+        "count": 120,
+        "mean": 67.85664416666667,
+        "median": 66.7385,
+        "p95": 72.89737,
+        "min": 66.6359,
+        "max": 86.246
+      },
+      "case_mean_ranges": {
+        "input_cpu_ms": {
+          "min_case_mean": 0.139165,
+          "max_case_mean": 0.17225000000000001
+        },
+        "enqueue_cpu_ms": {
+          "min_case_mean": 1.8722550000000004,
+          "max_case_mean": 2.495782499999999
+        },
+        "scheduling_wall_ms": {
+          "min_case_mean": 1.8785825,
+          "max_case_mean": 2.50219
+        },
+        "readback_wait_wall_ms": {
+          "min_case_mean": 64.3697,
+          "max_case_mean": 67.31715
+        },
+        "poll_clone_cpu_ms": {
+          "min_case_mean": 0.0075475,
+          "max_case_mean": 0.0089725
+        },
+        "postprocess_cpu_ms": {
+          "min_case_mean": 0.0093325,
+          "max_case_mean": 0.0097075
+        },
+        "total_wall_ms": {
+          "min_case_mean": 66.815455,
+          "max_case_mean": 69.70398
+        },
+        "total_frame_gap": {
+          "min_case_mean": 4,
+          "max_case_mean": 4.1
+        },
+        "scheduling_frame_gap": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "readback_frame_gap": {
+          "min_case_mean": 4,
+          "max_case_mean": 4.1
+        },
+        "previous_completion_frame_gap": {
+          "min_case_mean": 5,
+          "max_case_mean": 5.1
+        }
+      },
+      "full_case_results_per_second": 11.847497870056833
+    },
+    {
+      "model": "trial9-nano-maxdet40",
+      "backend": "CPU",
+      "readback": "ReadbackAndCloneAsync",
+      "desktop_target": -1,
+      "total_ms": {
+        "count": 120,
+        "mean": 28.616576666666667,
+        "median": 27.85065,
+        "p95": 33.922255,
+        "min": 24.4128,
+        "max": 39.1457
+      },
+      "case_mean_ranges": {
+        "input_cpu_ms": {
+          "min_case_mean": 0.1449125,
+          "max_case_mean": 0.168795
+        },
+        "enqueue_cpu_ms": {
+          "min_case_mean": 3.167009999999996,
+          "max_case_mean": 3.8871749999999956
+        },
+        "scheduling_wall_ms": {
+          "min_case_mean": 3.1733875,
+          "max_case_mean": 3.893585
+        },
+        "readback_wait_wall_ms": {
+          "min_case_mean": 24.58859,
+          "max_case_mean": 25.12956
+        },
+        "poll_clone_cpu_ms": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "postprocess_cpu_ms": {
+          "min_case_mean": 0.01055,
+          "max_case_mean": 0.010750000000000001
+        },
+        "total_wall_ms": {
+          "min_case_mean": 27.94196,
+          "max_case_mean": 28.96928
+        },
+        "total_frame_gap": {
+          "min_case_mean": 39.525,
+          "max_case_mean": 53.15
+        },
+        "scheduling_frame_gap": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "readback_frame_gap": {
+          "min_case_mean": 39.525,
+          "max_case_mean": 53.15
+        },
+        "previous_completion_frame_gap": {
+          "min_case_mean": 40.525,
+          "max_case_mean": 54.15
+        }
+      },
+      "full_case_results_per_second": 33.692804106532876
+    },
+    {
+      "model": "trial9-small-maxdet40",
+      "backend": "CPU",
+      "readback": "ReadbackAndCloneAsync",
+      "desktop_target": -1,
+      "total_ms": {
+        "count": 120,
+        "mean": 68.8820175,
+        "median": 68.2697,
+        "p95": 75.283695,
+        "min": 63.2377,
+        "max": 84.374
+      },
+      "case_mean_ranges": {
+        "input_cpu_ms": {
+          "min_case_mean": 0.15097,
+          "max_case_mean": 0.1649275
+        },
+        "enqueue_cpu_ms": {
+          "min_case_mean": 3.599582499999996,
+          "max_case_mean": 4.564792499999993
+        },
+        "scheduling_wall_ms": {
+          "min_case_mean": 3.60591,
+          "max_case_mean": 4.5710475
+        },
+        "readback_wait_wall_ms": {
+          "min_case_mean": 64.33725749999999,
+          "max_case_mean": 65.11244
+        },
+        "poll_clone_cpu_ms": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "postprocess_cpu_ms": {
+          "min_case_mean": 0.0104625,
+          "max_case_mean": 0.01057
+        },
+        "total_wall_ms": {
+          "min_case_mean": 68.268895,
+          "max_case_mean": 69.8594675
+        },
+        "total_frame_gap": {
+          "min_case_mean": 99.3,
+          "max_case_mean": 105.275
+        },
+        "scheduling_frame_gap": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "readback_frame_gap": {
+          "min_case_mean": 99.3,
+          "max_case_mean": 105.275
+        },
+        "previous_completion_frame_gap": {
+          "min_case_mean": 100.3,
+          "max_case_mean": 106.275
+        }
+      },
+      "full_case_results_per_second": 14.282111657053822
+    },
+    {
+      "model": "trial9-nano-maxdet40",
+      "backend": "GPUCompute",
+      "readback": "ReadbackAndCloneAsync",
+      "desktop_target": 60,
+      "total_ms": {
+        "count": 120,
+        "mean": 57.74418166666667,
+        "median": 66.6037,
+        "p95": 67.485635,
+        "min": 33.1143,
+        "max": 82.6351
+      },
+      "case_mean_ranges": {
+        "input_cpu_ms": {
+          "min_case_mean": 0.0556675,
+          "max_case_mean": 0.0666925
+        },
+        "enqueue_cpu_ms": {
+          "min_case_mean": 1.6773200000000004,
+          "max_case_mean": 1.8052875000000006
+        },
+        "scheduling_wall_ms": {
+          "min_case_mean": 1.6892525,
+          "max_case_mean": 1.8175475
+        },
+        "readback_wait_wall_ms": {
+          "min_case_mean": 37.21828,
+          "max_case_mean": 65.29137
+        },
+        "poll_clone_cpu_ms": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "postprocess_cpu_ms": {
+          "min_case_mean": 0.02471,
+          "max_case_mean": 0.0272375
+        },
+        "total_wall_ms": {
+          "min_case_mean": 39.1254475,
+          "max_case_mean": 67.0638025
+        },
+        "total_frame_gap": {
+          "min_case_mean": 2.35,
+          "max_case_mean": 4
+        },
+        "scheduling_frame_gap": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "readback_frame_gap": {
+          "min_case_mean": 2.35,
+          "max_case_mean": 4
+        },
+        "previous_completion_frame_gap": {
+          "min_case_mean": 3.35,
+          "max_case_mean": 5
+        }
+      },
+      "full_case_results_per_second": 13.314123715636413
+    },
+    {
+      "model": "trial9-small-maxdet40",
+      "backend": "GPUCompute",
+      "readback": "ReadbackAndCloneAsync",
+      "desktop_target": 60,
+      "total_ms": {
+        "count": 120,
+        "mean": 62.3103825,
+        "median": 66.5727,
+        "p95": 82.88186,
+        "min": 49.8023,
+        "max": 83.2699
+      },
+      "case_mean_ranges": {
+        "input_cpu_ms": {
+          "min_case_mean": 0.0603025,
+          "max_case_mean": 0.074845
+        },
+        "enqueue_cpu_ms": {
+          "min_case_mean": 1.7890100000000007,
+          "max_case_mean": 1.9557050000000005
+        },
+        "scheduling_wall_ms": {
+          "min_case_mean": 1.801265,
+          "max_case_mean": 1.9675425
+        },
+        "readback_wait_wall_ms": {
+          "min_case_mean": 48.1157525,
+          "max_case_mean": 67.820615
+        },
+        "poll_clone_cpu_ms": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "postprocess_cpu_ms": {
+          "min_case_mean": 0.0270975,
+          "max_case_mean": 0.0312475
+        },
+        "total_wall_ms": {
+          "min_case_mean": 50.0077825,
+          "max_case_mean": 69.89502
+        },
+        "total_frame_gap": {
+          "min_case_mean": 3,
+          "max_case_mean": 4
+        },
+        "scheduling_frame_gap": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "readback_frame_gap": {
+          "min_case_mean": 3,
+          "max_case_mean": 4
+        },
+        "previous_completion_frame_gap": {
+          "min_case_mean": 4,
+          "max_case_mean": 5
+        }
+      },
+      "full_case_results_per_second": 12.698584377898426
+    },
+    {
+      "model": "trial9-nano-maxdet40",
+      "backend": "GPUCompute",
+      "readback": "request_poll_clone_after_done",
+      "desktop_target": 60,
+      "total_ms": {
+        "count": 120,
+        "mean": 58.857906666666665,
+        "median": 66.69800000000001,
+        "p95": 69.281125,
+        "min": 33.1759,
+        "max": 83.3697
+      },
+      "case_mean_ranges": {
+        "input_cpu_ms": {
+          "min_case_mean": 0.0560525,
+          "max_case_mean": 0.06714
+        },
+        "enqueue_cpu_ms": {
+          "min_case_mean": 1.7377950000000004,
+          "max_case_mean": 2.773292500000001
+        },
+        "scheduling_wall_ms": {
+          "min_case_mean": 1.7499675,
+          "max_case_mean": 2.7908525
+        },
+        "readback_wait_wall_ms": {
+          "min_case_mean": 38.836445,
+          "max_case_mean": 66.1845875
+        },
+        "poll_clone_cpu_ms": {
+          "min_case_mean": 0.02482,
+          "max_case_mean": 0.025685
+        },
+        "postprocess_cpu_ms": {
+          "min_case_mean": 0.02858,
+          "max_case_mean": 0.041985
+        },
+        "total_wall_ms": {
+          "min_case_mean": 41.7359275,
+          "max_case_mean": 68.09628
+        },
+        "total_frame_gap": {
+          "min_case_mean": 2.5,
+          "max_case_mean": 4
+        },
+        "scheduling_frame_gap": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "readback_frame_gap": {
+          "min_case_mean": 2.5,
+          "max_case_mean": 4
+        },
+        "previous_completion_frame_gap": {
+          "min_case_mean": 3.5,
+          "max_case_mean": 5
+        }
+      },
+      "full_case_results_per_second": 13.204203383851766
+    },
+    {
+      "model": "trial9-small-maxdet40",
+      "backend": "GPUCompute",
+      "readback": "request_poll_clone_after_done",
+      "desktop_target": 60,
+      "total_ms": {
+        "count": 120,
+        "mean": 61.96827583333333,
+        "median": 66.64735,
+        "p95": 67.200085,
+        "min": 49.8671,
+        "max": 83.1187
+      },
+      "case_mean_ranges": {
+        "input_cpu_ms": {
+          "min_case_mean": 0.068815,
+          "max_case_mean": 0.0724925
+        },
+        "enqueue_cpu_ms": {
+          "min_case_mean": 1.8834525000000004,
+          "max_case_mean": 2.2823025
+        },
+        "scheduling_wall_ms": {
+          "min_case_mean": 1.8955625,
+          "max_case_mean": 2.296545
+        },
+        "readback_wait_wall_ms": {
+          "min_case_mean": 48.92236,
+          "max_case_mean": 65.43154
+        },
+        "poll_clone_cpu_ms": {
+          "min_case_mean": 0.022054999999999998,
+          "max_case_mean": 0.024085
+        },
+        "postprocess_cpu_ms": {
+          "min_case_mean": 0.03242,
+          "max_case_mean": 0.0411625
+        },
+        "total_wall_ms": {
+          "min_case_mean": 51.329875,
+          "max_case_mean": 67.4706775
+        },
+        "total_frame_gap": {
+          "min_case_mean": 3.075,
+          "max_case_mean": 4
+        },
+        "scheduling_frame_gap": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "readback_frame_gap": {
+          "min_case_mean": 3.075,
+          "max_case_mean": 4
+        },
+        "previous_completion_frame_gap": {
+          "min_case_mean": 4.075,
+          "max_case_mean": 5
+        }
+      },
+      "full_case_results_per_second": 12.531562724886726
+    },
+    {
+      "model": "trial9-nano-maxdet40",
+      "backend": "GPUCompute",
+      "readback": "ReadbackAndCloneAsync",
+      "desktop_target": -1,
+      "total_ms": {
+        "count": 120,
+        "mean": 14.178835833333332,
+        "median": 14.120999999999999,
+        "p95": 15.852744999999999,
+        "min": 12.1794,
+        "max": 17.357
+      },
+      "case_mean_ranges": {
+        "input_cpu_ms": {
+          "min_case_mean": 0.008865,
+          "max_case_mean": 0.01244
+        },
+        "enqueue_cpu_ms": {
+          "min_case_mean": 0.5760649999999997,
+          "max_case_mean": 0.6267749999999999
+        },
+        "scheduling_wall_ms": {
+          "min_case_mean": 0.5821225,
+          "max_case_mean": 0.63336
+        },
+        "readback_wait_wall_ms": {
+          "min_case_mean": 13.42142,
+          "max_case_mean": 13.745935
+        },
+        "poll_clone_cpu_ms": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "postprocess_cpu_ms": {
+          "min_case_mean": 0.0103075,
+          "max_case_mean": 0.01056
+        },
+        "total_wall_ms": {
+          "min_case_mean": 14.0228975,
+          "max_case_mean": 14.39102
+        },
+        "total_frame_gap": {
+          "min_case_mean": 4.95,
+          "max_case_mean": 5
+        },
+        "scheduling_frame_gap": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "readback_frame_gap": {
+          "min_case_mean": 4.95,
+          "max_case_mean": 5
+        },
+        "previous_completion_frame_gap": {
+          "min_case_mean": 5.95,
+          "max_case_mean": 6
+        }
+      },
+      "full_case_results_per_second": 67.66932455232117
+    },
+    {
+      "model": "trial9-small-maxdet40",
+      "backend": "GPUCompute",
+      "readback": "ReadbackAndCloneAsync",
+      "desktop_target": -1,
+      "total_ms": {
+        "count": 120,
+        "mean": 27.2664975,
+        "median": 27.113750000000003,
+        "p95": 29.72862,
+        "min": 24.2302,
+        "max": 31.9407
+      },
+      "case_mean_ranges": {
+        "input_cpu_ms": {
+          "min_case_mean": 0.0237675,
+          "max_case_mean": 0.027217500000000002
+        },
+        "enqueue_cpu_ms": {
+          "min_case_mean": 0.6839549999999996,
+          "max_case_mean": 0.9698649999999998
+        },
+        "scheduling_wall_ms": {
+          "min_case_mean": 0.690045,
+          "max_case_mean": 0.978325
+        },
+        "readback_wait_wall_ms": {
+          "min_case_mean": 26.154155,
+          "max_case_mean": 26.66624
+        },
+        "poll_clone_cpu_ms": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "postprocess_cpu_ms": {
+          "min_case_mean": 0.0114475,
+          "max_case_mean": 0.0165175
+        },
+        "total_wall_ms": {
+          "min_case_mean": 26.8798275,
+          "max_case_mean": 27.6887075
+        },
+        "total_frame_gap": {
+          "min_case_mean": 5,
+          "max_case_mean": 5
+        },
+        "scheduling_frame_gap": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "readback_frame_gap": {
+          "min_case_mean": 5,
+          "max_case_mean": 5
+        },
+        "previous_completion_frame_gap": {
+          "min_case_mean": 6,
+          "max_case_mean": 6
+        }
+      },
+      "full_case_results_per_second": 36.37310836193998
+    },
+    {
+      "model": "trial9-nano-maxdet40",
+      "backend": "GPUCompute",
+      "readback": "ReadbackAndCloneAsync",
+      "desktop_target": 20,
+      "total_ms": {
+        "count": 120,
+        "mean": 131.92929833333332,
+        "median": 149.88979999999998,
+        "p95": 152.628205,
+        "min": 99.7209,
+        "max": 152.8653
+      },
+      "case_mean_ranges": {
+        "input_cpu_ms": {
+          "min_case_mean": 0.0714675,
+          "max_case_mean": 0.0765425
+        },
+        "enqueue_cpu_ms": {
+          "min_case_mean": 1.8021700000000012,
+          "max_case_mean": 1.9864675000000005
+        },
+        "scheduling_wall_ms": {
+          "min_case_mean": 1.8152825,
+          "max_case_mean": 2
+        },
+        "readback_wait_wall_ms": {
+          "min_case_mean": 98.01954,
+          "max_case_mean": 147.55288
+        },
+        "poll_clone_cpu_ms": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "postprocess_cpu_ms": {
+          "min_case_mean": 0.02972,
+          "max_case_mean": 0.0305425
+        },
+        "total_wall_ms": {
+          "min_case_mean": 99.93739,
+          "max_case_mean": 149.6448675
+        },
+        "total_frame_gap": {
+          "min_case_mean": 2,
+          "max_case_mean": 2.975
+        },
+        "scheduling_frame_gap": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "readback_frame_gap": {
+          "min_case_mean": 2,
+          "max_case_mean": 2.975
+        },
+        "previous_completion_frame_gap": {
+          "min_case_mean": 3,
+          "max_case_mean": 3.975
+        }
+      },
+      "full_case_results_per_second": 5.504820439142867
+    },
+    {
+      "model": "trial9-small-maxdet40",
+      "backend": "GPUCompute",
+      "readback": "ReadbackAndCloneAsync",
+      "desktop_target": 20,
+      "total_ms": {
+        "count": 120,
+        "mean": 186.42544,
+        "median": 199.93755,
+        "p95": 203.28017499999999,
+        "min": 149.7734,
+        "max": 203.8219
+      },
+      "case_mean_ranges": {
+        "input_cpu_ms": {
+          "min_case_mean": 0.0762075,
+          "max_case_mean": 0.0834125
+        },
+        "enqueue_cpu_ms": {
+          "min_case_mean": 2.0057150000000004,
+          "max_case_mean": 2.1929100000000004
+        },
+        "scheduling_wall_ms": {
+          "min_case_mean": 2.0184,
+          "max_case_mean": 2.2057025
+        },
+        "readback_wait_wall_ms": {
+          "min_case_mean": 181.365965,
+          "max_case_mean": 188.796965
+        },
+        "poll_clone_cpu_ms": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "postprocess_cpu_ms": {
+          "min_case_mean": 0.03069,
+          "max_case_mean": 0.03461
+        },
+        "total_wall_ms": {
+          "min_case_mean": 183.688775,
+          "max_case_mean": 190.9234525
+        },
+        "total_frame_gap": {
+          "min_case_mean": 3.675,
+          "max_case_mean": 3.8
+        },
+        "scheduling_frame_gap": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "readback_frame_gap": {
+          "min_case_mean": 3.675,
+          "max_case_mean": 3.8
+        },
+        "previous_completion_frame_gap": {
+          "min_case_mean": 4.675,
+          "max_case_mean": 4.8
+        }
+      },
+      "full_case_results_per_second": 4.2116478495341525
+    },
+    {
+      "model": "trial9-nano-maxdet40",
+      "backend": "GPUCompute",
+      "readback": "request_poll_clone_after_done",
+      "desktop_target": 20,
+      "total_ms": {
+        "count": 120,
+        "mean": 131.02767583333332,
+        "median": 149.9694,
+        "p95": 152.80919500000002,
+        "min": 99.8175,
+        "max": 153.0717
+      },
+      "case_mean_ranges": {
+        "input_cpu_ms": {
+          "min_case_mean": 0.06462,
+          "max_case_mean": 0.07696
+        },
+        "enqueue_cpu_ms": {
+          "min_case_mean": 1.826922500000001,
+          "max_case_mean": 1.9477725000000006
+        },
+        "scheduling_wall_ms": {
+          "min_case_mean": 1.8398174999999999,
+          "max_case_mean": 1.959655
+        },
+        "readback_wait_wall_ms": {
+          "min_case_mean": 98.9589675,
+          "max_case_mean": 146.348135
+        },
+        "poll_clone_cpu_ms": {
+          "min_case_mean": 0.025805,
+          "max_case_mean": 0.02787
+        },
+        "postprocess_cpu_ms": {
+          "min_case_mean": 0.02912,
+          "max_case_mean": 0.0310725
+        },
+        "total_wall_ms": {
+          "min_case_mean": 100.89338,
+          "max_case_mean": 148.4150375
+        },
+        "total_frame_gap": {
+          "min_case_mean": 2,
+          "max_case_mean": 2.95
+        },
+        "scheduling_frame_gap": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "readback_frame_gap": {
+          "min_case_mean": 2,
+          "max_case_mean": 2.95
+        },
+        "previous_completion_frame_gap": {
+          "min_case_mean": 3,
+          "max_case_mean": 3.95
+        }
+      },
+      "full_case_results_per_second": 5.511033163711203
+    },
+    {
+      "model": "trial9-small-maxdet40",
+      "backend": "GPUCompute",
+      "readback": "request_poll_clone_after_done",
+      "desktop_target": 20,
+      "total_ms": {
+        "count": 120,
+        "mean": 194.67743333333334,
+        "median": 200.24329999999998,
+        "p95": 203.67153000000002,
+        "min": 149.9159,
+        "max": 203.9783
+      },
+      "case_mean_ranges": {
+        "input_cpu_ms": {
+          "min_case_mean": 0.07642,
+          "max_case_mean": 0.0810575
+        },
+        "enqueue_cpu_ms": {
+          "min_case_mean": 1.8614725000000003,
+          "max_case_mean": 2.0746775000000004
+        },
+        "scheduling_wall_ms": {
+          "min_case_mean": 1.873165,
+          "max_case_mean": 2.08755
+        },
+        "readback_wait_wall_ms": {
+          "min_case_mean": 191.87188,
+          "max_case_mean": 193.0559675
+        },
+        "poll_clone_cpu_ms": {
+          "min_case_mean": 0.0259925,
+          "max_case_mean": 0.0296575
+        },
+        "postprocess_cpu_ms": {
+          "min_case_mean": 0.0304175,
+          "max_case_mean": 0.037165000000000004
+        },
+        "total_wall_ms": {
+          "min_case_mean": 194.078855,
+          "max_case_mean": 195.17694
+        },
+        "total_frame_gap": {
+          "min_case_mean": 3.85,
+          "max_case_mean": 3.875
+        },
+        "scheduling_frame_gap": {
+          "min_case_mean": 0,
+          "max_case_mean": 0
+        },
+        "readback_frame_gap": {
+          "min_case_mean": 3.85,
+          "max_case_mean": 3.875
+        },
+        "previous_completion_frame_gap": {
+          "min_case_mean": 4.85,
+          "max_case_mean": 4.875
+        }
+      },
+      "full_case_results_per_second": 4.111873102113571
+    }
+  ],
+  "app_payload_tree_sha256": "3ca817a9b7db467d3bf3321e0022d4f1b61cbe91fb9d3fb486eb9159c857a05d",
+  "observed": "Same native Mac player reproduces headset-scale latency when player-loop pacing is slowed.",
+  "interpretation_confidence": {
+    "actual_mac_measurements": "high",
+    "frame_cadence_contribution_on_mac": "high",
+    "headset_root_cause": "unconfirmed",
+    "hardware_occupancy": "unknown"
+  },
+  "decisions": [
+    "Do not increase budget298 as a proposed fix without headset layer-count evidence.",
+    "Do not switch to polling by default.",
+    "Profile actual XR player-loop/CPU/GPU budgets before selecting a device fix.",
+    "Compare explicit CPU/GPU on headset using matched input/cadence."
+  ],
+  "limitations": [
+    "NeutralGamma/built-inrenderer fixture, notappLinear/URP/XR scene.",
+    "Fixedsyntheticinput noaccuracy orspatialcolorparityclaim.",
+    "Timersincludequeue/fence/readbackdelivery, notpureGPU.",
+    "Sequentialorder andrepeat drift/backgroundconditions.",
+    "Noheadsetor6.6execution."
+  ],
+  "validation": {
+    "mac_build_and_runtime": true,
+    "magic_leap": false,
+    "remote_pushed": false,
+    "all_suites_complete": true,
+    "all_sample_timings_finite": true,
+    "representative_outputs_match": true,
+    "representative_only_not_all_elementwise": true
+  },
+  "artifacts": {
+    "report": "domains/galvat/experiments/reports/galvat_trial9_sentis_mac_20261013.md",
+    "full_analysis": "/Users/bhavya/ml-agent-workbench/domains/galvat/experiments/runtime/sentis_mac_20261013T060845Z/final_analysis/summary.json",
+    "build_snapshot": "/Users/bhavya/ml-agent-workbench/domains/galvat/experiments/runtime/sentis_mac_20261013T060845Z/build_snapshot.json",
+    "probe_handoff": "domains/galvat/experiments/runtime/unity_latency_probe/README_MAC_AND_HEADSET_TESTS.md"
+  }
+}

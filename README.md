@@ -1,5 +1,11 @@
 # GALVAT Webcam ROI Demo
 
+## Project research and deployment status
+
+This repository is the home for GALVAT model-building notebooks and ML optimization evidence. Unity and Magic Leap deployment code live in [jadinV/GALVAT_R61](https://github.com/jadinV/GALVAT_R61/tree/bhavya).
+
+See the [verified project status and next tests](docs/PROJECT_STATUS.md), [historical notebook archive](notebooks/archive/README.md), and [Trial9 experiment reports](docs/experiments/trial9/). The current45-class Colab notebook exports are still needed; the archived Trial9 notebook is an older44-class template. The existing demo instructions below have not been updated to the latest Trial9 runtime.
+
 Minimal local demo to visualize your trained GALVAT model on a computer webcam with a Region of Interest (ROI).
 
 ## What This Does

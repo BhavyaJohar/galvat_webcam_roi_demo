@@ -1,0 +1,124 @@
+{
+  "schema": "galvat.headset_tracking_acceptance.v1",
+  "warmup_seconds": 15,
+  "method": "Within-session final-minus-first counter delta / elapsed delta after warmup; all short sessions retained but excluded. Source percentages count track observations, not ground-truth accuracy. Nearest-rank p95; repeated window fields are not independent windows. FrameWork excludes some asynchronous completion, native callback and CSV work. No commit/model identity is supplied by CSV.",
+  "files": [
+    {
+      "path": "domains/galvat/trial_9/tracking_experiment_2026-10-13_19-38-35_052a3621.csv",
+      "sha256": "824e5d5c4fed160d9246acbae2f0e82563c6510b32fc5f216ebdf07d7d8b9ab5",
+      "columns": 35,
+      "valid_rows": 371,
+      "excluded_rows": 1,
+      "sessions": [
+        {
+          "run_id": "052a3621a6df4587961f6ea4bcb8ecde",
+          "session_id": "1",
+          "rows": 371,
+          "last_elapsed_ms": 49143.96200000029,
+          "postwarm_rows": 262,
+          "settings": {
+            "Mode": {
+              "YOLO_FLOW": 371
+            },
+            "WorkerBackend": {
+              "GPUCompute": 371
+            },
+            "TrackerBackend": {
+              "CPU_SparseOpticalFlow": 371
+            },
+            "RefreshFrames": {
+              "5": 371
+            }
+          },
+          "postwarm_span_seconds": 34.07988310000021,
+          "counter_deltas": {
+            "CameraFrames": 261.0,
+            "OverlayFrames": 18.0,
+            "YOLOSubmissions": 62.0,
+            "YOLOCompletions": 63.0,
+            "LostTracks": 19.0,
+            "ForcedRefreshes": 28.0,
+            "AcceptedRefreshes": 56.0,
+            "RejectedRefreshes": 7.0,
+            "CameraCallbacks": 1022.0,
+            "OverwrittenCallbacks": 761.0,
+            "CropPreparations": 62.0
+          },
+          "processed_camera_fps": 7.658476974059761,
+          "detector_completions_per_second": 1.848597890290287,
+          "detector_submission_frame_percent": 23.754789272030653,
+          "forced_refresh_submission_percent": 45.16129032258065,
+          "nonzero_track_row_percent": 6.870229007633588,
+          "callback_fps": 29.988365775820213,
+          "overwritten_callback_percent": 74.46183953033268,
+          "track_observation_sources": {
+            "YOLO_UNPROPAGATED": 19
+          },
+          "track_observation_source_percent": {
+            "YOLO_UNPROPAGATED": 100.0
+          },
+          "metrics": {
+            "Tracker_ms": {
+              "mean": 92.99465152673523,
+              "median": 88.71280000032857,
+              "p95": 113.44629999995232,
+              "min": 76.12710000015795,
+              "max": 121.87570000067353
+            },
+            "Overlay_ms": {
+              "mean": 0.42415877863523044,
+              "median": 0.041499999817460775,
+              "p95": 3.5330000007525086,
+              "min": 0.03189999982714653,
+              "max": 15.09320000000298
+            },
+            "FrameWork_ms": {
+              "mean": 103.4337351145045,
+              "median": 93.3621999998577,
+              "p95": 145.88619999960065,
+              "min": 80.48430000059307,
+              "max": 168.57270000036806
+            },
+            "RefreshReplay_ms": {
+              "mean": 0.11986870228718141,
+              "median": 0.0,
+              "p95": 0.6870999997481704,
+              "min": 0.0,
+              "max": 3.7286000000312924
+            },
+            "ActiveTracks": {
+              "mean": 0.07251908396946564,
+              "median": 0.0,
+              "p95": 1.0,
+              "min": 0.0,
+              "max": 2.0
+            },
+            "CallbackQueue_ms": {
+              "mean": 17.87650801527193,
+              "median": 17.715199999976903,
+              "p95": 34.13960000034422,
+              "min": 2.735700000077486,
+              "max": 37.38399999961257
+            },
+            "CameraProcessingWindowFPS": {
+              "mean": 7.6545686592649185,
+              "median": 7.835134663433443,
+              "p95": 8.288575028178084,
+              "min": 6.649642315741465,
+              "max": 8.338081407469868
+            }
+          },
+          "processed_frame_completion_gap_ms": {
+            "mean": 130.57426475095866,
+            "median": 123.13380000088364,
+            "p95": 169.32749999966472,
+            "min": 100.05400000046939,
+            "max": 209.07810000050813
+          },
+          "processed_frame_gaps_over100ms": 261,
+          "logged_window_fps_rows_below10": 262
+        }
+      ]
+    }
+  ]
+}
