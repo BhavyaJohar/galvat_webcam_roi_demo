@@ -1,0 +1,112 @@
+{
+  "plan_id": "plan_november_2_to_20_delivery",
+  "title": "GALVAT November 2 to 20 final delivery",
+  "domain": "galvat",
+  "objective": "Deliver a reproducible tested model and Unity ML2 package byNovember20 with agreed operating limits; retain tested detector-only fallback.",
+  "hypothesis": "A verified JHU baseline and measured CPU/pipeline fixes can preserve responsiveness; tracking and model changes should ship only with demonstrated net benefit.",
+  "baseline": "JHU_Bhavya_1026 at865870369b5424e206d8829683de2fba9ee217c3 containsAUDdd792ba. HistoricalOct13 nano-only22.37processedcameraFPS/8.20YOLOresults_s/108.2ms mean wall, not a verifiedNovemberbenchmark. Existingplan galvat_trial9_tracking_value_diagnostics_v1.",
+  "experiments": [
+    {
+      "id": "N1",
+      "name": "Nov2–4 provenance and joint requirements",
+      "change": "Reconcile supplied45-class small notebook, model/config hashes, JHU session/intrinsics changes, E01211-class mapping and feedback budgets.",
+      "controlled_variables": [
+        "canonical45IDs",
+        "existingfrozen test",
+        "no threshold tuning ontest",
+        "recording-group separation"
+      ],
+      "expected_signal": "Jointbaseline manifest, categorymapping, owners and acceptance limits confirmed."
+    },
+    {
+      "id": "N2",
+      "name": "Nov5–7 detector-only device baseline",
+      "change": "Compare nano andsmall withverified own preprocessing/thresholds; repeatedordinaryruns separatefromprofilerdiagnostics.",
+      "controlled_variables": [
+        "sameML2/buildtype/scene/backend/input",
+        "3repeats15warm60measured",
+        "5min continuous stability",
+        "thresholdsselectedvalidationandfrozen"
+      ],
+      "expected_signal": "Reliablecamera/freshresult/feedbackrates andstagebottleneck; notRGPsnapshotFPS."
+    },
+    {
+      "id": "N3",
+      "name": "Nov8–10 targeted optimization andtracking decision",
+      "change": "One evidence-driven pipeline changeatatime; optionalnano tracking5 withstage/rejectionlogs; fallbackdecisionNov10.",
+      "controlled_variables": [
+        "same baseline scene/model/config",
+        "actualmotionverification",
+        "profiler-separatedbenchmarks"
+      ],
+      "expected_signal": "Netbenefitwithcurrentgeometryorselectdetector-only; noSAM dependency."
+    },
+    {
+      "id": "N4",
+      "name": "Nov11–13 model comparison andgaze regressions",
+      "change": "E012/sharedcategorycomparison; paired300/40ifreferencesavailable; stalegaze/lateoutput/depthtests.",
+      "controlled_variables": [
+        "same independentinputsanddevicebuild",
+        "own verifiedcontracts",
+        "frozenthresholds",
+        "no inventedE012mapping"
+      ],
+      "expected_signal": "Modeldecisionandfeedbackcorrectness evidence; conditionalTrial10onlyiffullyrevalidatedbyfreeze."
+    },
+    {
+      "id": "N5",
+      "name": "Nov14–17 regression andfreeze",
+      "change": "Priorityclass controlscenarios andcross-session/occlusion/invalidinputtests; freezeNov17.",
+      "controlled_variables": [
+        "18JHU priorityitems",
+        "agreedlighting/occlusionconditions",
+        "JHUapprovedstudyarrangements"
+      ],
+      "expected_signal": "Jointreleasecandidateacceptanceorexplicitexceptionsandrollback."
+    },
+    {
+      "id": "N6",
+      "name": "Nov18–20 handoff",
+      "change": "Cleanbuild/install, matchedfinaldevicecheck, cross-referencedmodelUnitymanifests andfinalhandoffNov20.",
+      "controlled_variables": [
+        "frozenreleaseconfiguration",
+        "affectedregressionsrepeatedforlatefixes"
+      ],
+      "expected_signal": "Reproducibledeliverywithmeasuredlimitsnotunverifiedacceptance."
+    }
+  ],
+  "metrics": [
+    "processedcameraFPS versus freshYOLOresults_s",
+    "median/p95 capture-to-displayandspeechlatency",
+    "stageCPUwalltimings",
+    "framegaps/drops/discardedresults",
+    "sourceframe/gaze/pose/age",
+    "tracking currentgeometry/IDdrift/expiry",
+    "perclassprecisionrecallcounts",
+    "memory/thermal/5minstability"
+  ],
+  "success_criteria": [
+    "JointapprovalbyNov4 ofproposed>=10cameraFPS,250msmedian/500msp95feedback,and500msconfirmationage budgets",
+    "No stale feedback afterknown ROI/target/sessionchanges",
+    "Independentheldoutrecognitionanddecodercontractevidence",
+    "Trackingoptionalnetbenefitandcurrentgeometry",
+    "FreezeNov17; deliverNov20withsignedacceptanceorexplicitlimits"
+  ],
+  "risks": [
+    "Acceptance limits/proposedownersnotyetjointlyapproved",
+    "E01211-classcontractandnano notebookstillneeded",
+    "Dataset/split independenceandannotationcompleteness requiremanifests; not assumedverified",
+    "NovRGPalonecannotestablishGPUidleore2eperformance",
+    "LimitedlocalML2/Androidexecutionaccess",
+    "PatienttestingrequiresJHUprotocol/permissionsandisnotpromisedcompletebydelivery"
+  ],
+  "recommended_order": [
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6"
+  ],
+  "created_at": "2026-11-02"
+}

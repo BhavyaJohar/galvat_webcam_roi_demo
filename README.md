@@ -4,7 +4,9 @@
 
 This repository is the home for GALVAT model-building notebooks and ML optimization evidence. Unity and Magic Leap deployment code live in [jadinV/GALVAT_R61](https://github.com/jadinV/GALVAT_R61/tree/bhavya).
 
-See the [verified project status and next tests](docs/PROJECT_STATUS.md), [historical notebook archive](notebooks/archive/README.md), and [Trial9 experiment reports](docs/experiments/trial9/). The current45-class Colab notebook exports are still needed; the archived Trial9 notebook is an older44-class template. The existing demo instructions below have not been updated to the latest Trial9 runtime.
+The [November 2 to 20 delivery plan](docs/plans/galvat_delivery_plan_nov2_nov20_2026.md) continues from JHU's `JHU_Bhavya_1026` integration branch, freezes the release by November 17, and targets final delivery November 20.
+
+See the [verified project status and next tests](docs/PROJECT_STATUS.md), [current supplied small-model notebook](notebooks/current/README.md), [historical notebook archive](notebooks/archive/README.md), and [Trial9 experiment reports](docs/experiments/trial9/). The nano Colab notebook is still needed; the archived Trial9 notebook is an older44-class template. The existing demo instructions below have not been updated to the latest Trial9 runtime.
 
 Minimal local demo to visualize your trained GALVAT model on a computer webcam with a Region of Interest (ROI).
 

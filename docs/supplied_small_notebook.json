@@ -1,0 +1,11 @@
+{
+  "source_sha256": "b2551d16eeb8df3fc7c82812441306a0acdb6381ae9133f424be7cb335cf9f25",
+  "published_sha256": "bd940248f092485748b0364af98777f2eb65a1723123575a87acb52be089e15d",
+  "cells": 29,
+  "source_filename": "GALVAT_Trial9_Train_Evaluate_Package_small (2).ipynb",
+  "published_path": "notebooks/current/GALVAT_Trial9_Train_Evaluate_Package_small.ipynb",
+  "transform": "Source unchanged; outputs/execution counts/transient metadata cleared",
+  "training_reexecuted": false,
+  "metric_naming_reconciliation_pending": true,
+  "current_nano_notebook_received": false
+}

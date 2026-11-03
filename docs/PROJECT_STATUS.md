@@ -22,7 +22,7 @@ GitHub branch checks on 2026-11-02:
 - `main` is an ancestor of `bhavya`; the latter is 17 commits ahead. Our updates are pushed to **bhavya**, not merged into **main**.
 - Important commits: `0e27bae` Trial 9 mapping/model/threshold integration; `46d9b54` and `0a83ed5` timing; `1709039` optional optical tracking; `d6069b8` nano and its confidence profile; `31332ed` camera/tracking pipeline fixes; `dd792ba` detector-only default and expanded diagnostics.
 
-No additional Unity changes are required merely to obtain the already-pushed source. Build `bhavya`, not the older `main`.
+These AUD changes were already delivered. JHU's newer `JHU_Bhavya_1026` branch at `865870369b5424e206d8829683de2fba9ee217c3` includes `dd792ba` and adds session-safe pending-result handling and result processing without camera intrinsics. Use that JHU branch as the next joint integration baseline, preserve its changes, and follow the [November2–20 delivery plan](plans/galvat_delivery_plan_nov2_nov20_2026.md). No branch was automatically merged or overwritten.
 
 ## Best measured headset baseline: two different FPS numbers
 
@@ -66,7 +66,7 @@ Longer-term, conditional work includes reduced/cached grayscale preparation or n
 ## Notebook availability and model release discipline
 
 - Eleven historical notebooks were imported under [notebooks/archive](../notebooks/archive/README.md). Outputs/execution counts and transient metadata were removed. One embedded Trial5 API-key literal was replaced by a secure prompt in the publication copy; rotate that key if still active. Original source hashes and the redaction are recorded in [import_manifest.json](import_manifest.json).
-- **The local Trial9 notebook is the old44-class template. It is not the current45-class training source.** The current small-model and nano Colab notebook exports/results must be supplied before a reproducible current training release can be declared.
+- **The archived workbench Trial9 notebook is the old44-class template.** The supplied [small-model Colab notebook](../notebooks/current/README.md) is now available separately; its active code asserts45 rated classes. Legacy shared44 headings,300-versus40 evaluation/export settings, exact class order and checkpoint-to-ONNX provenance still require reconciliation. The nano Colab notebook is still outstanding.
 - The handoff reported small-model GALVAT0.7478 on validation and0.6920 on frozen test. Do not describe0.75 as frozen-test accuracy or apply it to nano without its evaluation report.
 - Keep model-specific thresholds distinct. The early Mac nano/small comparison intentionally shared the existing threshold config; it does not validate nano calibration. The Unity nano profile was added later from the supplied nano thresholds.
 - Each future release should record a version, exact ONNX SHA256, class ordering, threshold-file hash, input/output semantics, training/evaluation notebook version and split-specific metrics. Unity should import that matched bundle and record its Git commit; do not swap only weights and keep stale labels/thresholds.
