@@ -1,0 +1,24 @@
+{
+  "identity": "User-supplied candidate class map; E012 identity unverified",
+  "received": "2026-11-03",
+  "model_file_received": false,
+  "preprocessing_or_thresholds_received": false,
+  "note": "43 classes, inconsistent with earlier 11-class E012 description. Never apply these IDs to Trial9 outputs.",
+  "classes": [
+    {"id":0,"name":"bathroom_sign"},{"id":1,"name":"cane"},{"id":2,"name":"canned_good"},
+    {"id":3,"name":"cellphone"},{"id":4,"name":"chair"},{"id":5,"name":"coffee_mug"},
+    {"id":6,"name":"deodorant"},{"id":7,"name":"door"},{"id":8,"name":"drinking_glass"},
+    {"id":9,"name":"electrical_outlet"},{"id":10,"name":"eyeglasses"},{"id":11,"name":"fork"},
+    {"id":12,"name":"hearing_aid"},{"id":13,"name":"jug"},{"id":14,"name":"keys"},
+    {"id":15,"name":"knife"},{"id":16,"name":"lemon"},{"id":17,"name":"light_switch"},
+    {"id":18,"name":"measuring_cup"},{"id":19,"name":"medicine_bottle"},{"id":20,"name":"pan"},
+    {"id":21,"name":"paper_towel_dispenser"},{"id":22,"name":"pot"},{"id":23,"name":"purse"},
+    {"id":24,"name":"railing"},{"id":25,"name":"razor"},{"id":26,"name":"salt_pepper_shaker"},
+    {"id":27,"name":"soap_dispenser"},{"id":28,"name":"spoon"},{"id":29,"name":"stairs"},
+    {"id":30,"name":"table"},{"id":31,"name":"thermostat"},{"id":32,"name":"toilet"},
+    {"id":33,"name":"toothbrush"},{"id":34,"name":"toothpaste"},{"id":35,"name":"trash_can"},
+    {"id":36,"name":"tupperware"},{"id":37,"name":"tv_remote"},{"id":38,"name":"urinal"},
+    {"id":39,"name":"wallet"},{"id":40,"name":"window"},{"id":41,"name":"wine_glass"},
+    {"id":42,"name":"writing_device"}
+  ]
+}

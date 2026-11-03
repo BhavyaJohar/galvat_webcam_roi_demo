@@ -1,0 +1,67 @@
+{
+  "source_commit": "865870369b5424e206d8829683de2fba9ee217c3",
+  "valid": false,
+  "files": [
+    {
+      "path": "domains/galvat/trial_9/timing_results_2026-10-13_12-24-02_Control.csv",
+      "schema": "timing_current",
+      "rows": 800,
+      "errors": [],
+      "warnings": [],
+      "current_complete": true,
+      "schema_gaps": [
+        "capture-to-feedback",
+        "gaze",
+        "pose",
+        "speech",
+        "discarded-result events"
+      ],
+      "measurement_limit": "CaptureToResult_ms ends before marker/display work; no full JHU acceptance measurement completeness is claimed.",
+      "sha256": "89fc13dd622a16b4eae1cd8abf0829a09e97d4f456e2aef8ee2baed89e94bb4d",
+      "bytes": 178063
+    },
+    {
+      "path": "domains/galvat/trial_9/tracking_experiment_2026-10-13_12-24-33_234381cb_Control.csv",
+      "schema": "tracking_legacy35",
+      "rows": 2176,
+      "errors": [],
+      "warnings": [
+        "legacy35: not current-complete; appended diagnostics missing"
+      ],
+      "current_complete": false,
+      "schema_gaps": [
+        "capture-to-feedback",
+        "gaze",
+        "pose",
+        "speech",
+        "discarded-result events"
+      ],
+      "measurement_limit": "CaptureToResult_ms ends before marker/display work; no full JHU acceptance measurement completeness is claimed.",
+      "sha256": "1832709e77c3619c4fab631ca4de11619ea0a84283bebc7e53b1ad158eee3b44",
+      "bytes": 635078
+    },
+    {
+      "path": "domains/galvat/trial_9/tracking_experiment_2026-10-13_19-38-35_052a3621.csv",
+      "schema": "tracking_legacy35",
+      "rows": 371,
+      "errors": [
+        "unexpected end of data"
+      ],
+      "warnings": [
+        "legacy35: not current-complete; appended diagnostics missing"
+      ],
+      "current_complete": false,
+      "schema_gaps": [
+        "capture-to-feedback",
+        "gaze",
+        "pose",
+        "speech",
+        "discarded-result events"
+      ],
+      "measurement_limit": "CaptureToResult_ms ends before marker/display work; no full JHU acceptance measurement completeness is claimed.",
+      "sha256": "824e5d5c4fed160d9246acbae2f0e82563c6510b32fc5f216ebdf07d7d8b9ab5",
+      "bytes": 135894
+    }
+  ],
+  "full_jhu_acceptance_measurement_complete": false
+}

@@ -1,0 +1,5070 @@
+{
+  "schema": "galvat.trial9_package_check.v1",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "versions": {
+    "numpy": "2.5.3",
+    "onnx": "1.23.2",
+    "onnxruntime": "1.30.0"
+  },
+  "available_providers": [
+    "CoreMLExecutionProvider",
+    "AzureExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "models": {
+    "nano": {
+      "model_sha256": "372eedae13afa798197998d39fff592f76323de23f30ca754cb98dbcdc73782b",
+      "config_sha256": "f5c68961337d8d3c58cc85b5f35f10dbeccc8246645316acbb2a77bd1eb0123f",
+      "model_asset": "galvat_trial9_yolo26n_maxdet40.onnx",
+      "config_asset": "Trial9NanoConfig.json",
+      "opset": [
+        12
+      ],
+      "providers": [
+        "CPUExecutionProvider"
+      ],
+      "input_name": "images",
+      "output_name": "output0",
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "output_shape": [
+        1,
+        40,
+        6
+      ],
+      "canonical_names": [
+        "railing",
+        "hearing_aid",
+        "bathroom_sign",
+        "tupperware",
+        "salt_pepper_shaker",
+        "wine_glass",
+        "drinking_glass",
+        "jug",
+        "measuring_cup",
+        "stairs",
+        "thermostat",
+        "paper_towel_dispenser",
+        "trash_can",
+        "light_switch",
+        "pan",
+        "electrical_outlet",
+        "urinal",
+        "soap_dispenser",
+        "wallet",
+        "toothbrush",
+        "toothpaste",
+        "table",
+        "door",
+        "knife",
+        "toilet",
+        "medicine_bottle",
+        "lemon",
+        "deodorant",
+        "keys",
+        "fork",
+        "coffee_mug",
+        "canned_good",
+        "razor",
+        "spoon",
+        "pot",
+        "cellphone",
+        "purse",
+        "tv_remote",
+        "writing_device",
+        "eyeglasses",
+        "chair",
+        "window",
+        "cane",
+        "exit_sign",
+        "measuring_spoon"
+      ],
+      "model_names": [
+        "bathroom_sign",
+        "cane",
+        "canned_good",
+        "cellphone",
+        "chair",
+        "coffee_mug",
+        "deodorant",
+        "door",
+        "drinking_glass",
+        "electrical_outlet",
+        "exit_sign",
+        "eyeglasses",
+        "fork",
+        "hearing_aid",
+        "jug",
+        "keys",
+        "knife",
+        "lemon",
+        "light_switch",
+        "measuring_cup",
+        "measuring_spoon",
+        "medicine_bottle",
+        "pan",
+        "paper_towel_dispenser",
+        "pot",
+        "purse",
+        "railing",
+        "razor",
+        "salt_pepper_shaker",
+        "soap_dispenser",
+        "spoon",
+        "stairs",
+        "table",
+        "thermostat",
+        "toilet",
+        "toothbrush",
+        "toothpaste",
+        "trash_can",
+        "tupperware",
+        "tv_remote",
+        "urinal",
+        "wallet",
+        "window",
+        "wine_glass",
+        "writing_device"
+      ],
+      "model_to_canonical": [
+        2,
+        42,
+        31,
+        35,
+        40,
+        30,
+        27,
+        22,
+        6,
+        15,
+        43,
+        39,
+        29,
+        1,
+        7,
+        28,
+        23,
+        26,
+        13,
+        8,
+        44,
+        25,
+        14,
+        11,
+        34,
+        36,
+        0,
+        32,
+        4,
+        17,
+        33,
+        9,
+        21,
+        10,
+        24,
+        19,
+        20,
+        12,
+        3,
+        37,
+        16,
+        18,
+        41,
+        5,
+        38
+      ],
+      "input_fixture": {
+        "generator": "all-zero float32 NCHW tensor",
+        "sha256": "f824c1a8a1128713f17dd8d1190d70e6012b509606d986e7a6c81e40b628df2b"
+      },
+      "output_fixture": [
+        [
+          [
+            4.50860595703125,
+            6.3427581787109375,
+            623.7959594726562,
+            637.1412353515625,
+            0.003867536783218384,
+            16.0
+          ],
+          [
+            4.50860595703125,
+            6.3427581787109375,
+            623.7959594726562,
+            637.1412353515625,
+            0.0004985034465789795,
+            23.0
+          ],
+          [
+            4.50860595703125,
+            6.3427581787109375,
+            623.7959594726562,
+            637.1412353515625,
+            0.0004114210605621338,
+            12.0
+          ],
+          [
+            4.50860595703125,
+            6.3427581787109375,
+            623.7959594726562,
+            637.1412353515625,
+            0.00015935301780700684,
+            7.0
+          ],
+          [
+            4.50860595703125,
+            6.3427581787109375,
+            623.7959594726562,
+            637.1412353515625,
+            6.35981559753418e-05,
+            44.0
+          ],
+          [
+            4.50860595703125,
+            6.3427581787109375,
+            623.7959594726562,
+            637.1412353515625,
+            6.285309791564941e-05,
+            41.0
+          ],
+          [
+            4.50860595703125,
+            6.3427581787109375,
+            623.7959594726562,
+            637.1412353515625,
+            4.9233436584472656e-05,
+            38.0
+          ],
+          [
+            7.359130859375,
+            5.4353485107421875,
+            570.238037109375,
+            628.4432373046875,
+            3.927946090698242e-05,
+            16.0
+          ],
+          [
+            4.50860595703125,
+            6.3427581787109375,
+            623.7959594726562,
+            637.1412353515625,
+            3.6269426345825195e-05,
+            30.0
+          ],
+          [
+            5.4197998046875,
+            5.253326416015625,
+            609.1259155273438,
+            635.188720703125,
+            3.165006637573242e-05,
+            16.0
+          ],
+          [
+            2.61126708984375,
+            -0.56585693359375,
+            612.7285766601562,
+            639.1156616210938,
+            2.2232532501220703e-05,
+            16.0
+          ],
+          [
+            4.99713134765625,
+            0.10809326171875,
+            575.927490234375,
+            634.8267822265625,
+            1.52587890625e-05,
+            16.0
+          ],
+          [
+            4.50860595703125,
+            6.3427581787109375,
+            623.7959594726562,
+            637.1412353515625,
+            1.4394521713256836e-05,
+            29.0
+          ],
+          [
+            4.50860595703125,
+            6.3427581787109375,
+            623.7959594726562,
+            637.1412353515625,
+            1.3172626495361328e-05,
+            18.0
+          ],
+          [
+            4.50860595703125,
+            6.3427581787109375,
+            623.7959594726562,
+            637.1412353515625,
+            1.3083219528198242e-05,
+            35.0
+          ],
+          [
+            4.50860595703125,
+            6.3427581787109375,
+            623.7959594726562,
+            637.1412353515625,
+            1.1652708053588867e-05,
+            25.0
+          ],
+          [
+            4.50860595703125,
+            6.3427581787109375,
+            623.7959594726562,
+            637.1412353515625,
+            1.1175870895385742e-05,
+            0.0
+          ],
+          [
+            27.48431396484375,
+            10.045150756835938,
+            633.9091796875,
+            630.2882080078125,
+            1.0907649993896484e-05,
+            16.0
+          ],
+          [
+            4.50860595703125,
+            6.3427581787109375,
+            623.7959594726562,
+            637.1412353515625,
+            1.0788440704345703e-05,
+            39.0
+          ],
+          [
+            7.359130859375,
+            5.4353485107421875,
+            570.238037109375,
+            628.4432373046875,
+            8.761882781982422e-06,
+            12.0
+          ],
+          [
+            4.50860595703125,
+            6.3427581787109375,
+            623.7959594726562,
+            637.1412353515625,
+            6.735324859619141e-06,
+            3.0
+          ],
+          [
+            5.961090087890625,
+            6.733917236328125,
+            630.1307373046875,
+            638.5126953125,
+            6.5267086029052734e-06,
+            16.0
+          ],
+          [
+            2.61126708984375,
+            -0.56585693359375,
+            612.7285766601562,
+            639.1156616210938,
+            6.22868537902832e-06,
+            12.0
+          ],
+          [
+            4.50860595703125,
+            6.3427581787109375,
+            623.7959594726562,
+            637.1412353515625,
+            5.781650543212891e-06,
+            6.0
+          ],
+          [
+            4.50860595703125,
+            6.3427581787109375,
+            623.7959594726562,
+            637.1412353515625,
+            5.5730342864990234e-06,
+            31.0
+          ],
+          [
+            5.4197998046875,
+            5.253326416015625,
+            609.1259155273438,
+            635.188720703125,
+            5.27501106262207e-06,
+            12.0
+          ],
+          [
+            4.99713134765625,
+            0.10809326171875,
+            575.927490234375,
+            634.8267822265625,
+            5.036592483520508e-06,
+            12.0
+          ],
+          [
+            4.50860595703125,
+            6.3427581787109375,
+            623.7959594726562,
+            637.1412353515625,
+            4.887580871582031e-06,
+            36.0
+          ],
+          [
+            4.50860595703125,
+            6.3427581787109375,
+            623.7959594726562,
+            637.1412353515625,
+            4.589557647705078e-06,
+            42.0
+          ],
+          [
+            4.50860595703125,
+            6.3427581787109375,
+            623.7959594726562,
+            637.1412353515625,
+            4.470348358154297e-06,
+            1.0
+          ],
+          [
+            4.50860595703125,
+            6.3427581787109375,
+            623.7959594726562,
+            637.1412353515625,
+            4.470348358154297e-06,
+            32.0
+          ],
+          [
+            1.572052001953125,
+            2.013824462890625,
+            627.0361938476562,
+            640.166015625,
+            4.26173210144043e-06,
+            16.0
+          ],
+          [
+            5.9656982421875,
+            7.4236602783203125,
+            501.157958984375,
+            615.7842407226562,
+            4.112720489501953e-06,
+            16.0
+          ],
+          [
+            4.2232513427734375,
+            3.93096923828125,
+            512.4275512695312,
+            626.9203491210938,
+            3.933906555175781e-06,
+            16.0
+          ],
+          [
+            5.4197998046875,
+            5.253326416015625,
+            609.1259155273438,
+            635.188720703125,
+            3.129243850708008e-06,
+            7.0
+          ],
+          [
+            5.4197998046875,
+            5.253326416015625,
+            609.1259155273438,
+            635.188720703125,
+            3.129243850708008e-06,
+            23.0
+          ],
+          [
+            10.778656005859375,
+            2.9427032470703125,
+            627.6475830078125,
+            624.908447265625,
+            2.8312206268310547e-06,
+            16.0
+          ],
+          [
+            27.48431396484375,
+            10.045150756835938,
+            633.9091796875,
+            630.2882080078125,
+            2.6226043701171875e-06,
+            12.0
+          ],
+          [
+            1.90594482421875,
+            8.94268798828125,
+            613.2686767578125,
+            642.3369140625,
+            2.4437904357910156e-06,
+            16.0
+          ],
+          [
+            2.61126708984375,
+            -0.56585693359375,
+            612.7285766601562,
+            639.1156616210938,
+            2.384185791015625e-06,
+            7.0
+          ]
+        ]
+      ],
+      "threshold_fixtures": [
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5999999642372131,
+            0
+          ],
+          "canonical_id": 2,
+          "name": "bathroom_sign",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6000000238418579,
+            0
+          ],
+          "canonical_id": 2,
+          "name": "bathroom_sign",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6000000834465027,
+            0
+          ],
+          "canonical_id": 2,
+          "name": "bathroom_sign",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5499999523162842,
+            1
+          ],
+          "canonical_id": 42,
+          "name": "cane",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.550000011920929,
+            1
+          ],
+          "canonical_id": 42,
+          "name": "cane",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5500000715255737,
+            1
+          ],
+          "canonical_id": 42,
+          "name": "cane",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6249999403953552,
+            2
+          ],
+          "canonical_id": 31,
+          "name": "canned_good",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.625,
+            2
+          ],
+          "canonical_id": 31,
+          "name": "canned_good",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6250000596046448,
+            2
+          ],
+          "canonical_id": 31,
+          "name": "canned_good",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.22499997913837433,
+            3
+          ],
+          "canonical_id": 35,
+          "name": "cellphone",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.22499999403953552,
+            3
+          ],
+          "canonical_id": 35,
+          "name": "cellphone",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.22500000894069672,
+            3
+          ],
+          "canonical_id": 35,
+          "name": "cellphone",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.7749999165534973,
+            4
+          ],
+          "canonical_id": 40,
+          "name": "chair",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.7749999761581421,
+            4
+          ],
+          "canonical_id": 40,
+          "name": "chair",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.7750000357627869,
+            4
+          ],
+          "canonical_id": 40,
+          "name": "chair",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.47499996423721313,
+            5
+          ],
+          "canonical_id": 30,
+          "name": "coffee_mug",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.4749999940395355,
+            5
+          ],
+          "canonical_id": 30,
+          "name": "coffee_mug",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.4750000238418579,
+            5
+          ],
+          "canonical_id": 30,
+          "name": "coffee_mug",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.29999998211860657,
+            6
+          ],
+          "canonical_id": 27,
+          "name": "deodorant",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.30000001192092896,
+            6
+          ],
+          "canonical_id": 27,
+          "name": "deodorant",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.30000004172325134,
+            6
+          ],
+          "canonical_id": 27,
+          "name": "deodorant",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.7499999403953552,
+            7
+          ],
+          "canonical_id": 22,
+          "name": "door",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.75,
+            7
+          ],
+          "canonical_id": 22,
+          "name": "door",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.7500000596046448,
+            7
+          ],
+          "canonical_id": 22,
+          "name": "door",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.14999999105930328,
+            8
+          ],
+          "canonical_id": 6,
+          "name": "drinking_glass",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.15000000596046448,
+            8
+          ],
+          "canonical_id": 6,
+          "name": "drinking_glass",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.15000002086162567,
+            8
+          ],
+          "canonical_id": 6,
+          "name": "drinking_glass",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6249999403953552,
+            9
+          ],
+          "canonical_id": 15,
+          "name": "electrical_outlet",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.625,
+            9
+          ],
+          "canonical_id": 15,
+          "name": "electrical_outlet",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6250000596046448,
+            9
+          ],
+          "canonical_id": 15,
+          "name": "electrical_outlet",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6249999403953552,
+            10
+          ],
+          "canonical_id": 43,
+          "name": "exit_sign",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.625,
+            10
+          ],
+          "canonical_id": 43,
+          "name": "exit_sign",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6250000596046448,
+            10
+          ],
+          "canonical_id": 43,
+          "name": "exit_sign",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.29999998211860657,
+            11
+          ],
+          "canonical_id": 39,
+          "name": "eyeglasses",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.30000001192092896,
+            11
+          ],
+          "canonical_id": 39,
+          "name": "eyeglasses",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.30000004172325134,
+            11
+          ],
+          "canonical_id": 39,
+          "name": "eyeglasses",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.29999998211860657,
+            12
+          ],
+          "canonical_id": 29,
+          "name": "fork",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.30000001192092896,
+            12
+          ],
+          "canonical_id": 29,
+          "name": "fork",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.30000004172325134,
+            12
+          ],
+          "canonical_id": 29,
+          "name": "fork",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5749999284744263,
+            13
+          ],
+          "canonical_id": 1,
+          "name": "hearing_aid",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.574999988079071,
+            13
+          ],
+          "canonical_id": 1,
+          "name": "hearing_aid",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5750000476837158,
+            13
+          ],
+          "canonical_id": 1,
+          "name": "hearing_aid",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.44999995827674866,
+            14
+          ],
+          "canonical_id": 7,
+          "name": "jug",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.44999998807907104,
+            14
+          ],
+          "canonical_id": 7,
+          "name": "jug",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.45000001788139343,
+            14
+          ],
+          "canonical_id": 7,
+          "name": "jug",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.2749999761581421,
+            15
+          ],
+          "canonical_id": 28,
+          "name": "keys",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.2750000059604645,
+            15
+          ],
+          "canonical_id": 28,
+          "name": "keys",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.27500003576278687,
+            15
+          ],
+          "canonical_id": 28,
+          "name": "keys",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.44999995827674866,
+            16
+          ],
+          "canonical_id": 23,
+          "name": "knife",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.44999998807907104,
+            16
+          ],
+          "canonical_id": 23,
+          "name": "knife",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.45000001788139343,
+            16
+          ],
+          "canonical_id": 23,
+          "name": "knife",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.3999999761581421,
+            17
+          ],
+          "canonical_id": 26,
+          "name": "lemon",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.4000000059604645,
+            17
+          ],
+          "canonical_id": 26,
+          "name": "lemon",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.40000003576278687,
+            17
+          ],
+          "canonical_id": 26,
+          "name": "lemon",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.34999996423721313,
+            18
+          ],
+          "canonical_id": 13,
+          "name": "light_switch",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.3499999940395355,
+            18
+          ],
+          "canonical_id": 13,
+          "name": "light_switch",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.3500000238418579,
+            18
+          ],
+          "canonical_id": 13,
+          "name": "light_switch",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6999999284744263,
+            19
+          ],
+          "canonical_id": 8,
+          "name": "measuring_cup",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.699999988079071,
+            19
+          ],
+          "canonical_id": 8,
+          "name": "measuring_cup",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.7000000476837158,
+            19
+          ],
+          "canonical_id": 8,
+          "name": "measuring_cup",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.2499999850988388,
+            20
+          ],
+          "canonical_id": 44,
+          "name": "measuring_spoon",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.25,
+            20
+          ],
+          "canonical_id": 44,
+          "name": "measuring_spoon",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.2500000298023224,
+            20
+          ],
+          "canonical_id": 44,
+          "name": "measuring_spoon",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.22499997913837433,
+            21
+          ],
+          "canonical_id": 25,
+          "name": "medicine_bottle",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.22499999403953552,
+            21
+          ],
+          "canonical_id": 25,
+          "name": "medicine_bottle",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.22500000894069672,
+            21
+          ],
+          "canonical_id": 25,
+          "name": "medicine_bottle",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5249999165534973,
+            22
+          ],
+          "canonical_id": 14,
+          "name": "pan",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5249999761581421,
+            22
+          ],
+          "canonical_id": 14,
+          "name": "pan",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5250000357627869,
+            22
+          ],
+          "canonical_id": 14,
+          "name": "pan",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.47499996423721313,
+            23
+          ],
+          "canonical_id": 11,
+          "name": "paper_towel_dispenser",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.4749999940395355,
+            23
+          ],
+          "canonical_id": 11,
+          "name": "paper_towel_dispenser",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.4750000238418579,
+            23
+          ],
+          "canonical_id": 11,
+          "name": "paper_towel_dispenser",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.4999999701976776,
+            24
+          ],
+          "canonical_id": 34,
+          "name": "pot",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5,
+            24
+          ],
+          "canonical_id": 34,
+          "name": "pot",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5000000596046448,
+            24
+          ],
+          "canonical_id": 34,
+          "name": "pot",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6749999523162842,
+            25
+          ],
+          "canonical_id": 36,
+          "name": "purse",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.675000011920929,
+            25
+          ],
+          "canonical_id": 36,
+          "name": "purse",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6750000715255737,
+            25
+          ],
+          "canonical_id": 36,
+          "name": "purse",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.42499998211860657,
+            26
+          ],
+          "canonical_id": 0,
+          "name": "railing",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.42500001192092896,
+            26
+          ],
+          "canonical_id": 0,
+          "name": "railing",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.42500004172325134,
+            26
+          ],
+          "canonical_id": 0,
+          "name": "railing",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5999999642372131,
+            27
+          ],
+          "canonical_id": 32,
+          "name": "razor",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6000000238418579,
+            27
+          ],
+          "canonical_id": 32,
+          "name": "razor",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6000000834465027,
+            27
+          ],
+          "canonical_id": 32,
+          "name": "razor",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.14999999105930328,
+            28
+          ],
+          "canonical_id": 4,
+          "name": "salt_pepper_shaker",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.15000000596046448,
+            28
+          ],
+          "canonical_id": 4,
+          "name": "salt_pepper_shaker",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.15000002086162567,
+            28
+          ],
+          "canonical_id": 4,
+          "name": "salt_pepper_shaker",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.7499999403953552,
+            29
+          ],
+          "canonical_id": 17,
+          "name": "soap_dispenser",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.75,
+            29
+          ],
+          "canonical_id": 17,
+          "name": "soap_dispenser",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.7500000596046448,
+            29
+          ],
+          "canonical_id": 17,
+          "name": "soap_dispenser",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.47499996423721313,
+            30
+          ],
+          "canonical_id": 33,
+          "name": "spoon",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.4749999940395355,
+            30
+          ],
+          "canonical_id": 33,
+          "name": "spoon",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.4750000238418579,
+            30
+          ],
+          "canonical_id": 33,
+          "name": "spoon",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.42499998211860657,
+            31
+          ],
+          "canonical_id": 9,
+          "name": "stairs",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.42500001192092896,
+            31
+          ],
+          "canonical_id": 9,
+          "name": "stairs",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.42500004172325134,
+            31
+          ],
+          "canonical_id": 9,
+          "name": "stairs",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.42499998211860657,
+            32
+          ],
+          "canonical_id": 21,
+          "name": "table",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.42500001192092896,
+            32
+          ],
+          "canonical_id": 21,
+          "name": "table",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.42500004172325134,
+            32
+          ],
+          "canonical_id": 21,
+          "name": "table",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5999999642372131,
+            33
+          ],
+          "canonical_id": 10,
+          "name": "thermostat",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6000000238418579,
+            33
+          ],
+          "canonical_id": 10,
+          "name": "thermostat",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6000000834465027,
+            33
+          ],
+          "canonical_id": 10,
+          "name": "thermostat",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.8499999642372131,
+            34
+          ],
+          "canonical_id": 24,
+          "name": "toilet",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.8500000238418579,
+            34
+          ],
+          "canonical_id": 24,
+          "name": "toilet",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.8500000834465027,
+            34
+          ],
+          "canonical_id": 24,
+          "name": "toilet",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.8249999284744263,
+            35
+          ],
+          "canonical_id": 19,
+          "name": "toothbrush",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.824999988079071,
+            35
+          ],
+          "canonical_id": 19,
+          "name": "toothbrush",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.8250000476837158,
+            35
+          ],
+          "canonical_id": 19,
+          "name": "toothbrush",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.29999998211860657,
+            36
+          ],
+          "canonical_id": 20,
+          "name": "toothpaste",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.30000001192092896,
+            36
+          ],
+          "canonical_id": 20,
+          "name": "toothpaste",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.30000004172325134,
+            36
+          ],
+          "canonical_id": 20,
+          "name": "toothpaste",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.32499995827674866,
+            37
+          ],
+          "canonical_id": 12,
+          "name": "trash_can",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.32499998807907104,
+            37
+          ],
+          "canonical_id": 12,
+          "name": "trash_can",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.32500001788139343,
+            37
+          ],
+          "canonical_id": 12,
+          "name": "trash_can",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5249999165534973,
+            38
+          ],
+          "canonical_id": 3,
+          "name": "tupperware",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5249999761581421,
+            38
+          ],
+          "canonical_id": 3,
+          "name": "tupperware",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5250000357627869,
+            38
+          ],
+          "canonical_id": 3,
+          "name": "tupperware",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.29999998211860657,
+            39
+          ],
+          "canonical_id": 37,
+          "name": "tv_remote",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.30000001192092896,
+            39
+          ],
+          "canonical_id": 37,
+          "name": "tv_remote",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.30000004172325134,
+            39
+          ],
+          "canonical_id": 37,
+          "name": "tv_remote",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.44999995827674866,
+            40
+          ],
+          "canonical_id": 16,
+          "name": "urinal",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.44999998807907104,
+            40
+          ],
+          "canonical_id": 16,
+          "name": "urinal",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.45000001788139343,
+            40
+          ],
+          "canonical_id": 16,
+          "name": "urinal",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.04999999701976776,
+            41
+          ],
+          "canonical_id": 18,
+          "name": "wallet",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.05000000074505806,
+            41
+          ],
+          "canonical_id": 18,
+          "name": "wallet",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.05000000447034836,
+            41
+          ],
+          "canonical_id": 18,
+          "name": "wallet",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6749999523162842,
+            42
+          ],
+          "canonical_id": 41,
+          "name": "window",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.675000011920929,
+            42
+          ],
+          "canonical_id": 41,
+          "name": "window",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6750000715255737,
+            42
+          ],
+          "canonical_id": 41,
+          "name": "window",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.2749999761581421,
+            43
+          ],
+          "canonical_id": 5,
+          "name": "wine_glass",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.2750000059604645,
+            43
+          ],
+          "canonical_id": 5,
+          "name": "wine_glass",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.27500003576278687,
+            43
+          ],
+          "canonical_id": 5,
+          "name": "wine_glass",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5749999284744263,
+            44
+          ],
+          "canonical_id": 38,
+          "name": "writing_device",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.574999988079071,
+            44
+          ],
+          "canonical_id": 38,
+          "name": "writing_device",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5750000476837158,
+            44
+          ],
+          "canonical_id": 38,
+          "name": "writing_device",
+          "boundary": "above",
+          "keep": true
+        }
+      ],
+      "first_call_smoke_ms_not_benchmark": 26.587000000290573,
+      "structure_and_contract_passed": true
+    },
+    "small": {
+      "model_sha256": "992a329515ee0793e7ec0f78fc0576d0d937d38ec194bfee23b4a575c10cd498",
+      "config_sha256": "155a855a1960e7ceb2381f46205816d299613866b51b111fd0c8aff285798e40",
+      "model_asset": "galvat_trial9_yolo26s_maxdet40.onnx",
+      "config_asset": "Trial9Config.json",
+      "opset": [
+        20
+      ],
+      "providers": [
+        "CPUExecutionProvider"
+      ],
+      "input_name": "images",
+      "output_name": "output0",
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "output_shape": [
+        1,
+        40,
+        6
+      ],
+      "canonical_names": [
+        "railing",
+        "hearing_aid",
+        "bathroom_sign",
+        "tupperware",
+        "salt_pepper_shaker",
+        "wine_glass",
+        "drinking_glass",
+        "jug",
+        "measuring_cup",
+        "stairs",
+        "thermostat",
+        "paper_towel_dispenser",
+        "trash_can",
+        "light_switch",
+        "pan",
+        "electrical_outlet",
+        "urinal",
+        "soap_dispenser",
+        "wallet",
+        "toothbrush",
+        "toothpaste",
+        "table",
+        "door",
+        "knife",
+        "toilet",
+        "medicine_bottle",
+        "lemon",
+        "deodorant",
+        "keys",
+        "fork",
+        "coffee_mug",
+        "canned_good",
+        "razor",
+        "spoon",
+        "pot",
+        "cellphone",
+        "purse",
+        "tv_remote",
+        "writing_device",
+        "eyeglasses",
+        "chair",
+        "window",
+        "cane",
+        "exit_sign",
+        "measuring_spoon"
+      ],
+      "model_names": [
+        "bathroom_sign",
+        "cane",
+        "canned_good",
+        "cellphone",
+        "chair",
+        "coffee_mug",
+        "deodorant",
+        "door",
+        "drinking_glass",
+        "electrical_outlet",
+        "exit_sign",
+        "eyeglasses",
+        "fork",
+        "hearing_aid",
+        "jug",
+        "keys",
+        "knife",
+        "lemon",
+        "light_switch",
+        "measuring_cup",
+        "measuring_spoon",
+        "medicine_bottle",
+        "pan",
+        "paper_towel_dispenser",
+        "pot",
+        "purse",
+        "railing",
+        "razor",
+        "salt_pepper_shaker",
+        "soap_dispenser",
+        "spoon",
+        "stairs",
+        "table",
+        "thermostat",
+        "toilet",
+        "toothbrush",
+        "toothpaste",
+        "trash_can",
+        "tupperware",
+        "tv_remote",
+        "urinal",
+        "wallet",
+        "window",
+        "wine_glass",
+        "writing_device"
+      ],
+      "model_to_canonical": [
+        2,
+        42,
+        31,
+        35,
+        40,
+        30,
+        27,
+        22,
+        6,
+        15,
+        43,
+        39,
+        29,
+        1,
+        7,
+        28,
+        23,
+        26,
+        13,
+        8,
+        44,
+        25,
+        14,
+        11,
+        34,
+        36,
+        0,
+        32,
+        4,
+        17,
+        33,
+        9,
+        21,
+        10,
+        24,
+        19,
+        20,
+        12,
+        3,
+        37,
+        16,
+        18,
+        41,
+        5,
+        38
+      ],
+      "input_fixture": {
+        "generator": "all-zero float32 NCHW tensor",
+        "sha256": "f824c1a8a1128713f17dd8d1190d70e6012b509606d986e7a6c81e40b628df2b"
+      },
+      "output_fixture": [
+        [
+          [
+            16.00244140625,
+            4.06964111328125,
+            608.5728149414062,
+            635.9404296875,
+            0.0008452832698822021,
+            16.0
+          ],
+          [
+            16.00244140625,
+            4.06964111328125,
+            608.5728149414062,
+            635.9404296875,
+            0.0008117258548736572,
+            12.0
+          ],
+          [
+            338.0194091796875,
+            12.09722900390625,
+            638.3804931640625,
+            620.496826171875,
+            0.00014987587928771973,
+            16.0
+          ],
+          [
+            20.818145751953125,
+            4.802490234375,
+            617.5770263671875,
+            635.2747802734375,
+            0.0001226663589477539,
+            16.0
+          ],
+          [
+            20.818145751953125,
+            4.802490234375,
+            617.5770263671875,
+            635.2747802734375,
+            0.0001106560230255127,
+            12.0
+          ],
+          [
+            14.5416259765625,
+            2.66790771484375,
+            611.7166748046875,
+            637.5739135742188,
+            6.812810897827148e-05,
+            7.0
+          ],
+          [
+            14.5416259765625,
+            2.66790771484375,
+            611.7166748046875,
+            637.5739135742188,
+            3.9249658584594727e-05,
+            39.0
+          ],
+          [
+            16.00244140625,
+            4.06964111328125,
+            608.5728149414062,
+            635.9404296875,
+            2.631545066833496e-05,
+            44.0
+          ],
+          [
+            338.0194091796875,
+            12.09722900390625,
+            638.3804931640625,
+            620.496826171875,
+            2.2709369659423828e-05,
+            12.0
+          ],
+          [
+            16.00244140625,
+            4.06964111328125,
+            608.5728149414062,
+            635.9404296875,
+            1.773238182067871e-05,
+            30.0
+          ],
+          [
+            16.00244140625,
+            4.06964111328125,
+            608.5728149414062,
+            635.9404296875,
+            1.767277717590332e-05,
+            38.0
+          ],
+          [
+            16.00244140625,
+            4.06964111328125,
+            608.5728149414062,
+            635.9404296875,
+            1.2248754501342773e-05,
+            3.0
+          ],
+          [
+            142.292236328125,
+            9.10546875,
+            628.2953491210938,
+            625.1835327148438,
+            1.2218952178955078e-05,
+            16.0
+          ],
+          [
+            351.1474609375,
+            63.501220703125,
+            638.0078735351562,
+            632.366943359375,
+            1.0073184967041016e-05,
+            16.0
+          ],
+          [
+            3.292449951171875,
+            12.472625732421875,
+            342.1650085449219,
+            613.0576171875,
+            6.556510925292969e-06,
+            16.0
+          ],
+          [
+            28.5977783203125,
+            4.2848052978515625,
+            611.8814086914062,
+            630.115478515625,
+            6.109476089477539e-06,
+            3.0
+          ],
+          [
+            20.818145751953125,
+            4.802490234375,
+            617.5770263671875,
+            635.2747802734375,
+            5.9604644775390625e-06,
+            44.0
+          ],
+          [
+            240.02073669433594,
+            11.50299072265625,
+            633.9345703125,
+            621.5584716796875,
+            5.811452865600586e-06,
+            16.0
+          ],
+          [
+            14.5416259765625,
+            2.66790771484375,
+            611.7166748046875,
+            637.5739135742188,
+            5.543231964111328e-06,
+            9.0
+          ],
+          [
+            20.818145751953125,
+            4.802490234375,
+            617.5770263671875,
+            635.2747802734375,
+            5.3942203521728516e-06,
+            30.0
+          ],
+          [
+            30.77197265625,
+            44.360443115234375,
+            589.95458984375,
+            637.5275268554688,
+            5.304813385009766e-06,
+            12.0
+          ],
+          [
+            348.2450256347656,
+            30.38330078125,
+            638.22705078125,
+            627.9271240234375,
+            5.0067901611328125e-06,
+            16.0
+          ],
+          [
+            105.64520263671875,
+            388.9720458984375,
+            587.0995483398438,
+            640.02001953125,
+            4.1425228118896484e-06,
+            16.0
+          ],
+          [
+            344.24639892578125,
+            19.3990478515625,
+            638.3585205078125,
+            626.9404296875,
+            4.0531158447265625e-06,
+            16.0
+          ],
+          [
+            20.818145751953125,
+            4.802490234375,
+            617.5770263671875,
+            635.2747802734375,
+            3.874301910400391e-06,
+            38.0
+          ],
+          [
+            53.020477294921875,
+            124.00970458984375,
+            563.942138671875,
+            639.3541259765625,
+            3.874301910400391e-06,
+            12.0
+          ],
+          [
+            297.8716125488281,
+            12.377593994140625,
+            636.1531982421875,
+            620.802490234375,
+            3.4570693969726562e-06,
+            16.0
+          ],
+          [
+            30.77197265625,
+            44.360443115234375,
+            589.95458984375,
+            637.5275268554688,
+            3.3974647521972656e-06,
+            16.0
+          ],
+          [
+            20.818145751953125,
+            4.802490234375,
+            617.5770263671875,
+            635.2747802734375,
+            3.248453140258789e-06,
+            3.0
+          ],
+          [
+            338.0194091796875,
+            12.09722900390625,
+            638.3804931640625,
+            620.496826171875,
+            3.0994415283203125e-06,
+            30.0
+          ],
+          [
+            21.259002685546875,
+            3.61962890625,
+            598.45751953125,
+            630.157958984375,
+            3.069639205932617e-06,
+            3.0
+          ],
+          [
+            142.292236328125,
+            9.10546875,
+            628.2953491210938,
+            625.1835327148438,
+            3.039836883544922e-06,
+            12.0
+          ],
+          [
+            53.020477294921875,
+            124.00970458984375,
+            563.942138671875,
+            639.3541259765625,
+            2.7120113372802734e-06,
+            16.0
+          ],
+          [
+            351.1474609375,
+            63.501220703125,
+            638.0078735351562,
+            632.366943359375,
+            2.652406692504883e-06,
+            12.0
+          ],
+          [
+            354.166748046875,
+            123.8985595703125,
+            637.576416015625,
+            635.5389404296875,
+            2.384185791015625e-06,
+            16.0
+          ],
+          [
+            16.00244140625,
+            4.06964111328125,
+            608.5728149414062,
+            635.9404296875,
+            2.086162567138672e-06,
+            41.0
+          ],
+          [
+            338.0194091796875,
+            12.09722900390625,
+            638.3804931640625,
+            620.496826171875,
+            2.086162567138672e-06,
+            44.0
+          ],
+          [
+            297.8716125488281,
+            12.377593994140625,
+            636.1531982421875,
+            620.802490234375,
+            1.8477439880371094e-06,
+            12.0
+          ],
+          [
+            3.292449951171875,
+            12.472625732421875,
+            342.1650085449219,
+            613.0576171875,
+            1.7285346984863281e-06,
+            12.0
+          ],
+          [
+            240.02073669433594,
+            11.50299072265625,
+            633.9345703125,
+            621.5584716796875,
+            1.7285346984863281e-06,
+            12.0
+          ]
+        ]
+      ],
+      "threshold_fixtures": [
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.44999995827674866,
+            0
+          ],
+          "canonical_id": 2,
+          "name": "bathroom_sign",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.44999998807907104,
+            0
+          ],
+          "canonical_id": 2,
+          "name": "bathroom_sign",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.45000001788139343,
+            0
+          ],
+          "canonical_id": 2,
+          "name": "bathroom_sign",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5999999642372131,
+            1
+          ],
+          "canonical_id": 42,
+          "name": "cane",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6000000238418579,
+            1
+          ],
+          "canonical_id": 42,
+          "name": "cane",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6000000834465027,
+            1
+          ],
+          "canonical_id": 42,
+          "name": "cane",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6749999523162842,
+            2
+          ],
+          "canonical_id": 31,
+          "name": "canned_good",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.675000011920929,
+            2
+          ],
+          "canonical_id": 31,
+          "name": "canned_good",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6750000715255737,
+            2
+          ],
+          "canonical_id": 31,
+          "name": "canned_good",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.29999998211860657,
+            3
+          ],
+          "canonical_id": 35,
+          "name": "cellphone",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.30000001192092896,
+            3
+          ],
+          "canonical_id": 35,
+          "name": "cellphone",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.30000004172325134,
+            3
+          ],
+          "canonical_id": 35,
+          "name": "cellphone",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6749999523162842,
+            4
+          ],
+          "canonical_id": 40,
+          "name": "chair",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.675000011920929,
+            4
+          ],
+          "canonical_id": 40,
+          "name": "chair",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6750000715255737,
+            4
+          ],
+          "canonical_id": 40,
+          "name": "chair",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.3999999761581421,
+            5
+          ],
+          "canonical_id": 30,
+          "name": "coffee_mug",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.4000000059604645,
+            5
+          ],
+          "canonical_id": 30,
+          "name": "coffee_mug",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.40000003576278687,
+            5
+          ],
+          "canonical_id": 30,
+          "name": "coffee_mug",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.7249999642372131,
+            6
+          ],
+          "canonical_id": 27,
+          "name": "deodorant",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.7250000238418579,
+            6
+          ],
+          "canonical_id": 27,
+          "name": "deodorant",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.7250000834465027,
+            6
+          ],
+          "canonical_id": 27,
+          "name": "deodorant",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.42499998211860657,
+            7
+          ],
+          "canonical_id": 22,
+          "name": "door",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.42500001192092896,
+            7
+          ],
+          "canonical_id": 22,
+          "name": "door",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.42500004172325134,
+            7
+          ],
+          "canonical_id": 22,
+          "name": "door",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.42499998211860657,
+            8
+          ],
+          "canonical_id": 6,
+          "name": "drinking_glass",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.42500001192092896,
+            8
+          ],
+          "canonical_id": 6,
+          "name": "drinking_glass",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.42500004172325134,
+            8
+          ],
+          "canonical_id": 6,
+          "name": "drinking_glass",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.7499999403953552,
+            9
+          ],
+          "canonical_id": 15,
+          "name": "electrical_outlet",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.75,
+            9
+          ],
+          "canonical_id": 15,
+          "name": "electrical_outlet",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.7500000596046448,
+            9
+          ],
+          "canonical_id": 15,
+          "name": "electrical_outlet",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.47499996423721313,
+            10
+          ],
+          "canonical_id": 43,
+          "name": "exit_sign",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.4749999940395355,
+            10
+          ],
+          "canonical_id": 43,
+          "name": "exit_sign",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.4750000238418579,
+            10
+          ],
+          "canonical_id": 43,
+          "name": "exit_sign",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.44999995827674866,
+            11
+          ],
+          "canonical_id": 39,
+          "name": "eyeglasses",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.44999998807907104,
+            11
+          ],
+          "canonical_id": 39,
+          "name": "eyeglasses",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.45000001788139343,
+            11
+          ],
+          "canonical_id": 39,
+          "name": "eyeglasses",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.2749999761581421,
+            12
+          ],
+          "canonical_id": 29,
+          "name": "fork",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.2750000059604645,
+            12
+          ],
+          "canonical_id": 29,
+          "name": "fork",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.27500003576278687,
+            12
+          ],
+          "canonical_id": 29,
+          "name": "fork",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.4999999701976776,
+            13
+          ],
+          "canonical_id": 1,
+          "name": "hearing_aid",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5,
+            13
+          ],
+          "canonical_id": 1,
+          "name": "hearing_aid",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5000000596046448,
+            13
+          ],
+          "canonical_id": 1,
+          "name": "hearing_aid",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.2749999761581421,
+            14
+          ],
+          "canonical_id": 7,
+          "name": "jug",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.2750000059604645,
+            14
+          ],
+          "canonical_id": 7,
+          "name": "jug",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.27500003576278687,
+            14
+          ],
+          "canonical_id": 7,
+          "name": "jug",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.14999999105930328,
+            15
+          ],
+          "canonical_id": 28,
+          "name": "keys",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.15000000596046448,
+            15
+          ],
+          "canonical_id": 28,
+          "name": "keys",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.15000002086162567,
+            15
+          ],
+          "canonical_id": 28,
+          "name": "keys",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.19999998807907104,
+            16
+          ],
+          "canonical_id": 23,
+          "name": "knife",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.20000000298023224,
+            16
+          ],
+          "canonical_id": 23,
+          "name": "knife",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.20000001788139343,
+            16
+          ],
+          "canonical_id": 23,
+          "name": "knife",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5499999523162842,
+            17
+          ],
+          "canonical_id": 26,
+          "name": "lemon",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.550000011920929,
+            17
+          ],
+          "canonical_id": 26,
+          "name": "lemon",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5500000715255737,
+            17
+          ],
+          "canonical_id": 26,
+          "name": "lemon",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.34999996423721313,
+            18
+          ],
+          "canonical_id": 13,
+          "name": "light_switch",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.3499999940395355,
+            18
+          ],
+          "canonical_id": 13,
+          "name": "light_switch",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.3500000238418579,
+            18
+          ],
+          "canonical_id": 13,
+          "name": "light_switch",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5749999284744263,
+            19
+          ],
+          "canonical_id": 8,
+          "name": "measuring_cup",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.574999988079071,
+            19
+          ],
+          "canonical_id": 8,
+          "name": "measuring_cup",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5750000476837158,
+            19
+          ],
+          "canonical_id": 8,
+          "name": "measuring_cup",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.1249999925494194,
+            20
+          ],
+          "canonical_id": 44,
+          "name": "measuring_spoon",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.125,
+            20
+          ],
+          "canonical_id": 44,
+          "name": "measuring_spoon",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.1250000149011612,
+            20
+          ],
+          "canonical_id": 44,
+          "name": "measuring_spoon",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5249999165534973,
+            21
+          ],
+          "canonical_id": 25,
+          "name": "medicine_bottle",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5249999761581421,
+            21
+          ],
+          "canonical_id": 25,
+          "name": "medicine_bottle",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5250000357627869,
+            21
+          ],
+          "canonical_id": 25,
+          "name": "medicine_bottle",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.3999999761581421,
+            22
+          ],
+          "canonical_id": 14,
+          "name": "pan",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.4000000059604645,
+            22
+          ],
+          "canonical_id": 14,
+          "name": "pan",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.40000003576278687,
+            22
+          ],
+          "canonical_id": 14,
+          "name": "pan",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6249999403953552,
+            23
+          ],
+          "canonical_id": 11,
+          "name": "paper_towel_dispenser",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.625,
+            23
+          ],
+          "canonical_id": 11,
+          "name": "paper_towel_dispenser",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6250000596046448,
+            23
+          ],
+          "canonical_id": 11,
+          "name": "paper_towel_dispenser",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.4999999701976776,
+            24
+          ],
+          "canonical_id": 34,
+          "name": "pot",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5,
+            24
+          ],
+          "canonical_id": 34,
+          "name": "pot",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5000000596046448,
+            24
+          ],
+          "canonical_id": 34,
+          "name": "pot",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.7749999165534973,
+            25
+          ],
+          "canonical_id": 36,
+          "name": "purse",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.7749999761581421,
+            25
+          ],
+          "canonical_id": 36,
+          "name": "purse",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.7750000357627869,
+            25
+          ],
+          "canonical_id": 36,
+          "name": "purse",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5749999284744263,
+            26
+          ],
+          "canonical_id": 0,
+          "name": "railing",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.574999988079071,
+            26
+          ],
+          "canonical_id": 0,
+          "name": "railing",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5750000476837158,
+            26
+          ],
+          "canonical_id": 0,
+          "name": "railing",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.8999999165534973,
+            27
+          ],
+          "canonical_id": 32,
+          "name": "razor",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.8999999761581421,
+            27
+          ],
+          "canonical_id": 32,
+          "name": "razor",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.9000000357627869,
+            27
+          ],
+          "canonical_id": 32,
+          "name": "razor",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.7999999523162842,
+            28
+          ],
+          "canonical_id": 4,
+          "name": "salt_pepper_shaker",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.800000011920929,
+            28
+          ],
+          "canonical_id": 4,
+          "name": "salt_pepper_shaker",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.8000000715255737,
+            28
+          ],
+          "canonical_id": 4,
+          "name": "salt_pepper_shaker",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.3999999761581421,
+            29
+          ],
+          "canonical_id": 17,
+          "name": "soap_dispenser",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.4000000059604645,
+            29
+          ],
+          "canonical_id": 17,
+          "name": "soap_dispenser",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.40000003576278687,
+            29
+          ],
+          "canonical_id": 17,
+          "name": "soap_dispenser",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.7249999642372131,
+            30
+          ],
+          "canonical_id": 33,
+          "name": "spoon",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.7250000238418579,
+            30
+          ],
+          "canonical_id": 33,
+          "name": "spoon",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.7250000834465027,
+            30
+          ],
+          "canonical_id": 33,
+          "name": "spoon",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.32499995827674866,
+            31
+          ],
+          "canonical_id": 9,
+          "name": "stairs",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.32499998807907104,
+            31
+          ],
+          "canonical_id": 9,
+          "name": "stairs",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.32500001788139343,
+            31
+          ],
+          "canonical_id": 9,
+          "name": "stairs",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5749999284744263,
+            32
+          ],
+          "canonical_id": 21,
+          "name": "table",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.574999988079071,
+            32
+          ],
+          "canonical_id": 21,
+          "name": "table",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5750000476837158,
+            32
+          ],
+          "canonical_id": 21,
+          "name": "table",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.47499996423721313,
+            33
+          ],
+          "canonical_id": 10,
+          "name": "thermostat",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.4749999940395355,
+            33
+          ],
+          "canonical_id": 10,
+          "name": "thermostat",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.4750000238418579,
+            33
+          ],
+          "canonical_id": 10,
+          "name": "thermostat",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.8249999284744263,
+            34
+          ],
+          "canonical_id": 24,
+          "name": "toilet",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.824999988079071,
+            34
+          ],
+          "canonical_id": 24,
+          "name": "toilet",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.8250000476837158,
+            34
+          ],
+          "canonical_id": 24,
+          "name": "toilet",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.8999999165534973,
+            35
+          ],
+          "canonical_id": 19,
+          "name": "toothbrush",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.8999999761581421,
+            35
+          ],
+          "canonical_id": 19,
+          "name": "toothbrush",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.9000000357627869,
+            35
+          ],
+          "canonical_id": 19,
+          "name": "toothbrush",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.32499995827674866,
+            36
+          ],
+          "canonical_id": 20,
+          "name": "toothpaste",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.32499998807907104,
+            36
+          ],
+          "canonical_id": 20,
+          "name": "toothpaste",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.32500001788139343,
+            36
+          ],
+          "canonical_id": 20,
+          "name": "toothpaste",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6749999523162842,
+            37
+          ],
+          "canonical_id": 12,
+          "name": "trash_can",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.675000011920929,
+            37
+          ],
+          "canonical_id": 12,
+          "name": "trash_can",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6750000715255737,
+            37
+          ],
+          "canonical_id": 12,
+          "name": "trash_can",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6749999523162842,
+            38
+          ],
+          "canonical_id": 3,
+          "name": "tupperware",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.675000011920929,
+            38
+          ],
+          "canonical_id": 3,
+          "name": "tupperware",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6750000715255737,
+            38
+          ],
+          "canonical_id": 3,
+          "name": "tupperware",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5249999165534973,
+            39
+          ],
+          "canonical_id": 37,
+          "name": "tv_remote",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5249999761581421,
+            39
+          ],
+          "canonical_id": 37,
+          "name": "tv_remote",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5250000357627869,
+            39
+          ],
+          "canonical_id": 37,
+          "name": "tv_remote",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5499999523162842,
+            40
+          ],
+          "canonical_id": 16,
+          "name": "urinal",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.550000011920929,
+            40
+          ],
+          "canonical_id": 16,
+          "name": "urinal",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5500000715255737,
+            40
+          ],
+          "canonical_id": 16,
+          "name": "urinal",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5249999165534973,
+            41
+          ],
+          "canonical_id": 18,
+          "name": "wallet",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5249999761581421,
+            41
+          ],
+          "canonical_id": 18,
+          "name": "wallet",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.5250000357627869,
+            41
+          ],
+          "canonical_id": 18,
+          "name": "wallet",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.8499999642372131,
+            42
+          ],
+          "canonical_id": 41,
+          "name": "window",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.8500000238418579,
+            42
+          ],
+          "canonical_id": 41,
+          "name": "window",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.8500000834465027,
+            42
+          ],
+          "canonical_id": 41,
+          "name": "window",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.29999998211860657,
+            43
+          ],
+          "canonical_id": 5,
+          "name": "wine_glass",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.30000001192092896,
+            43
+          ],
+          "canonical_id": 5,
+          "name": "wine_glass",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.30000004172325134,
+            43
+          ],
+          "canonical_id": 5,
+          "name": "wine_glass",
+          "boundary": "above",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6749999523162842,
+            44
+          ],
+          "canonical_id": 38,
+          "name": "writing_device",
+          "boundary": "below",
+          "keep": false
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.675000011920929,
+            44
+          ],
+          "canonical_id": 38,
+          "name": "writing_device",
+          "boundary": "equal",
+          "keep": true
+        },
+        {
+          "row": [
+            10,
+            20,
+            30,
+            40,
+            0.6750000715255737,
+            44
+          ],
+          "canonical_id": 38,
+          "name": "writing_device",
+          "boundary": "above",
+          "keep": true
+        }
+      ],
+      "first_call_smoke_ms_not_benchmark": 69.74595900101122,
+      "structure_and_contract_passed": true
+    }
+  },
+  "limitations": [
+    "Synthetic zero-input fixtures are not recognition/recall tests.",
+    "CPU ORT is not Unity/Sentis or Magic Leap timing.",
+    "RGB normalization and coordinate origin still need Unity fixture parity.",
+    "Validation does not link the supplied training checkpoint to these binaries."
+  ],
+  "source_commit": "865870369b5424e206d8829683de2fba9ee217c3",
+  "candidate_class_comparison": {
+    "identity": "User-supplied candidate class map; E012 identity unverified",
+    "model_identity_verified": false,
+    "candidate_class_count": 43,
+    "shared_class_count": 43,
+    "trial9_only_classes": [
+      "exit_sign",
+      "measuring_spoon"
+    ],
+    "candidate_only_classes": [],
+    "shared_mapping_by_name": [
+      {
+        "candidate_id": 0,
+        "name": "bathroom_sign",
+        "trial9_model_id": 0,
+        "galvat_canonical_id": 2
+      },
+      {
+        "candidate_id": 1,
+        "name": "cane",
+        "trial9_model_id": 1,
+        "galvat_canonical_id": 42
+      },
+      {
+        "candidate_id": 2,
+        "name": "canned_good",
+        "trial9_model_id": 2,
+        "galvat_canonical_id": 31
+      },
+      {
+        "candidate_id": 3,
+        "name": "cellphone",
+        "trial9_model_id": 3,
+        "galvat_canonical_id": 35
+      },
+      {
+        "candidate_id": 4,
+        "name": "chair",
+        "trial9_model_id": 4,
+        "galvat_canonical_id": 40
+      },
+      {
+        "candidate_id": 5,
+        "name": "coffee_mug",
+        "trial9_model_id": 5,
+        "galvat_canonical_id": 30
+      },
+      {
+        "candidate_id": 6,
+        "name": "deodorant",
+        "trial9_model_id": 6,
+        "galvat_canonical_id": 27
+      },
+      {
+        "candidate_id": 7,
+        "name": "door",
+        "trial9_model_id": 7,
+        "galvat_canonical_id": 22
+      },
+      {
+        "candidate_id": 8,
+        "name": "drinking_glass",
+        "trial9_model_id": 8,
+        "galvat_canonical_id": 6
+      },
+      {
+        "candidate_id": 9,
+        "name": "electrical_outlet",
+        "trial9_model_id": 9,
+        "galvat_canonical_id": 15
+      },
+      {
+        "candidate_id": 10,
+        "name": "eyeglasses",
+        "trial9_model_id": 11,
+        "galvat_canonical_id": 39
+      },
+      {
+        "candidate_id": 11,
+        "name": "fork",
+        "trial9_model_id": 12,
+        "galvat_canonical_id": 29
+      },
+      {
+        "candidate_id": 12,
+        "name": "hearing_aid",
+        "trial9_model_id": 13,
+        "galvat_canonical_id": 1
+      },
+      {
+        "candidate_id": 13,
+        "name": "jug",
+        "trial9_model_id": 14,
+        "galvat_canonical_id": 7
+      },
+      {
+        "candidate_id": 14,
+        "name": "keys",
+        "trial9_model_id": 15,
+        "galvat_canonical_id": 28
+      },
+      {
+        "candidate_id": 15,
+        "name": "knife",
+        "trial9_model_id": 16,
+        "galvat_canonical_id": 23
+      },
+      {
+        "candidate_id": 16,
+        "name": "lemon",
+        "trial9_model_id": 17,
+        "galvat_canonical_id": 26
+      },
+      {
+        "candidate_id": 17,
+        "name": "light_switch",
+        "trial9_model_id": 18,
+        "galvat_canonical_id": 13
+      },
+      {
+        "candidate_id": 18,
+        "name": "measuring_cup",
+        "trial9_model_id": 19,
+        "galvat_canonical_id": 8
+      },
+      {
+        "candidate_id": 19,
+        "name": "medicine_bottle",
+        "trial9_model_id": 21,
+        "galvat_canonical_id": 25
+      },
+      {
+        "candidate_id": 20,
+        "name": "pan",
+        "trial9_model_id": 22,
+        "galvat_canonical_id": 14
+      },
+      {
+        "candidate_id": 21,
+        "name": "paper_towel_dispenser",
+        "trial9_model_id": 23,
+        "galvat_canonical_id": 11
+      },
+      {
+        "candidate_id": 22,
+        "name": "pot",
+        "trial9_model_id": 24,
+        "galvat_canonical_id": 34
+      },
+      {
+        "candidate_id": 23,
+        "name": "purse",
+        "trial9_model_id": 25,
+        "galvat_canonical_id": 36
+      },
+      {
+        "candidate_id": 24,
+        "name": "railing",
+        "trial9_model_id": 26,
+        "galvat_canonical_id": 0
+      },
+      {
+        "candidate_id": 25,
+        "name": "razor",
+        "trial9_model_id": 27,
+        "galvat_canonical_id": 32
+      },
+      {
+        "candidate_id": 26,
+        "name": "salt_pepper_shaker",
+        "trial9_model_id": 28,
+        "galvat_canonical_id": 4
+      },
+      {
+        "candidate_id": 27,
+        "name": "soap_dispenser",
+        "trial9_model_id": 29,
+        "galvat_canonical_id": 17
+      },
+      {
+        "candidate_id": 28,
+        "name": "spoon",
+        "trial9_model_id": 30,
+        "galvat_canonical_id": 33
+      },
+      {
+        "candidate_id": 29,
+        "name": "stairs",
+        "trial9_model_id": 31,
+        "galvat_canonical_id": 9
+      },
+      {
+        "candidate_id": 30,
+        "name": "table",
+        "trial9_model_id": 32,
+        "galvat_canonical_id": 21
+      },
+      {
+        "candidate_id": 31,
+        "name": "thermostat",
+        "trial9_model_id": 33,
+        "galvat_canonical_id": 10
+      },
+      {
+        "candidate_id": 32,
+        "name": "toilet",
+        "trial9_model_id": 34,
+        "galvat_canonical_id": 24
+      },
+      {
+        "candidate_id": 33,
+        "name": "toothbrush",
+        "trial9_model_id": 35,
+        "galvat_canonical_id": 19
+      },
+      {
+        "candidate_id": 34,
+        "name": "toothpaste",
+        "trial9_model_id": 36,
+        "galvat_canonical_id": 20
+      },
+      {
+        "candidate_id": 35,
+        "name": "trash_can",
+        "trial9_model_id": 37,
+        "galvat_canonical_id": 12
+      },
+      {
+        "candidate_id": 36,
+        "name": "tupperware",
+        "trial9_model_id": 38,
+        "galvat_canonical_id": 3
+      },
+      {
+        "candidate_id": 37,
+        "name": "tv_remote",
+        "trial9_model_id": 39,
+        "galvat_canonical_id": 37
+      },
+      {
+        "candidate_id": 38,
+        "name": "urinal",
+        "trial9_model_id": 40,
+        "galvat_canonical_id": 16
+      },
+      {
+        "candidate_id": 39,
+        "name": "wallet",
+        "trial9_model_id": 41,
+        "galvat_canonical_id": 18
+      },
+      {
+        "candidate_id": 40,
+        "name": "window",
+        "trial9_model_id": 42,
+        "galvat_canonical_id": 41
+      },
+      {
+        "candidate_id": 41,
+        "name": "wine_glass",
+        "trial9_model_id": 43,
+        "galvat_canonical_id": 5
+      },
+      {
+        "candidate_id": 42,
+        "name": "writing_device",
+        "trial9_model_id": 44,
+        "galvat_canonical_id": 38
+      }
+    ]
+  }
+}

@@ -1,0 +1,373 @@
+{
+  "modelClassNames": [
+    "bathroom_sign",
+    "cane",
+    "canned_good",
+    "cellphone",
+    "chair",
+    "coffee_mug",
+    "deodorant",
+    "door",
+    "drinking_glass",
+    "electrical_outlet",
+    "exit_sign",
+    "eyeglasses",
+    "fork",
+    "hearing_aid",
+    "jug",
+    "keys",
+    "knife",
+    "lemon",
+    "light_switch",
+    "measuring_cup",
+    "measuring_spoon",
+    "medicine_bottle",
+    "pan",
+    "paper_towel_dispenser",
+    "pot",
+    "purse",
+    "railing",
+    "razor",
+    "salt_pepper_shaker",
+    "soap_dispenser",
+    "spoon",
+    "stairs",
+    "table",
+    "thermostat",
+    "toilet",
+    "toothbrush",
+    "toothpaste",
+    "trash_can",
+    "tupperware",
+    "tv_remote",
+    "urinal",
+    "wallet",
+    "window",
+    "wine_glass",
+    "writing_device"
+  ],
+  "classes": [
+    {
+      "canonicalId": 0,
+      "name": "railing",
+      "displayName": "railing",
+      "threshold": 0.425
+    },
+    {
+      "canonicalId": 1,
+      "name": "hearing_aid",
+      "displayName": "hearing aid",
+      "threshold": 0.575
+    },
+    {
+      "canonicalId": 2,
+      "name": "bathroom_sign",
+      "displayName": "bathroom sign",
+      "threshold": 0.6
+    },
+    {
+      "canonicalId": 3,
+      "name": "tupperware",
+      "displayName": "tupperware",
+      "threshold": 0.525
+    },
+    {
+      "canonicalId": 4,
+      "name": "salt_pepper_shaker",
+      "displayName": "salt pepper shaker",
+      "threshold": 0.15
+    },
+    {
+      "canonicalId": 5,
+      "name": "wine_glass",
+      "displayName": "wine glass",
+      "threshold": 0.275
+    },
+    {
+      "canonicalId": 6,
+      "name": "drinking_glass",
+      "displayName": "drinking glass",
+      "threshold": 0.15
+    },
+    {
+      "canonicalId": 7,
+      "name": "jug",
+      "displayName": "jug",
+      "threshold": 0.45
+    },
+    {
+      "canonicalId": 8,
+      "name": "measuring_cup",
+      "displayName": "measuring cup",
+      "threshold": 0.7
+    },
+    {
+      "canonicalId": 9,
+      "name": "stairs",
+      "displayName": "stairs",
+      "threshold": 0.425
+    },
+    {
+      "canonicalId": 10,
+      "name": "thermostat",
+      "displayName": "thermostat",
+      "threshold": 0.6
+    },
+    {
+      "canonicalId": 11,
+      "name": "paper_towel_dispenser",
+      "displayName": "paper towel dispenser",
+      "threshold": 0.475
+    },
+    {
+      "canonicalId": 12,
+      "name": "trash_can",
+      "displayName": "trash can",
+      "threshold": 0.325
+    },
+    {
+      "canonicalId": 13,
+      "name": "light_switch",
+      "displayName": "light switch",
+      "threshold": 0.35
+    },
+    {
+      "canonicalId": 14,
+      "name": "pan",
+      "displayName": "pan",
+      "threshold": 0.525
+    },
+    {
+      "canonicalId": 15,
+      "name": "electrical_outlet",
+      "displayName": "electrical outlet",
+      "threshold": 0.625
+    },
+    {
+      "canonicalId": 16,
+      "name": "urinal",
+      "displayName": "urinal",
+      "threshold": 0.45
+    },
+    {
+      "canonicalId": 17,
+      "name": "soap_dispenser",
+      "displayName": "soap dispenser",
+      "threshold": 0.75
+    },
+    {
+      "canonicalId": 18,
+      "name": "wallet",
+      "displayName": "wallet",
+      "threshold": 0.05
+    },
+    {
+      "canonicalId": 19,
+      "name": "toothbrush",
+      "displayName": "toothbrush",
+      "threshold": 0.825
+    },
+    {
+      "canonicalId": 20,
+      "name": "toothpaste",
+      "displayName": "toothpaste",
+      "threshold": 0.3
+    },
+    {
+      "canonicalId": 21,
+      "name": "table",
+      "displayName": "table",
+      "threshold": 0.425
+    },
+    {
+      "canonicalId": 22,
+      "name": "door",
+      "displayName": "door",
+      "threshold": 0.75
+    },
+    {
+      "canonicalId": 23,
+      "name": "knife",
+      "displayName": "knife",
+      "threshold": 0.45
+    },
+    {
+      "canonicalId": 24,
+      "name": "toilet",
+      "displayName": "toilet",
+      "threshold": 0.85
+    },
+    {
+      "canonicalId": 25,
+      "name": "medicine_bottle",
+      "displayName": "medicine bottle",
+      "threshold": 0.225
+    },
+    {
+      "canonicalId": 26,
+      "name": "lemon",
+      "displayName": "lemon",
+      "threshold": 0.4
+    },
+    {
+      "canonicalId": 27,
+      "name": "deodorant",
+      "displayName": "deodorant",
+      "threshold": 0.3
+    },
+    {
+      "canonicalId": 28,
+      "name": "keys",
+      "displayName": "keys",
+      "threshold": 0.275
+    },
+    {
+      "canonicalId": 29,
+      "name": "fork",
+      "displayName": "fork",
+      "threshold": 0.3
+    },
+    {
+      "canonicalId": 30,
+      "name": "coffee_mug",
+      "displayName": "coffee mug",
+      "threshold": 0.475
+    },
+    {
+      "canonicalId": 31,
+      "name": "canned_good",
+      "displayName": "canned good",
+      "threshold": 0.625
+    },
+    {
+      "canonicalId": 32,
+      "name": "razor",
+      "displayName": "razor",
+      "threshold": 0.6
+    },
+    {
+      "canonicalId": 33,
+      "name": "spoon",
+      "displayName": "spoon",
+      "threshold": 0.475
+    },
+    {
+      "canonicalId": 34,
+      "name": "pot",
+      "displayName": "pot",
+      "threshold": 0.5
+    },
+    {
+      "canonicalId": 35,
+      "name": "cellphone",
+      "displayName": "cellphone",
+      "threshold": 0.225
+    },
+    {
+      "canonicalId": 36,
+      "name": "purse",
+      "displayName": "purse",
+      "threshold": 0.675
+    },
+    {
+      "canonicalId": 37,
+      "name": "tv_remote",
+      "displayName": "TV remote",
+      "threshold": 0.3
+    },
+    {
+      "canonicalId": 38,
+      "name": "writing_device",
+      "displayName": "writing device",
+      "threshold": 0.575
+    },
+    {
+      "canonicalId": 39,
+      "name": "eyeglasses",
+      "displayName": "eyeglasses",
+      "threshold": 0.3
+    },
+    {
+      "canonicalId": 40,
+      "name": "chair",
+      "displayName": "chair",
+      "threshold": 0.775
+    },
+    {
+      "canonicalId": 41,
+      "name": "window",
+      "displayName": "window",
+      "threshold": 0.675
+    },
+    {
+      "canonicalId": 42,
+      "name": "cane",
+      "displayName": "cane",
+      "threshold": 0.55
+    },
+    {
+      "canonicalId": 43,
+      "name": "exit_sign",
+      "displayName": "exit sign",
+      "threshold": 0.625
+    },
+    {
+      "canonicalId": 44,
+      "name": "measuring_spoon",
+      "displayName": "measuring spoon",
+      "threshold": 0.25
+    }
+  ],
+  "modelToCanonicalIds": [
+    2,
+    42,
+    31,
+    35,
+    40,
+    30,
+    27,
+    22,
+    6,
+    15,
+    43,
+    39,
+    29,
+    1,
+    7,
+    28,
+    23,
+    26,
+    13,
+    8,
+    44,
+    25,
+    14,
+    11,
+    34,
+    36,
+    0,
+    32,
+    4,
+    17,
+    33,
+    9,
+    21,
+    10,
+    24,
+    19,
+    20,
+    12,
+    3,
+    37,
+    16,
+    18,
+    41,
+    5,
+    38
+  ],
+  "modelAssetName": "galvat_trial9_yolo26n_maxdet40",
+  "modelSha256": "372eedae13afa798197998d39fff592f76323de23f30ca754cb98dbcdc73782b",
+  "referenceIou": 0.65,
+  "applyAdditionalNms": false,
+  "thresholdSource": "User-provided nano per-class thresholds, 2026-10-09"
+}

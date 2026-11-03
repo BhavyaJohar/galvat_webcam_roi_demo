@@ -1,0 +1,35 @@
+{
+  "schema": "galvat.trial9_release_identity.v1",
+  "source_repository": "https://github.com/jadinV/GALVAT_R61.git",
+  "source_commit": "865870369b5424e206d8829683de2fba9ee217c3",
+  "input_shape": [
+    1,
+    3,
+    640,
+    640
+  ],
+  "output_shape": [
+    1,
+    40,
+    6
+  ],
+  "reference_iou": 0.65,
+  "additional_nms_for_trial9": false,
+  "nms_contract_source": "Assets/Scripts/MLProcessing.cs:637, explicit Trial9 branch bypasses NMS",
+  "models": {
+    "nano": {
+      "asset_name": "galvat_trial9_yolo26n_maxdet40",
+      "config": "Trial9NanoConfig.json",
+      "model_sha256": "372eedae13afa798197998d39fff592f76323de23f30ca754cb98dbcdc73782b",
+      "config_sha256": "f5c68961337d8d3c58cc85b5f35f10dbeccc8246645316acbb2a77bd1eb0123f",
+      "source_git_blob": "cdc7f763ec6c12cd6923a11f8bc28ff7a94a103d"
+    },
+    "small": {
+      "asset_name": "galvat_trial9_yolo26s_maxdet40",
+      "config": "Trial9Config.json",
+      "model_sha256": "992a329515ee0793e7ec0f78fc0576d0d937d38ec194bfee23b4a575c10cd498",
+      "config_sha256": "155a855a1960e7ceb2381f46205816d299613866b51b111fd0c8aff285798e40",
+      "source_git_blob": "d47d8c3e209e8ed3666ae199cd791f6aa10e3e6b"
+    }
+  }
+}
