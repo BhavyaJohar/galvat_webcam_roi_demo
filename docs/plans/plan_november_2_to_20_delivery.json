@@ -16,24 +16,23 @@
         "no threshold tuning ontest",
         "recording-group separation"
       ],
-      "expected_signal": "Jointbaseline manifest, categorymapping, owners and acceptance limits confirmed."
+      "expected_signal": "Verified model/configuration package, shared-category mapping and baseline acceptance limits."
     },
     {
       "id": "N2",
-      "name": "Nov5–7 detector-only device baseline",
+      "name": "Nov2–6 integration and baseline runtime testing",
       "change": "Compare nano and small with verified own preprocessing/thresholds; ordinary runs separate from profilers. Jadin's Nov2–6 work also includes separate tracking-interval pilots, area-based label sizing, and an initial Trial9/E012 comparison once contracts are verified.",
       "controlled_variables": [
-        "sameML2/buildtype/scene/backend/input",
-        "3repeats15warm60measured",
-        "5min continuous stability",
-        "thresholdsselectedvalidationandfrozen"
+        "same Magic Leap device/application build/input scenes",
+        "verified model-specific preprocessing/decoder",
+        "validation-selected thresholds frozen before testing"
       ],
       "expected_signal": "Reliablecamera/freshresult/feedbackrates andstagebottleneck; notRGPsnapshotFPS."
     },
     {
       "id": "N3",
-      "name": "Nov8–10 optimization and checkpoint; tracking work through Nov13",
-      "change": "One evidence-driven pipeline change at a time; diagnostic nano tracking5 and justified interval comparisons. Review Nov10; work toward reliable tracking Nov9–13 and make final inclusion decision Nov13.",
+      "name": "Nov9–13 frame rate and tracking development",
+      "change": "Compare periodic YOLO refresh3/5/10 against detector-only; measure tracker cost and reliability, validate CSV fields and decide inclusion Nov13, with detector-only fallback.",
       "controlled_variables": [
         "same baseline scene/model/config",
         "actualmotionverification",
@@ -55,8 +54,8 @@
     },
     {
       "id": "N5",
-      "name": "Nov14–17 regression andfreeze",
-      "change": "Priority-class regressions plus Jadin's final tests/evaluations fromNov16. Freeze Nov17; begin full detection/integration documentation before freeze.",
+      "name": "Nov16–17 final tuning and system freeze",
+      "change": "Begin final testing/evaluation, complete regressions and freeze selected model/configuration; Trial10 only for a specific issue with time for full revalidation.",
       "controlled_variables": [
         "18JHU priorityitems",
         "agreedlighting/occlusionconditions",
@@ -66,7 +65,7 @@
     },
     {
       "id": "N6",
-      "name": "Nov18–20 handoff",
+      "name": "Nov18–20 final testing deliverable and documentation",
       "change": "DuringNov16–20 complete final testing, full pipeline/integration documentation and FPS/latency report; Nov18–19 clean-build/handoff buffer and Nov20 delivery.",
       "controlled_variables": [
         "frozenreleaseconfiguration",
@@ -83,12 +82,12 @@
     "sourceframe/gaze/pose/age",
     "tracking currentgeometry/IDdrift/expiry",
     "perclassprecisionrecallcounts",
-    "memory/thermal/5minstability",
+    "memory and continuous-video stability",
     "bounding-box-area label sizing, readability, jitter and bounds",
     "CSV schema completeness and required value validity"
   ],
   "success_criteria": [
-    "JointapprovalbyNov4 ofproposed>=10cameraFPS,250msmedian/500msp95feedback,and500msconfirmationage budgets",
+    "Agree latency and task-error limits during the baseline phase.",
     "No stale feedback afterknown ROI/target/sessionchanges",
     "Independentheldoutrecognitionanddecodercontractevidence",
     "Trackingoptionalnetbenefitandcurrentgeometry",
@@ -96,7 +95,7 @@
     "JadinNov2–6 profiling/interval pilots/label-sizing/initialE012 comparison, Nov9–13 real-world data andCSV audit; final tracking inclusion decisionNov13"
   ],
   "risks": [
-    "Acceptance limits/proposedownersnotyetjointlyapproved",
+    "Latency and task-error acceptance limits remain to be agreed.",
     "E01211-classcontractandnano notebookstillneeded",
     "Dataset/split independenceandannotationcompleteness requiremanifests; not assumedverified",
     "NovRGPalonecannotestablishGPUidleore2eperformance",
