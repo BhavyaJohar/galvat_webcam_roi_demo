@@ -21,7 +21,7 @@
     {
       "id": "N2",
       "name": "Nov5–7 detector-only device baseline",
-      "change": "Compare nano andsmall withverified own preprocessing/thresholds; repeatedordinaryruns separatefromprofilerdiagnostics.",
+      "change": "Compare nano and small with verified own preprocessing/thresholds; ordinary runs separate from profilers. Jadin's Nov2–6 work also includes separate tracking-interval pilots, area-based label sizing, and an initial Trial9/E012 comparison once contracts are verified.",
       "controlled_variables": [
         "sameML2/buildtype/scene/backend/input",
         "3repeats15warm60measured",
@@ -32,8 +32,8 @@
     },
     {
       "id": "N3",
-      "name": "Nov8–10 targeted optimization andtracking decision",
-      "change": "One evidence-driven pipeline changeatatime; optionalnano tracking5 withstage/rejectionlogs; fallbackdecisionNov10.",
+      "name": "Nov8–10 optimization and checkpoint; tracking work through Nov13",
+      "change": "One evidence-driven pipeline change at a time; diagnostic nano tracking5 and justified interval comparisons. Review Nov10; work toward reliable tracking Nov9–13 and make final inclusion decision Nov13.",
       "controlled_variables": [
         "same baseline scene/model/config",
         "actualmotionverification",
@@ -43,8 +43,8 @@
     },
     {
       "id": "N4",
-      "name": "Nov11–13 model comparison andgaze regressions",
-      "change": "E012/sharedcategorycomparison; paired300/40ifreferencesavailable; stalegaze/lateoutput/depthtests.",
+      "name": "Nov9–13 tracking reliability, real-world tests and CSV audit",
+      "change": "Complete initial Trial9/E012 comparison; paired300/40 if available; gaze switching, exit/reentry, occlusion/reidentification, invalid gaze and late-output/depth/label-sizing regressions. Validate every intended CSV field, schema and required values by Nov13; distinguish inapplicable fields from missing measurements.",
       "controlled_variables": [
         "same independentinputsanddevicebuild",
         "own verifiedcontracts",
@@ -56,7 +56,7 @@
     {
       "id": "N5",
       "name": "Nov14–17 regression andfreeze",
-      "change": "Priorityclass controlscenarios andcross-session/occlusion/invalidinputtests; freezeNov17.",
+      "change": "Priority-class regressions plus Jadin's final tests/evaluations fromNov16. Freeze Nov17; begin full detection/integration documentation before freeze.",
       "controlled_variables": [
         "18JHU priorityitems",
         "agreedlighting/occlusionconditions",
@@ -67,7 +67,7 @@
     {
       "id": "N6",
       "name": "Nov18–20 handoff",
-      "change": "Cleanbuild/install, matchedfinaldevicecheck, cross-referencedmodelUnitymanifests andfinalhandoffNov20.",
+      "change": "DuringNov16–20 complete final testing, full pipeline/integration documentation and FPS/latency report; Nov18–19 clean-build/handoff buffer and Nov20 delivery.",
       "controlled_variables": [
         "frozenreleaseconfiguration",
         "affectedregressionsrepeatedforlatefixes"
@@ -83,14 +83,17 @@
     "sourceframe/gaze/pose/age",
     "tracking currentgeometry/IDdrift/expiry",
     "perclassprecisionrecallcounts",
-    "memory/thermal/5minstability"
+    "memory/thermal/5minstability",
+    "bounding-box-area label sizing, readability, jitter and bounds",
+    "CSV schema completeness and required value validity"
   ],
   "success_criteria": [
     "JointapprovalbyNov4 ofproposed>=10cameraFPS,250msmedian/500msp95feedback,and500msconfirmationage budgets",
     "No stale feedback afterknown ROI/target/sessionchanges",
     "Independentheldoutrecognitionanddecodercontractevidence",
     "Trackingoptionalnetbenefitandcurrentgeometry",
-    "FreezeNov17; deliverNov20withsignedacceptanceorexplicitlimits"
+    "FreezeNov17; deliverNov20withsignedacceptanceorexplicitlimits",
+    "JadinNov2–6 profiling/interval pilots/label-sizing/initialE012 comparison, Nov9–13 real-world data andCSV audit; final tracking inclusion decisionNov13"
   ],
   "risks": [
     "Acceptance limits/proposedownersnotyetjointlyapproved",

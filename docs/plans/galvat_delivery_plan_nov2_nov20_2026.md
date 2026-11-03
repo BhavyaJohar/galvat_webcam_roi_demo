@@ -2,6 +2,8 @@
 
 November 2 to November 20 2026
 
+Updated November 3 to incorporate Jadin's November 2 action items.
+
 ## Purpose and delivery decision
 
 We will deliver a versioned GALVAT Magic Leap package by November 20, with a reproducible build, matched model configuration, device measurements, and documented limitations. This schedule replaces the October 7 to 30 milestones while retaining JHU's requirements for independent evaluation, fair model comparisons, traceable feedback, and gaze safety.
@@ -16,9 +18,9 @@ Nano detector-only is the practical baseline. Tracking is optional and will ente
 - The November 2 capture was reported as nano with tracking disabled. An RGP file alone does not establish sustained camera FPS, inference latency, GPU utilization, or a camera-pause root cause. Jadin's Unity CPU capture, viewer screenshots and matching CSVs are needed.
 - The supplied small-model notebook includes measuring spoon and asserts 45 rated classes. Legacy shared44 names and evaluation at 300 versus deployment export at 40 require reconciliation. Saved outputs report validation GALVAT 0.7478 and frozen-test GALVAT 0.6920; these are not nano results or newly reproduced scores.
 
-## Proposed ownership
+## Ownership and coordination
 
-Owners and acceptance limits will be confirmed jointly by November 4.
+Jadin's weekly actions below reflect his November 2 email. Shared responsibilities and acceptance limits will be confirmed jointly by November 4.
 
 | Responsibility | Lead | Support |
 |---|---|---|
@@ -28,6 +30,14 @@ Owners and acceptance limits will be confirmed jointly by November 4.
 | Images, scene coverage and annotation review | Yujia and JHU | AUD |
 | E012 package and 11-class definition | JHU | AUD comparison |
 | Acceptance and study readiness decision | AUD and JHU jointly | JHU study team |
+
+## Jadin weekly action items
+
+| Dates | Jadin actions and expected evidence |
+|---|---|
+| November 2 to 6 | CPU/GPU profiling of pauses and slowdowns; separate tracking refresh-interval pilots; bounding-box-area label sizing; initial Trial 9 versus E012 comparison using verified model contracts. |
+| November 9 to 13 | Work toward reliable tracking; audit CSV field completeness; collect real-world performance data for gaze switching, target exit/reentry, occlusion/reidentification and invalid gaze. Make the tracking inclusion decision by November 13. |
+| November 16 to 20 | Run final tests/evaluations, document the complete detection/integration pipeline, report final FPS/latency and deliver November 20. Freeze the release candidate November 17, with November 18 and 19 reserved for verification and handoff. |
 
 <!-- pagebreak -->
 
@@ -53,17 +63,21 @@ For each mode, run at least three repetitions with 15 seconds of warmup and at l
 
 Record camera callbacks, processed images, fresh detector results, frame gaps, preprocessing, inference scheduling/readback, postprocessing, rendering and feedback timestamps. Use a common monotonic clock or a documented clock conversion. Report median and p95 capture-to-feedback latency, not just average inference time.
 
+During November 2 to 6, Jadin will also run tracking refresh-interval pilots as separate diagnostic runs, keeping the detector-only comparison uncontaminated. Begin the Trial 9 versus E012 comparison by November 6 once the shared-category mapping and each model's preprocessing/decoder are verified. Complete the controlled comparison and selection review during November 11 to 13; flag missing E012 inputs rather than substituting an unfair comparison.
+
+Jadin will update label size based on the displayed bounding box's area during November 2 to 6. Define minimum/maximum label sizes, invalid/zero-area handling and smoothing to prevent jitter. Check small/large targets, changing box size, ROI coordinate conversion and text readability. Keep label depth/placement policy separate from size, and hold the label configuration constant across model timing comparisons.
+
 **Exit evidence:** repeatable detector-only measurements and a ranked bottleneck explanation. The short November RGP capture will not substitute for continuous-video CSVs.
 
-## Part 3 Fix the measured bottleneck and decide on tracking
+## Part 3 Fix the measured bottleneck and assess tracking
 
 ### November 8 to 10
 
 Bhavya and Jadin will implement one evidence-driven runtime change at a time and compare it with the frozen baseline. Candidates include grayscale preparation, repeated pixel/texture access, scene checks, unnecessary copies/uploads, scheduling/completion delays, and feedback placement. Actual stage measurements determine which change proceeds.
 
-Only after detector-only measurements are stable, run nano plus tracking at interval 5 with the 69-column diagnostics. Examine static textured objects, slow movement and occlusion; use 3 or 10 only when the failure reasons justify the comparison. Measure tracker cost, successful propagation, ID continuity, drift, forced refreshes and stale boxes. A visible unpropagated YOLO box is not successful tracking.
+After the initial refresh-interval pilots and a stable detector-only baseline, run nano plus tracking at interval 5 with the 69-column diagnostics. Examine static textured objects, slow movement and occlusion; compare intervals 3 or 10 when the failure reasons justify it. Measure tracker cost, successful propagation, ID continuity, drift, forced refreshes and stale boxes. A visible unpropagated YOLO box is not successful tracking.
 
-**Decision by November 10:** retain tracking only with verified current geometry and a material duty-cycle or stability benefit without breaching the camera/latency budget. Otherwise freeze detector-only. Small plus tracking is conditional on this result. SAM stays outside the delivery critical path unless its complete ML2 runtime, memory and latency feasibility is separately demonstrated.
+**November 10 checkpoint:** review costs and failure reasons, then use November 9 to 13 to work toward Jadin's reliable-tracking goal. Make the final inclusion decision by November 13. Retain tracking only with verified current geometry and a material duty-cycle or stability benefit without breaching the camera/latency budget; otherwise select detector-only. Small plus tracking is conditional on this result. SAM stays outside the delivery critical path unless its complete ML2 runtime, memory and latency feasibility is separately demonstrated.
 
 <!-- pagebreak -->
 
@@ -71,11 +85,13 @@ Only after detector-only measurements are stable, run nano plus tracking at inte
 
 ### November 11 to 13
 
-AUD and JHU will compare E012 with the selected Trial 9 candidates on the agreed shared categories, using the same independent inputs and ML2 application build. Each model retains its own class map, preprocessing, decoder and frozen threshold profile. Report per-class precision, recall, sample counts and false-positive/false-negative definitions; report additional class coverage separately. Neither model is presumed better.
+AUD and JHU will complete and review the Trial 9 versus E012 comparison started during November 2 to 6. Use the agreed shared categories, independent inputs and same ML2 application build. Each model retains its own class map, preprocessing, decoder and frozen threshold profile. Report per-class precision, recall, sample counts and false-positive/false-negative definitions; report additional class coverage separately. Neither model is presumed better.
 
 Where both 300-output and 40-output exports are available, AUD will run paired inputs and thresholds and document where the limit is applied. JHU will measure device latency, while AUD checks recall and small targets in clutter. Include fixed expected decoder outputs and coordinate checks. Do not add conventional NMS to the end-to-end export merely because an IoU setting exists; document whether IoU 0.65 is applicable to the evaluated path. If the 300-output reference is unavailable, document the gap rather than inventing a comparison.
 
-JHU will test gaze switching between two objects, targets leaving view, occlusion/reacquisition, invalid gaze, and late detections after a head turn. Record the source frame, ROI/gaze and camera pose used for placement. The team will specify fixed display-plane cues versus measured-depth placement and the fallback when depth/intrinsics are unavailable. JHU's new intrinsics-independent result handling requires regression tests, not an assumption of correct 3D placement.
+During November 9 to 13, Jadin/JHU will collect real-world performance data for gaze switching between two objects, a target leaving and reentering the frame, occlusion and reidentification, invalid/unusable gaze, and late detections after a head turn. Record the source frame, ROI/gaze and camera pose used for placement, together with timing and failure outcomes. The team will specify fixed display-plane cues versus measured-depth placement and the fallback when depth/intrinsics are unavailable. JHU's new intrinsics-independent result handling and area-based label sizing require regression tests, not an assumption of correct placement or readability.
+
+By November 13, Jadin will verify that CSVs contain every intended field. Compare headers against the declared schema and validate required values, frame/session IDs, timestamps, counters, units and row completeness for detector-only and tracking modes. Distinguish legitimately inapplicable/disabled fields from missing measurements; do not fill absent data with misleading zeros. Verify capture-to-display/spoken-feedback fields where implemented, and document gaps or add the required instrumentation before final tests.
 
 **Exit evidence:** model-selection rationale, feedback/placement tests and confirmed stale-output suppression. Any Trial 10 proposal requires a specific failure, joint approval, and enough time to repeat evaluation/export/device checks before November 17; otherwise defer it.
 
@@ -87,6 +103,8 @@ JHU will run the agreed control-subject scenarios across lighting and occlusion 
 
 AUD will reconcile notebook metric definitions, model/export identity and release configuration. Jadin will freeze the selected model, Unity commit, thresholds, detector duty policy, association/expiry rules and feedback behavior by November 17. Optional changes that have not passed the same regression tests will be excluded. A simpler tested fallback takes priority over experimental features.
 
+Jadin's final testing/evaluation window begins November 16. Recheck label sizing/readability, the four real-world gaze/target scenarios, CSV completeness, tracking or detector-only behavior, and end-to-end performance on the release candidate. Begin documenting the full detection pipeline and Unity integration, including known limitations, before the freeze.
+
 **Exit evidence:** joint release-candidate review, signed acceptance results or explicit exceptions, regression evidence and a rollback package. Patient testing depends on JHU's approved protocol, permissions and study readiness. The November 20 milestone covers engineering delivery, not completion of a patient study.
 
 ## Part 6 Reproduce package and deliver
@@ -94,6 +112,8 @@ AUD will reconcile notebook metric definitions, model/export identity and releas
 ### November 18 to 20
 
 Reserve November 18 and 19 for a clean build/install, final continuous-video runs, configuration checks and a joint handoff rehearsal. AUD supplies the model/research package and deployment instructions; Jadin/JHU verifies the Unity build on the target ML2. Any late fix must repeat the affected regression tests and be recorded in the change log.
+
+During November 16 to 20, Jadin will complete the pipeline/integration documentation and final FPS/latency report. Report camera/render/tracking rates separately from fresh detector-result rate, plus median/p95 capture-to-feedback latency, the exact release configuration and repeat-run conditions. Link the report to its CSVs and test evidence.
 
 **November 20 delivery:** provide the final versioned package, source commits, installation/run instructions, reproducibility evidence, known limitations and the tested rollback configuration. If a target remains unmet, report the measured shortfall and agreed operating restrictions rather than presenting an unverified system as accepted.
 
