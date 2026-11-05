@@ -8,6 +8,12 @@ The [November 2 to 20 delivery plan](docs/plans/galvat_delivery_plan_nov2_nov20_
 
 See the [November 3 local validation results and device checklist](docs/experiments/2026-11-03/README.md) for model-contract fixtures, CSV intake tools, the unverified comparison class map, and remaining profiler evidence needed.
 
+The [November 5 six-run device analysis](docs/experiments/2026-11-05/galvat_six_device_tests_20261104.md)
+finds that disabling debugging helps, nano is faster than small, and delayed tracking
+replay remains unreliable. The [integrated next test plan](docs/experiments/2026-11-05/NEXT_TEST_PLAN.md)
+combines dev and feedback fixes with an opt-in texture-aware tracker experiment in
+[Jadin's candidate branch](https://github.com/jadinV/GALVAT_R61/tree/bhavya-feedback-timing).
+
 See the [verified project status and next tests](docs/PROJECT_STATUS.md), [current supplied small-model notebook](notebooks/current/README.md), [historical notebook archive](notebooks/archive/README.md), and [Trial9 experiment reports](docs/experiments/trial9/). The nano Colab notebook is still needed; the archived Trial9 notebook is an older44-class template. The existing demo instructions below have not been updated to the latest Trial9 runtime.
 
 Minimal local demo to visualize your trained GALVAT model on a computer webcam with a Region of Interest (ROI).
